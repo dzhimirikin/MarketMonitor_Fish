@@ -3,7 +3,7 @@ name: Update Fish Market Monitor data
 on:
   workflow_dispatch:
   schedule:
-    # Monthly on the 1st at 04:00 UTC. Manual runs are available under Actions.
+    # Monthly on the 11th at 04:00 UTC. Manual runs are available under Actions.
     - cron: '0 4 11 * *'
 
 permissions:
@@ -24,24 +24,27 @@ jobs:
           sdk: stable
 
       - name: Install Dart dependencies
+        working-directory: MarketMonitor
         run: dart pub get
 
       - name: Generate annual data
         id: annual
+        working-directory: MarketMonitor
         continue-on-error: true
-        run: dart run scripts/market_monitor.dart
+        run: dart run market_monitor.dart
 
       - name: Generate quarterly data
         id: quarterly
+        working-directory: MarketMonitor
         continue-on-error: true
-        run: dart run scripts/market_monitor_quarterly.dart
+        run: dart run market_monitor_quarterly.dart
 
       - name: Commit generated JSON files
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          if [ -f companies.json ]; then git add companies.json; fi
-          if [ -f companies_quarterly.json ]; then git add companies_quarterly.json; fi
+          if [ -f MarketMonitor/companies.json ]; then git add MarketMonitor/companies.json; fi
+          if [ -f MarketMonitor/companies_quarterly.json ]; then git add MarketMonitor/companies_quarterly.json; fi
           if ! git diff --cached --quiet; then
             git commit -m "Update Fish Market Monitor data"
             git push
