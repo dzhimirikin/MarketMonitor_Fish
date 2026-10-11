@@ -468,3 +468,8 @@ companies:
   registry_code: '14783230'
   website: null
   note: registry_code_verified_from_search
+
+- name: Betreston OÜ
+  registry_code: '10219129'
+  website: null
+  note: registry_code_verified_from_search
