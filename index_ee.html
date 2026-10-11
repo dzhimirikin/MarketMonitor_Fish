@@ -1,0 +1,422 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Independent financial monitor of the Estonian fish market.">
+  <title>Fish Market Monitor Estonia</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- MARKET MONITOR -->
+  <section
+    id="market-monitor"
+    data-status-companies="Ettevõtteid"
+    data-status-with-data="Andmetega"
+    data-status-period="Periood"
+    data-status-latest="Viimased andmed"
+    data-quarter-prefix="Q"
+    data-load-error="Turu monitooringu andmete laadimine ebaõnnestus."
+    data-check-file="Kontrollige faili olemasolu"
+    data-local-http="ja veenduge, et leht töötab kohaliku HTTP-serveri kaudu."
+    data-quarterly-load-error="Kvartaliandmete laadimine ebaõnnestus."
+    data-quarterly-check-file="Kontrollige faili companies_quarterly.json olemasolu ja veenduge, et leht töötab kohaliku HTTP-serveri kaudu."
+
+    data-summary-title="Turunäitajad"
+    data-summary-indicator="Näitaja"
+    data-summary-market="Turg"
+    data-summary-companies="ettevõtet"
+    data-summary-close="Sulge"
+
+    data-summary-turnover="Käive, €"
+    data-summary-equity="Omakapital, €"
+    data-summary-profit="Kasum, €"
+    data-summary-profitability="Kasumlikkus"
+    data-summary-employees="Töötajad"
+    data-summary-turnover-per-employee="Käive / töötaja, €"
+    data-summary-profit-per-employee="Kasum / töötaja, €"
+
+    data-summary-projected-turnover="Prognoositav käive, €"
+    data-summary-state-taxes="Riiklikud maksud, €"
+    data-summary-labour-taxes="Tööjõumaksud, €"
+    data-summary-projected-productivity="Prognoositav tööjõu tootlikkus, €"
+    data-summary-productivity="Tööjõu tootlikkus, €"
+    data-summary-average-wage="Keskmine brutopalk, €"
+
+    data-summary-select-all="Vali kõik"
+    data-summary-deselect-all="Tühista kõik valikud"
+
+    data-csv-year="Aasta"
+    data-csv-period="Periood"
+    data-csv-profitability="Kasumlikkus, %"
+  >
+  <div class="card">
+
+    <h2>Fish Market Monitor Estonia</h2>
+
+    <div class="market-monitor-tabs" role="tablist" aria-label="Report type">
+      <button
+        id="marketMonitorAnnualTab"
+        class="market-monitor-tab active"
+        type="button"
+        role="tab"
+        aria-selected="true"
+        aria-controls="marketMonitorAnnual">
+        Annual Report
+      </button>
+
+      <button
+        id="marketMonitorQuarterlyTab"
+        class="market-monitor-tab"
+        type="button"
+        role="tab"
+        aria-selected="false"
+        aria-controls="marketMonitorQuarterly">
+        Quarterly Report
+      </button>
+    </div>
+
+<!-- ANNUAL REPORT -->
+    <div
+      id="marketMonitorAnnual"
+      class="market-monitor-report"
+      role="tabpanel"
+      aria-labelledby="marketMonitorAnnualTab">
+
+      <p class="market-monitor-description">
+        Key financial indicators of companies in the Estonian fish market.
+      </p>
+
+      <p class="quarterly-note">
+        Source: Estonian Business Register data. Turnover — taxable turnover.
+      </p>
+
+      <div
+        id="marketMonitorAnnualUpdated"
+        class="market-monitor-updated"
+        data-prefix="Updated">
+      </div>
+
+      <div id="status">
+        Loading...
+      </div>
+
+      <div class="controls">
+
+        <label>
+          Year:
+          <select id="year"></select>
+        </label>
+
+        <label>
+          Sort:
+          <select id="sort">
+            <option value="turnover">Turnover</option>
+            <option value="equity">Equity</option>
+            <option value="profit">Profit</option>
+            <option value="margin">Profitability</option>
+            <option value="employees">Employees</option>
+            <option value="turnoverPerEmployee">Turnover / employee</option>
+            <option value="name">Name A–Z</option>
+          </select>
+        </label>
+
+        <label>
+          Direction:
+          <select id="sortDirection">
+            <option value="desc">Descending ↓</option>
+            <option value="asc">Ascending ↑</option>
+          </select>
+        </label>
+
+        <label>
+          Search:
+          <input
+            id="search"
+            type="search"
+            placeholder="Company name"
+          >
+        </label>
+
+      </div>
+
+      <div class="market-summary-action">
+        <button
+          id="marketAnnualSummaryButton"
+          class="cv-link"
+          type="button">
+          Market indicators
+        </button>
+      </div>
+
+      <div class="market-selection-file-actions">
+        <button
+          id="marketAnnualExportSelection"
+          class="cv-link market-selection-file-button"
+          type="button">
+          Export selection
+        </button>
+
+        <button
+          id="marketAnnualImportSelection"
+          class="cv-link market-selection-file-button"
+          type="button">
+          Import selection
+        </button>
+
+        <input
+          id="marketAnnualImportSelectionFile"
+          type="file"
+          accept=".json,application/json"
+          hidden>
+      </div>
+
+      <div id="marketAnnualSelection" class="market-selection-action">
+        <div class="market-selection-topline">
+          <label class="market-selection-label">
+            <input id="marketAnnualSelectAll" type="checkbox" checked>
+            <span id="marketAnnualSelectAllLabel">Select all</span>
+          </label>
+          <div class="market-selection-presets" role="group" aria-label="Company preset">
+            <!--
+            <button type="button" class="market-selection-preset" data-selection-preset="Al" aria-pressed="false">Al</button>
+            <button type="button" class="market-selection-preset" data-selection-preset="Fe" aria-pressed="false">Fe</button>
+            -->
+          </div>
+        </div>
+      </div>
+
+      <div class="table-wrap">
+
+        <table>
+
+          <thead>
+            <tr>
+              <th>Company</th>
+              <th>Year</th>
+              <th>Turnover, €</th>
+              <th>Equity, €</th>
+              <th>Profit, €</th>
+              <th>Profitability</th>
+              <th>Employees</th>
+              <th>Turnover / employee</th>
+            </tr>
+          </thead>
+
+          <tbody id="companiesBody"></tbody>
+
+        </table>
+
+      </div>
+    </div>
+
+    <!-- QUARTERLY REPORT -->
+    <div
+      id="marketMonitorQuarterly"
+      class="market-monitor-report quarterly-report"
+      role="tabpanel"
+      aria-labelledby="marketMonitorQuarterlyTab"
+      hidden>
+
+      <p class="market-monitor-description">
+        Quarterly indicators of companies in the Estonian fish market.
+      </p>
+
+      <p class="quarterly-note">
+        Source: Estonian Tax and Customs Board (EMTA) and public Inforegister data.
+        Turnover — taxable turnover.
+      </p>
+
+
+      <div
+        id="marketMonitorQuarterlyUpdated"
+        class="market-monitor-updated"
+        data-prefix="Updated">
+      </div>
+
+      <div id="quarterlyStatus" class="market-monitor-quarterly-status">
+        Loading...
+      </div>
+
+      <div class="quarterly-controls">
+
+        <label>
+          Year:
+          <select id="quarterlyYear"></select>
+        </label>
+
+        <label>
+          Quarter:
+          <select id="quarterlyQuarter"></select>
+        </label>
+
+        <label>
+          Sort:
+          <select id="quarterlySort">
+            <option value="taxableTurnover">Turnover</option>
+            <option value="projectedTurnover">Projected turnover</option>
+            <option value="stateTaxes">State taxes</option>
+            <option value="labourTaxes">Labour taxes</option>
+            <option value="employees">Employees</option>
+            <option value="taxableTurnoverPerEmployee">Turnover / employee</option>
+            <option value="projectedLabourProductivity">Projected labour productivity</option>
+            <option value="labourProductivity">Labour productivity</option>
+            <option value="profitPerEmployee">Profit / employee</option>
+            <option value="averageGrossWage">Average gross wage</option>
+            <option value="name">Name A–Z</option>
+          </select>
+        </label>
+
+        <label>
+          Direction:
+          <select id="quarterlyDirection">
+            <option value="desc">Descending ↓</option>
+            <option value="asc">Ascending ↑</option>
+          </select>
+        </label>
+
+        <label>
+          Search:
+          <input
+            id="quarterlySearch"
+            type="search"
+            placeholder="Company name"
+          >
+        </label>
+
+      </div>
+
+      <div class="market-summary-action">
+        <button
+          id="marketQuarterlySummaryButton"
+          class="cv-link"
+          type="button">
+          Market indicators
+        </button>
+      </div>
+
+      <div class="market-selection-file-actions">
+        <button
+          id="marketQuarterlyExportSelection"
+          class="cv-link market-selection-file-button"
+          type="button">
+          Export selection
+        </button>
+
+        <button
+          id="marketQuarterlyImportSelection"
+          class="cv-link market-selection-file-button"
+          type="button">
+          Import selection
+        </button>
+
+        <input
+          id="marketQuarterlyImportSelectionFile"
+          type="file"
+          accept=".json,application/json"
+          hidden>
+      </div>
+
+      <div id="marketQuarterlySelection" class="market-selection-action">
+        <div class="market-selection-topline">
+          <label class="market-selection-label">
+            <input id="marketQuarterlySelectAll" type="checkbox" checked>
+            <span id="marketQuarterlySelectAllLabel">Select all</span>
+          </label>
+          <div class="market-selection-presets" role="group" aria-label="Company preset">
+            <!--
+            <button type="button" class="market-selection-preset" data-selection-preset="Al" aria-pressed="false">Al</button>
+            <button type="button" class="market-selection-preset" data-selection-preset="Fe" aria-pressed="false">Fe</button>
+            -->
+          </div>
+        </div>
+      </div>
+
+
+      <div class="quarterly-table-wrap">
+
+        <table class="quarterly-table">
+
+          <thead>
+            <tr>
+              <th>Company</th>
+              <th>Period</th>
+              <th>Turnover, €</th>
+              <th>Projected turnover, €</th>
+              <th>State taxes, €</th>
+              <th>Labour taxes, €</th>
+              <th>Employees</th>
+              <th>Turnover / employee, €</th>
+              <th>Projected labour productivity, €</th>
+              <th>Labour productivity, €</th>
+              <th>Profit / employee, €</th>
+              <th>Average gross wage, €</th>
+            </tr>
+          </thead>
+
+          <tbody id="quarterlyBody"></tbody>
+
+        </table>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACTS -->
+<section id="contacts">
+  <div class="card">
+    <h2>Contacts</h2>
+
+    <p>
+      <!-- envelope -->
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none"
+           viewBox="0 0 24 24" stroke="currentColor"
+           style="vertical-align:-3px;margin-right:6px;">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"
+              d="M21.75 7.5v9a2.25 2.25 0 01-2.25 2.25h-15A2.25 2.25 0 012.25 16.5v-9m19.5 0L12 13.5 2.25 7.5m19.5 0A2.25 2.25 0 0019.5 5.25h-15A2.25 2.25 0 002.25 7.5"/>
+      </svg>
+      Email:
+      <a href="mailto:d.zhimirikin@gmail.com">d.zhimirikin@gmail.com</a>
+    </p>
+
+    <p>
+      <!-- phone -->
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none"
+           viewBox="0 0 24 24" stroke="currentColor"
+           style="vertical-align:-3px;margin-right:6px;">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"
+              d="M2.25 6.75c0 8.284 6.716 15 15 15h1.5a2.25 2.25 0 002.25-2.25l.001-1.372a2.25 2.25 0 00-1.636-2.163l-2.605-.744a2.25 2.25 0 00-2.318.761l-.574.766a12.042 12.042 0 01-5.516-5.516l.766-.574a2.25 2.25 0 00.761-2.318l-.744-2.605A2.25 2.25 0 006.372 3H5A2.25 2.25 0 002.75 5.25v1.5z"/>
+      </svg>
+      Phone (EST):
+      <a href="tel:+37253235078">+372-53235078</a>
+    </p>
+
+    <p>
+      <!-- phone -->
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none"
+           viewBox="0 0 24 24" stroke="currentColor"
+           style="vertical-align:-3px;margin-right:6px;">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"
+              d="M2.25 6.75c0 8.284 6.716 15 15 15h1.5a2.25 2.25 0 002.25-2.25l.001-1.372a2.25 2.25 0 00-1.636-2.163l-2.605-.744a2.25 2.25 0 00-2.318.761l-.574.766a12.042 12.042 0 01-5.516-5.516l.766-.574a2.25 2.25 0 00.761-2.318l-.744-2.605A2.25 2.25 0 006.372 3H5A2.25 2.25 0 002.75 5.25v1.5z"/>
+      </svg>
+      Phone (RUS):
+      <a href="tel:+79313166455">+7-931-3166455</a>
+    </p>
+
+    <!-- увеличенный отступ перед LinkedIn -->
+    <p style="margin-top:18px;">
+      <a href="https://www.linkedin.com/in/dzhimirikin/" target="_blank" rel="noopener noreferrer">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg"
+             width="24" height="24" alt="">
+      </a>
+    </p>
+
+  </div>
+</section>
+<script src="js/market-monitor.js" defer></script>
+<script src="js/market-monitor-quarterly.js" defer></script>
+<script src="js/market-monitor-tabs.js" defer></script>
+</body>
+</html>
