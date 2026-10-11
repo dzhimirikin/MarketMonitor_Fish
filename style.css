@@ -28,29 +28,14 @@ input[type="radio"] {
 
 
 /* ============================================================
-   BODY BACKGROUND (GRID — softer version)
+   BODY BACKGROUND — pale blue fish pattern
 ============================================================ */
 body {
-  background-color: #f8f8f8;
-
-  background-image:
-    /* 1 мм — тонкие */
-    linear-gradient(to right, rgba(0,0,0,0.03) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(0,0,0,0.03) 1px, transparent 1px),
-
-    /* 5 мм — средние */
-    linear-gradient(to right, rgba(0,0,0,0.06) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(0,0,0,0.06) 1px, transparent 1px),
-
-    /* 10 мм — основные */
-    linear-gradient(to right, rgba(0,0,0,0.09) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(0,0,0,0.09) 1px, transparent 1px);
-
-  background-size:
-    3.78px 3.78px, 3.78px 3.78px,
-    18.9px 18.9px, 18.9px 18.9px,
-    37.8px 37.8px, 37.8px 37.8px;
-
+  background-color: #f8fbff;
+  background-image: url("Delicate Pale Blue Fish Pattern.png");
+  background-repeat: repeat;
+  background-position: center top;
+  background-size: 790px auto;
   background-attachment: fixed;
 }
 
