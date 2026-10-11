@@ -4713,3 +4713,82 @@ right:30px;
     color: #111820;
     border-color: #9fcbe6;
 }
+
+/* ============================================================
+   MARKET INDICATORS — UNIFIED GRAPHITE CONTROLS
+   Overrides older styles for all Market Monitor summary/export dialogs.
+============================================================ */
+#market-monitor .market-summary-window {
+    color: #111820;
+}
+
+#market-monitor .market-summary-window,
+#market-monitor .market-summary-window p,
+#market-monitor .market-summary-window label,
+#market-monitor .market-summary-window span,
+#market-monitor .market-summary-window .market-summary-subtitle,
+#market-monitor .market-summary-window .market-csv-options,
+#market-monitor .market-summary-window .market-csv-choice,
+#market-monitor .market-summary-window .market-csv-years label {
+    color: #111820;
+}
+
+/* All action buttons in the modal, including CSV and Cancel */
+#market-monitor .market-summary-window button:not(.market-summary-close),
+#market-monitor .market-summary-window .cv-link,
+#market-monitor .market-summary-window .market-summary-actions button,
+#market-monitor .market-summary-window .market-csv-actions button {
+    background: #1f2933 !important;
+    color: #fff !important;
+    border: 1px solid #1f2933 !important;
+    text-shadow: none;
+    box-shadow: none;
+}
+
+#market-monitor .market-summary-window button:not(.market-summary-close):hover,
+#market-monitor .market-summary-window .cv-link:hover,
+#market-monitor .market-summary-window .market-summary-actions button:hover,
+#market-monitor .market-summary-window .market-csv-actions button:hover {
+    background: #11171a !important;
+    color: #fff !important;
+    border-color: #11171a !important;
+}
+
+#market-monitor .market-summary-window button:not(.market-summary-close):focus-visible,
+#market-monitor .market-summary-window .cv-link:focus-visible {
+    outline: 2px solid #64748b;
+    outline-offset: 2px;
+}
+
+/* Keep the close control discreet, with dark symbol */
+#market-monitor .market-summary-window .market-summary-close {
+    background: transparent !important;
+    color: #111820 !important;
+    border: none !important;
+}
+
+#market-monitor .market-summary-window .market-summary-close:hover {
+    background: #eee !important;
+    color: #111820 !important;
+}
+
+/* Radio buttons: graphite accent and consistent spacing */
+#market-monitor .market-summary-window input[type="radio"] {
+    accent-color: #1f2933 !important;
+    width: 14px;
+    height: 14px;
+    margin: 0;
+    flex: 0 0 auto;
+    cursor: pointer;
+}
+
+#market-monitor .market-summary-window .market-csv-choice {
+    cursor: pointer;
+}
+
+#market-monitor .market-summary-window select,
+#market-monitor .market-summary-window input:not([type="radio"]),
+#market-monitor .market-summary-window textarea {
+    color: #111820;
+    background-color: #fff;
+}
