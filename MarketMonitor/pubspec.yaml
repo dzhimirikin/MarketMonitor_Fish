@@ -1,0 +1,11 @@
+name: fish_market_monitor
+description: Independent data parsers for Fish Market Monitor Estonia
+publish_to: none
+version: 1.0.0
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+dependencies:
+  archive: ^3.6.1
+  csv: ^6.0.0
+  http: ^1.2.2
+  yaml: ^3.1.2
