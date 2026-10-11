@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-11T06:42:19.581758",
+  "updated": "2026-10-11T13:19:24.601229",
   "source": {
     "generalReports": "https://avaandmed.ariregister.rik.ee/sites/default/files/1.aruannete_yldandmed_kuni_31082026_0.zip",
     "keyIndicators": [
@@ -6422,6 +6422,103 @@
           "employees": 2.0,
           "margin": 14.45412949258128,
           "turnoverPerEmployee": 82831.0
+        }
+      ]
+    },
+    {
+      "name": "Betreston OÜ",
+      "registryCode": "10219129",
+      "website": null,
+      "note": "registry_code_verified_from_search",
+      "dataStatus": "ok",
+      "latest": {
+        "reportId": "3448100",
+        "year": 2025,
+        "submitted": "2025-12-31T00:00:00.000",
+        "turnover": 33460.0,
+        "equity": 67392.0,
+        "profit": 814.0,
+        "employees": 0.0,
+        "margin": 2.432755528989839,
+        "turnoverPerEmployee": null
+      },
+      "history": [
+        {
+          "reportId": "3448100",
+          "year": 2025,
+          "submitted": "2025-12-31T00:00:00.000",
+          "turnover": 33460.0,
+          "equity": 67392.0,
+          "profit": 814.0,
+          "employees": 0.0,
+          "margin": 2.432755528989839,
+          "turnoverPerEmployee": null
+        },
+        {
+          "reportId": "3145481",
+          "year": 2024,
+          "submitted": "2024-12-31T00:00:00.000",
+          "turnover": 30559.0,
+          "equity": 66578.0,
+          "profit": 68.0,
+          "employees": 0.0,
+          "margin": 0.2225203704309696,
+          "turnoverPerEmployee": null
+        },
+        {
+          "reportId": "2854087",
+          "year": 2023,
+          "submitted": "2023-12-31T00:00:00.000",
+          "turnover": 46802.0,
+          "equity": 66510.0,
+          "profit": -3285.0,
+          "employees": 0.0,
+          "margin": -7.018930814922439,
+          "turnoverPerEmployee": null
+        },
+        {
+          "reportId": "2564218",
+          "year": 2022,
+          "submitted": "2022-12-31T00:00:00.000",
+          "turnover": 37964.0,
+          "equity": 69795.0,
+          "profit": 942.0,
+          "employees": 0.0,
+          "margin": 2.4812980718575495,
+          "turnoverPerEmployee": null
+        },
+        {
+          "reportId": "2325163",
+          "year": 2021,
+          "submitted": "2021-12-31T00:00:00.000",
+          "turnover": 20903.0,
+          "equity": 68853.0,
+          "profit": -12090.0,
+          "employees": 1.0,
+          "margin": -57.83858776252213,
+          "turnoverPerEmployee": 20903.0
+        },
+        {
+          "reportId": "2055414",
+          "year": 2020,
+          "submitted": "2020-12-31T00:00:00.000",
+          "turnover": 35699.0,
+          "equity": 80943.0,
+          "profit": 762.0,
+          "employees": 0.0,
+          "margin": 2.1345135718087342,
+          "turnoverPerEmployee": null
+        },
+        {
+          "reportId": "1731705",
+          "year": 2019,
+          "submitted": "2019-12-31T00:00:00.000",
+          "turnover": 26573.0,
+          "equity": 80181.0,
+          "profit": 4337.0,
+          "employees": 0.0,
+          "margin": 16.32107778572235,
+          "turnoverPerEmployee": null
         }
       ]
     }
