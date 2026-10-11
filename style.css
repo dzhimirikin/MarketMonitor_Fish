@@ -4792,3 +4792,289 @@ right:30px;
     color: #111820;
     background-color: #fff;
 }
+
+
+/* ============================================================
+   GLOBAL DIALOG BUTTON THEME
+   All dialog buttons: pale blue + black text.
+   Hover: darker blue + white text.
+   Close / icon-only controls remain discreet.
+============================================================ */
+:root {
+    --dialog-button-bg: #dceefa;
+    --dialog-button-border: #c4dfef;
+    --dialog-button-hover-bg: #397da5;
+    --dialog-button-hover-border: #2f6f96;
+    --dialog-button-text: #111820;
+    --dialog-button-hover-text: #ffffff;
+}
+
+/* Buttons and button-like links in all dialogs */
+:where(
+    .modal,
+    .modal-content,
+    .telemost-modal,
+    .telemost-window,
+    .company-warning-modal,
+    .company-warning-box,
+    [role="dialog"],
+    .market-summary-window
+) button:not(.market-summary-close):not(.telemost-close):not(.lightbox-close),
+:where(
+    .modal,
+    .modal-content,
+    .telemost-modal,
+    .telemost-window,
+    .company-warning-modal,
+    .company-warning-box,
+    [role="dialog"],
+    .market-summary-window
+) a.cv-link,
+:where(
+    .modal,
+    .modal-content,
+    .telemost-modal,
+    .telemost-window,
+    .company-warning-modal,
+    .company-warning-box,
+    [role="dialog"],
+    .market-summary-window
+) input[type="button"],
+:where(
+    .modal,
+    .modal-content,
+    .telemost-modal,
+    .telemost-window,
+    .company-warning-modal,
+    .company-warning-box,
+    [role="dialog"],
+    .market-summary-window
+) input[type="submit"],
+:where(
+    .modal,
+    .modal-content,
+    .telemost-modal,
+    .telemost-window,
+    .company-warning-modal,
+    .company-warning-box,
+    [role="dialog"],
+    .market-summary-window
+) .access-btn {
+    background: var(--dialog-button-bg) !important;
+    color: var(--dialog-button-text) !important;
+    border-color: var(--dialog-button-border) !important;
+    text-shadow: none !important;
+    box-shadow: none;
+    transition: background-color 0.18s ease, color 0.18s ease, border-color 0.18s ease;
+}
+
+/* Hover / keyboard activation: dark blue with white text */
+:where(
+    .modal,
+    .modal-content,
+    .telemost-modal,
+    .telemost-window,
+    .company-warning-modal,
+    .company-warning-box,
+    [role="dialog"],
+    .market-summary-window
+) button:not(:disabled):not(.market-summary-close):not(.telemost-close):not(.lightbox-close):hover,
+:where(
+    .modal,
+    .modal-content,
+    .telemost-modal,
+    .telemost-window,
+    .company-warning-modal,
+    .company-warning-box,
+    [role="dialog"],
+    .market-summary-window
+) a.cv-link:hover,
+:where(
+    .modal,
+    .modal-content,
+    .telemost-modal,
+    .telemost-window,
+    .company-warning-modal,
+    .company-warning-box,
+    [role="dialog"],
+    .market-summary-window
+) input[type="button"]:hover,
+:where(
+    .modal,
+    .modal-content,
+    .telemost-modal,
+    .telemost-window,
+    .company-warning-modal,
+    .company-warning-box,
+    [role="dialog"],
+    .market-summary-window
+) input[type="submit"]:hover,
+:where(
+    .modal,
+    .modal-content,
+    .telemost-modal,
+    .telemost-window,
+    .company-warning-modal,
+    .company-warning-box,
+    [role="dialog"],
+    .market-summary-window
+) .access-btn:hover {
+    background: var(--dialog-button-hover-bg) !important;
+    color: var(--dialog-button-hover-text) !important;
+    border-color: var(--dialog-button-hover-border) !important;
+}
+
+/* Disabled controls do not get hover styling */
+:where(
+    .modal,
+    .modal-content,
+    .telemost-modal,
+    .telemost-window,
+    .company-warning-modal,
+    .company-warning-box,
+    [role="dialog"],
+    .market-summary-window
+) button:disabled {
+    cursor: not-allowed;
+    opacity: 0.55;
+}
+
+/* Radio buttons inside dialogs use the same blue accent */
+:where(
+    .modal,
+    .modal-content,
+    .telemost-modal,
+    .telemost-window,
+    .company-warning-modal,
+    .company-warning-box,
+    [role="dialog"],
+    .market-summary-window
+) input[type="radio"] {
+    accent-color: #397da5 !important;
+}
+
+/* Market Indicators / CSV dialog: override the previous graphite rules */
+#market-monitor .market-summary-window button:not(.market-summary-close),
+#market-monitor .market-summary-window .cv-link,
+#market-monitor .market-summary-window .market-summary-actions button,
+#market-monitor .market-summary-window .market-csv-actions button {
+    background: var(--dialog-button-bg) !important;
+    color: var(--dialog-button-text) !important;
+    border-color: var(--dialog-button-border) !important;
+}
+
+#market-monitor .market-summary-window button:not(:disabled):not(.market-summary-close):hover,
+#market-monitor .market-summary-window .cv-link:hover,
+#market-monitor .market-summary-window .market-summary-actions button:hover,
+#market-monitor .market-summary-window .market-csv-actions button:hover {
+    background: var(--dialog-button-hover-bg) !important;
+    color: var(--dialog-button-hover-text) !important;
+    border-color: var(--dialog-button-hover-border) !important;
+}
+
+#market-monitor .market-summary-window input[type="radio"] {
+    accent-color: #397da5 !important;
+}
+
+/* ============================================================
+   UNIFIED FOCUS STATE — ALL BUTTONS AND BUTTON-LIKE CONTROLS
+   Focus must never revert to the browser's black/default styling.
+   ============================================================ */
+:where(button, input[type="button"], input[type="submit"], input[type="reset"], .cv-link, .access-btn, .combo-reset, a[role="button"]):focus,
+:where(button, input[type="button"], input[type="submit"], input[type="reset"], .cv-link, .access-btn, .combo-reset, a[role="button"]):focus-visible {
+    background-color: var(--dialog-button-hover-bg, #28678d) !important;
+    color: #ffffff !important;
+    border-color: var(--dialog-button-hover-border, #28678d) !important;
+    -webkit-text-fill-color: #ffffff !important;
+    outline: 2px solid rgba(40, 103, 141, 0.35) !important;
+    outline-offset: 2px;
+}
+
+/* Keep close / icon-only controls visually neutral when focused */
+:where(.modal-close, .market-summary-close, .telemost-close, .close, .lightbox-close):focus,
+:where(.modal-close, .market-summary-close, .telemost-close, .close, .lightbox-close):focus-visible {
+    background: transparent !important;
+    color: #111827 !important;
+    -webkit-text-fill-color: currentColor !important;
+    outline: 2px solid rgba(40, 103, 141, 0.35) !important;
+}
+
+/* Disabled buttons should not adopt the blue hover/focus treatment */
+:where(button, input[type="button"], input[type="submit"], input[type="reset"]):disabled:focus,
+:where(button, input[type="button"], input[type="submit"], input[type="reset"]):disabled:focus-visible {
+    background-color: #d1d5db !important;
+    color: #4b5563 !important;
+    -webkit-text-fill-color: #4b5563 !important;
+    border-color: #d1d5db !important;
+    outline: none !important;
+}
+
+/* ============================================================
+   MARKET MONITOR MAIN ACTION BUTTONS
+   Market indicators / Export selection / Import selection
+   Default: pale blue + black text.
+   Hover or keyboard focus: dark blue + white text.
+============================================================ */
+#market-monitor button:not(:disabled):not(.market-summary-close):not(.telemost-close):not(.lightbox-close),
+#market-monitor input[type="button"]:not(:disabled),
+#market-monitor input[type="submit"]:not(:disabled),
+#market-monitor a[role="button"] {
+    background-color: #dceefa !important;
+    color: #111820 !important;
+    -webkit-text-fill-color: #111820 !important;
+    border-color: #c4dfef !important;
+    text-shadow: none !important;
+    box-shadow: none;
+    transition: background-color 0.18s ease, color 0.18s ease, border-color 0.18s ease;
+}
+
+#market-monitor button:not(:disabled):not(.market-summary-close):not(.telemost-close):not(.lightbox-close):hover,
+#market-monitor button:not(:disabled):not(.market-summary-close):not(.telemost-close):not(.lightbox-close):focus,
+#market-monitor button:not(:disabled):not(.market-summary-close):not(.telemost-close):not(.lightbox-close):focus-visible,
+#market-monitor input[type="button"]:not(:disabled):hover,
+#market-monitor input[type="button"]:not(:disabled):focus,
+#market-monitor input[type="button"]:not(:disabled):focus-visible,
+#market-monitor input[type="submit"]:not(:disabled):hover,
+#market-monitor input[type="submit"]:not(:disabled):focus,
+#market-monitor input[type="submit"]:not(:disabled):focus-visible,
+#market-monitor a[role="button"]:hover,
+#market-monitor a[role="button"]:focus,
+#market-monitor a[role="button"]:focus-visible {
+    background-color: #397da5 !important;
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+    border-color: #2f6f96 !important;
+}
+
+#market-monitor button:disabled,
+#market-monitor input[type="button"]:disabled,
+#market-monitor input[type="submit"]:disabled {
+    cursor: not-allowed;
+}
+
+
+/* Keep the selected annual/quarterly report tab highlighted independently
+   of keyboard/mouse focus on other controls. */
+#market-monitor .market-monitor-tab.active,
+#market-monitor .market-monitor-tab.active:hover,
+#market-monitor .market-monitor-tab.active:focus,
+#market-monitor .market-monitor-tab.active:focus-visible {
+    background: #1f78b4 !important;
+    color: #ffffff !important;
+    border-color: #1f78b4 !important;
+    box-shadow: none;
+}
+
+/* Inactive report tabs retain the standard pale-blue style. */
+#market-monitor .market-monitor-tab:not(.active) {
+    background: #dceefa;
+    color: #111820;
+    border-color: #c4dfef;
+}
+#market-monitor .market-monitor-tab:not(.active):hover,
+#market-monitor .market-monitor-tab:not(.active):focus,
+#market-monitor .market-monitor-tab:not(.active):focus-visible {
+    background: #1f78b4 !important;
+    color: #ffffff !important;
+    border-color: #1f78b4 !important;
+}
