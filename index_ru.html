@@ -1,13 +1,54 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Independent financial monitor of the Estonian fish market.">
-  <title>Fish Market Monitor Estonia</title>
+  <meta name="description" content="Независимый финансовый мониторинг рыбного рынка Эстонии.">
+  <title>Мониторинг рыбного рынка Эстонии</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    .language-switcher {
+      box-sizing: border-box;
+      width: 100%;
+      min-height: 42px;
+      padding: 11px max(24px, calc((100% - 1080px) / 2));
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 7px;
+      background: #dceefa;
+      color: #111820;
+      font: 12px/1.2 Arial, Helvetica, sans-serif;
+      position: relative;
+      z-index: 10;
+    }
+    .language-switcher a {
+      color: #111820;
+      text-decoration: none;
+      opacity: .78;
+      transition: opacity .15s ease, color .15s ease;
+    }
+    .language-switcher a:hover,
+    .language-switcher a[aria-current="page"] {
+      color: #111820;
+      opacity: 1;
+      font-weight: 700;
+    }
+    .language-switcher .separator { opacity: .45; }
+    @media (max-width: 600px) {
+      .language-switcher { padding-right: 16px; padding-left: 16px; }
+    }
+  </style>
 </head>
 <body>
+<nav class="language-switcher" aria-label="Выбор языка">
+  <a href="index.html">EN</a>
+  <span class="separator" aria-hidden="true">|</span>
+  <a href="index_ru.html" aria-current="page">RU</a>
+  <span class="separator" aria-hidden="true">|</span>
+  <a href="index_ee.html">EE</a>
+</nav>
+
 <!-- MARKET MONITOR -->
   <section
     id="market-monitor"
@@ -36,11 +77,11 @@
     data-summary-turnover-per-employee="Оборот / сотрудник, €"
     data-summary-profit-per-employee="Прибыль / сотрудник, €"
 
-    data-summary-projected-turnover="Оборот. Прогноз, €"
+    data-summary-projected-turnover="Прогноз оборота, €"
     data-summary-state-taxes="Государственные налоги, €"
     data-summary-labour-taxes="Налоги на труд, €"
-    data-summary-projected-productivity="Производит. труда. Прогноз, €"
-    data-summary-productivity="Производит. труда, €"
+    data-summary-projected-productivity="Прогноз производительности труда, €"
+    data-summary-productivity="Производительность труда, €"
     data-summary-average-wage="Средняя брутто-зарплата, €"
 
     data-summary-select-all="Выделить все"
@@ -52,9 +93,9 @@
   >
   <div class="card">
 
-    <h2>Fish Market Monitor Estonia</h2>
+    <h2>Мониторинг рыбного рынка Эстонии</h2>
 
-    <div class="market-monitor-tabs" role="tablist" aria-label="Report type">
+    <div class="market-monitor-tabs" role="tablist" aria-label="Тип отчёта">
       <button
         id="marketMonitorAnnualTab"
         class="market-monitor-tab active"
@@ -62,7 +103,7 @@
         role="tab"
         aria-selected="true"
         aria-controls="marketMonitorAnnual">
-        Annual Report
+        Годовой отчёт
       </button>
 
       <button
@@ -72,7 +113,7 @@
         role="tab"
         aria-selected="false"
         aria-controls="marketMonitorQuarterly">
-        Quarterly Report
+        Квартальный отчёт
       </button>
     </div>
 
@@ -84,57 +125,57 @@
       aria-labelledby="marketMonitorAnnualTab">
 
       <p class="market-monitor-description">
-        Key financial indicators of companies in the Estonian fish market.
+        Основные финансовые показатели компаний рыбного рынка Эстонии.
       </p>
 
       <p class="quarterly-note">
-        Source: Estonian Business Register data. Turnover — taxable turnover.
+        Источник: данные Коммерческого регистра Эстонии. Оборот — налогооблагаемый оборот.
       </p>
 
       <div
         id="marketMonitorAnnualUpdated"
         class="market-monitor-updated"
-        data-prefix="Updated">
+        data-prefix="Обновлено">
       </div>
 
       <div id="status">
-        Loading...
+        Загрузка...
       </div>
 
       <div class="controls">
 
         <label>
-          Year:
+          Год:
           <select id="year"></select>
         </label>
 
         <label>
-          Sort:
+          Сортировка:
           <select id="sort">
-            <option value="turnover">Turnover</option>
-            <option value="equity">Equity</option>
-            <option value="profit">Profit</option>
-            <option value="margin">Profitability</option>
-            <option value="employees">Employees</option>
-            <option value="turnoverPerEmployee">Turnover / employee</option>
-            <option value="name">Name A–Z</option>
+            <option value="turnover">Оборот</option>
+            <option value="equity">Собственный капитал</option>
+            <option value="profit">Прибыль</option>
+            <option value="margin">Рентабельность</option>
+            <option value="employees">Число работников</option>
+            <option value="turnoverPerEmployee">Оборот на работника</option>
+            <option value="name">Название А–Я</option>
           </select>
         </label>
 
         <label>
-          Direction:
+          Направление:
           <select id="sortDirection">
-            <option value="desc">Descending ↓</option>
-            <option value="asc">Ascending ↑</option>
+            <option value="desc">По убыванию ↓</option>
+            <option value="asc">По возрастанию ↑</option>
           </select>
         </label>
 
         <label>
-          Search:
+          Поиск:
           <input
             id="search"
             type="search"
-            placeholder="Company name"
+            placeholder="Название компании"
           >
         </label>
 
@@ -145,7 +186,7 @@
           id="marketAnnualSummaryButton"
           class="cv-link"
           type="button">
-          Market indicators
+          Показатели рынка
         </button>
       </div>
 
@@ -154,14 +195,14 @@
           id="marketAnnualExportSelection"
           class="cv-link market-selection-file-button"
           type="button">
-          Export selection
+          Экспорт выборки
         </button>
 
         <button
           id="marketAnnualImportSelection"
           class="cv-link market-selection-file-button"
           type="button">
-          Import selection
+          Импорт выборки
         </button>
 
         <input
@@ -175,7 +216,7 @@
         <div class="market-selection-topline">
           <label class="market-selection-label">
             <input id="marketAnnualSelectAll" type="checkbox" checked>
-            <span id="marketAnnualSelectAllLabel">Select all</span>
+            <span id="marketAnnualSelectAllLabel">Выбрать все</span>
           </label>
           <div class="market-selection-presets" role="group" aria-label="Company preset">
             <!--
@@ -192,14 +233,14 @@
 
           <thead>
             <tr>
-              <th>Company</th>
-              <th>Year</th>
-              <th>Turnover, €</th>
-              <th>Equity, €</th>
-              <th>Profit, €</th>
-              <th>Profitability</th>
-              <th>Employees</th>
-              <th>Turnover / employee</th>
+              <th>Компания</th>
+              <th>Год</th>
+              <th>Оборот, €</th>
+              <th>Собственный капитал, €</th>
+              <th>Прибыль, €</th>
+              <th>Рентабельность</th>
+              <th>Работники</th>
+              <th>Оборот на работника</th>
             </tr>
           </thead>
 
@@ -219,68 +260,67 @@
       hidden>
 
       <p class="market-monitor-description">
-        Quarterly indicators of companies in the Estonian fish market.
+        Квартальные показатели компаний рыбного рынка Эстонии.
       </p>
 
       <p class="quarterly-note">
-        Source: Estonian Tax and Customs Board (EMTA) and public Inforegister data.
-        Turnover — taxable turnover.
+        Источник: Налогово-таможенный департамент Эстонии (EMTA) и открытые данные Inforegister. Оборот — налогооблагаемый оборот.
       </p>
 
 
       <div
         id="marketMonitorQuarterlyUpdated"
         class="market-monitor-updated"
-        data-prefix="Updated">
+        data-prefix="Обновлено">
       </div>
 
       <div id="quarterlyStatus" class="market-monitor-quarterly-status">
-        Loading...
+        Загрузка...
       </div>
 
       <div class="quarterly-controls">
 
         <label>
-          Year:
+          Год:
           <select id="quarterlyYear"></select>
         </label>
 
         <label>
-          Quarter:
+          Квартал:
           <select id="quarterlyQuarter"></select>
         </label>
 
         <label>
-          Sort:
+          Сортировка:
           <select id="quarterlySort">
-            <option value="taxableTurnover">Turnover</option>
-            <option value="projectedTurnover">Projected turnover</option>
-            <option value="stateTaxes">State taxes</option>
-            <option value="labourTaxes">Labour taxes</option>
-            <option value="employees">Employees</option>
-            <option value="taxableTurnoverPerEmployee">Turnover / employee</option>
-            <option value="projectedLabourProductivity">Projected labour productivity</option>
-            <option value="labourProductivity">Labour productivity</option>
-            <option value="profitPerEmployee">Profit / employee</option>
-            <option value="averageGrossWage">Average gross wage</option>
-            <option value="name">Name A–Z</option>
+            <option value="taxableTurnover">Оборот</option>
+            <option value="projectedTurnover">Прогноз оборота</option>
+            <option value="stateTaxes">Государственные налоги</option>
+            <option value="labourTaxes">Налоги на труд</option>
+            <option value="employees">Число работников</option>
+            <option value="taxableTurnoverPerEmployee">Оборот на работника</option>
+            <option value="projectedLabourProductivity">Прогноз производительности труда</option>
+            <option value="labourProductivity">Производительность труда</option>
+            <option value="profitPerEmployee">Прибыль на работника</option>
+            <option value="averageGrossWage">Средняя брутто-зарплата</option>
+            <option value="name">Название А–Я</option>
           </select>
         </label>
 
         <label>
-          Direction:
+          Направление:
           <select id="quarterlyDirection">
-            <option value="desc">Descending ↓</option>
-            <option value="asc">Ascending ↑</option>
+            <option value="desc">По убыванию ↓</option>
+            <option value="asc">По возрастанию ↑</option>
           </select>
         </label>
 
         <label>
-          Search:
+          Поиск:
           <input
             id="quarterlySearch"
             type="search"
-            placeholder="Company name"
+            placeholder="Название компании"
           >
         </label>
 
@@ -291,7 +331,7 @@
           id="marketQuarterlySummaryButton"
           class="cv-link"
           type="button">
-          Market indicators
+          Показатели рынка
         </button>
       </div>
 
@@ -300,14 +340,14 @@
           id="marketQuarterlyExportSelection"
           class="cv-link market-selection-file-button"
           type="button">
-          Export selection
+          Экспорт выборки
         </button>
 
         <button
           id="marketQuarterlyImportSelection"
           class="cv-link market-selection-file-button"
           type="button">
-          Import selection
+          Импорт выборки
         </button>
 
         <input
@@ -321,7 +361,7 @@
         <div class="market-selection-topline">
           <label class="market-selection-label">
             <input id="marketQuarterlySelectAll" type="checkbox" checked>
-            <span id="marketQuarterlySelectAllLabel">Select all</span>
+            <span id="marketQuarterlySelectAllLabel">Выбрать все</span>
           </label>
           <div class="market-selection-presets" role="group" aria-label="Company preset">
             <!--
@@ -339,18 +379,18 @@
 
           <thead>
             <tr>
-              <th>Company</th>
-              <th>Period</th>
-              <th>Turnover, €</th>
-              <th>Projected turnover, €</th>
-              <th>State taxes, €</th>
-              <th>Labour taxes, €</th>
-              <th>Employees</th>
-              <th>Turnover / employee, €</th>
-              <th>Projected labour productivity, €</th>
-              <th>Labour productivity, €</th>
-              <th>Profit / employee, €</th>
-              <th>Average gross wage, €</th>
+              <th>Компания</th>
+              <th>Период</th>
+              <th>Оборот, €</th>
+              <th>Прогноз оборота, €</th>
+              <th>Государственные налоги, €</th>
+              <th>Налоги на труд, €</th>
+              <th>Работники</th>
+              <th>Оборот на работника, €</th>
+              <th>Прогноз производительности труда, €</th>
+              <th>Производительность труда, €</th>
+              <th>Прибыль на работника, €</th>
+              <th>Средняя брутто-зарплата, €</th>
             </tr>
           </thead>
 
@@ -367,7 +407,7 @@
 <!-- CONTACTS -->
 <section id="contacts">
   <div class="card">
-    <h2>Contacts</h2>
+    <h2>Контакты</h2>
 
     <p>
       <!-- envelope -->
@@ -377,7 +417,7 @@
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"
               d="M21.75 7.5v9a2.25 2.25 0 01-2.25 2.25h-15A2.25 2.25 0 012.25 16.5v-9m19.5 0L12 13.5 2.25 7.5m19.5 0A2.25 2.25 0 0019.5 5.25h-15A2.25 2.25 0 002.25 7.5"/>
       </svg>
-      Email:
+      Электронная почта:
       <a href="mailto:d.zhimirikin@gmail.com">d.zhimirikin@gmail.com</a>
     </p>
 
@@ -389,7 +429,7 @@
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"
               d="M2.25 6.75c0 8.284 6.716 15 15 15h1.5a2.25 2.25 0 002.25-2.25l.001-1.372a2.25 2.25 0 00-1.636-2.163l-2.605-.744a2.25 2.25 0 00-2.318.761l-.574.766a12.042 12.042 0 01-5.516-5.516l.766-.574a2.25 2.25 0 00.761-2.318l-.744-2.605A2.25 2.25 0 006.372 3H5A2.25 2.25 0 002.75 5.25v1.5z"/>
       </svg>
-      Phone (EST):
+      Телефон (Эстония):
       <a href="tel:+37253235078">+372-53235078</a>
     </p>
 
@@ -401,7 +441,7 @@
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"
               d="M2.25 6.75c0 8.284 6.716 15 15 15h1.5a2.25 2.25 0 002.25-2.25l.001-1.372a2.25 2.25 0 00-1.636-2.163l-2.605-.744a2.25 2.25 0 00-2.318.761l-.574.766a12.042 12.042 0 01-5.516-5.516l.766-.574a2.25 2.25 0 00.761-2.318l-.744-2.605A2.25 2.25 0 006.372 3H5A2.25 2.25 0 002.75 5.25v1.5z"/>
       </svg>
-      Phone (RUS):
+      Телефон (Россия):
       <a href="tel:+79313166455">+7-931-3166455</a>
     </p>
 

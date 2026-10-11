@@ -4678,3 +4678,38 @@ right:30px;
   opacity: 0.55;
   cursor: wait;
 }
+
+
+/* ============================================================
+   FISH MARKET MONITOR — PALE BLUE BUTTONS
+   Matching solid fill for report tabs and action buttons
+============================================================ */
+#market-monitor .market-monitor-tab,
+#market-monitor .market-monitor-tab.active,
+#market-monitor .market-monitor-tab:hover,
+#market-monitor .market-summary-action .cv-link,
+#market-monitor .market-selection-file-actions .cv-link,
+#market-monitor .market-selection-preset {
+    background: #dceefa;
+    color: #111820;
+    border-color: #c4dfef;
+}
+
+#market-monitor .market-monitor-tab:hover,
+#market-monitor .market-summary-action .cv-link:hover,
+#market-monitor .market-selection-file-actions .cv-link:hover,
+#market-monitor .market-selection-preset:hover {
+    background: #c9e4f5;
+    color: #111820;
+}
+
+#market-monitor .market-monitor-tab.active {
+    border-color: #c4dfef;
+    font-weight: 700;
+}
+
+#market-monitor .market-selection-preset[aria-pressed="true"] {
+    background: #c9e4f5;
+    color: #111820;
+    border-color: #9fcbe6;
+}

@@ -6,8 +6,49 @@
   <meta name="description" content="Independent financial monitor of the Estonian fish market.">
   <title>Fish Market Monitor Estonia</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    .language-switcher {
+      box-sizing: border-box;
+      width: 100%;
+      min-height: 42px;
+      padding: 11px max(24px, calc((100% - 1080px) / 2));
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 7px;
+      background: #dceefa;
+      color: #111820;
+      font: 12px/1.2 Arial, Helvetica, sans-serif;
+      position: relative;
+      z-index: 10;
+    }
+    .language-switcher a {
+      color: #111820;
+      text-decoration: none;
+      opacity: .78;
+      transition: opacity .15s ease, color .15s ease;
+    }
+    .language-switcher a:hover,
+    .language-switcher a[aria-current="page"] {
+      color: #111820;
+      opacity: 1;
+      font-weight: 700;
+    }
+    .language-switcher .separator { opacity: .45; }
+    @media (max-width: 600px) {
+      .language-switcher { padding-right: 16px; padding-left: 16px; }
+    }
+  </style>
 </head>
 <body>
+<nav class="language-switcher" aria-label="Language selection">
+  <a href="index.html" aria-current="page">EN</a>
+  <span class="separator" aria-hidden="true">|</span>
+  <a href="index_ru.html">RU</a>
+  <span class="separator" aria-hidden="true">|</span>
+  <a href="index_ee.html">EE</a>
+</nav>
+
 <!-- MARKET MONITOR -->
   <section
     id="market-monitor"

@@ -1,13 +1,54 @@
 <!doctype html>
-<html lang="en">
+<html lang="et">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Independent financial monitor of the Estonian fish market.">
-  <title>Fish Market Monitor Estonia</title>
+  <meta name="description" content="Eesti kalaturu sõltumatu finantsseire.">
+  <title>Eesti kalaturu monitooring</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    .language-switcher {
+      box-sizing: border-box;
+      width: 100%;
+      min-height: 42px;
+      padding: 11px max(24px, calc((100% - 1080px) / 2));
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 7px;
+      background: #dceefa;
+      color: #111820;
+      font: 12px/1.2 Arial, Helvetica, sans-serif;
+      position: relative;
+      z-index: 10;
+    }
+    .language-switcher a {
+      color: #111820;
+      text-decoration: none;
+      opacity: .78;
+      transition: opacity .15s ease, color .15s ease;
+    }
+    .language-switcher a:hover,
+    .language-switcher a[aria-current="page"] {
+      color: #111820;
+      opacity: 1;
+      font-weight: 700;
+    }
+    .language-switcher .separator { opacity: .45; }
+    @media (max-width: 600px) {
+      .language-switcher { padding-right: 16px; padding-left: 16px; }
+    }
+  </style>
 </head>
 <body>
+<nav class="language-switcher" aria-label="Keele valik">
+  <a href="index.html">EN</a>
+  <span class="separator" aria-hidden="true">|</span>
+  <a href="index_ru.html">RU</a>
+  <span class="separator" aria-hidden="true">|</span>
+  <a href="index_ee.html" aria-current="page">EE</a>
+</nav>
+
 <!-- MARKET MONITOR -->
   <section
     id="market-monitor"
@@ -52,9 +93,9 @@
   >
   <div class="card">
 
-    <h2>Fish Market Monitor Estonia</h2>
+    <h2>Eesti kalaturu monitooring</h2>
 
-    <div class="market-monitor-tabs" role="tablist" aria-label="Report type">
+    <div class="market-monitor-tabs" role="tablist" aria-label="Aruande tüüp">
       <button
         id="marketMonitorAnnualTab"
         class="market-monitor-tab active"
@@ -62,7 +103,7 @@
         role="tab"
         aria-selected="true"
         aria-controls="marketMonitorAnnual">
-        Annual Report
+        Aastaaruanne
       </button>
 
       <button
@@ -72,7 +113,7 @@
         role="tab"
         aria-selected="false"
         aria-controls="marketMonitorQuarterly">
-        Quarterly Report
+        Kvartaliaruanne
       </button>
     </div>
 
@@ -84,57 +125,57 @@
       aria-labelledby="marketMonitorAnnualTab">
 
       <p class="market-monitor-description">
-        Key financial indicators of companies in the Estonian fish market.
+        Eesti kalaturu ettevõtete peamised finantsnäitajad.
       </p>
 
       <p class="quarterly-note">
-        Source: Estonian Business Register data. Turnover — taxable turnover.
+        Allikas: Eesti äriregistri andmed. Käive tähendab maksustatavat käivet.
       </p>
 
       <div
         id="marketMonitorAnnualUpdated"
         class="market-monitor-updated"
-        data-prefix="Updated">
+        data-prefix="Uuendatud">
       </div>
 
       <div id="status">
-        Loading...
+        Laadimine...
       </div>
 
       <div class="controls">
 
         <label>
-          Year:
+          Aasta:
           <select id="year"></select>
         </label>
 
         <label>
-          Sort:
+          Sorteerimine:
           <select id="sort">
-            <option value="turnover">Turnover</option>
-            <option value="equity">Equity</option>
-            <option value="profit">Profit</option>
-            <option value="margin">Profitability</option>
-            <option value="employees">Employees</option>
-            <option value="turnoverPerEmployee">Turnover / employee</option>
-            <option value="name">Name A–Z</option>
+            <option value="turnover">Käive</option>
+            <option value="equity">Omakapital</option>
+            <option value="profit">Kasum</option>
+            <option value="margin">Kasumlikkus</option>
+            <option value="employees">Töötajad</option>
+            <option value="turnoverPerEmployee">Käive töötaja kohta</option>
+            <option value="name">Nimi A–Ü</option>
           </select>
         </label>
 
         <label>
-          Direction:
+          Suund:
           <select id="sortDirection">
-            <option value="desc">Descending ↓</option>
-            <option value="asc">Ascending ↑</option>
+            <option value="desc">Kahanevalt ↓</option>
+            <option value="asc">Kasvavalt ↑</option>
           </select>
         </label>
 
         <label>
-          Search:
+          Otsing:
           <input
             id="search"
             type="search"
-            placeholder="Company name"
+            placeholder="Ettevõtte nimi"
           >
         </label>
 
@@ -145,7 +186,7 @@
           id="marketAnnualSummaryButton"
           class="cv-link"
           type="button">
-          Market indicators
+          Turu näitajad
         </button>
       </div>
 
@@ -154,14 +195,14 @@
           id="marketAnnualExportSelection"
           class="cv-link market-selection-file-button"
           type="button">
-          Export selection
+          Ekspordi valik
         </button>
 
         <button
           id="marketAnnualImportSelection"
           class="cv-link market-selection-file-button"
           type="button">
-          Import selection
+          Impordi valik
         </button>
 
         <input
@@ -175,7 +216,7 @@
         <div class="market-selection-topline">
           <label class="market-selection-label">
             <input id="marketAnnualSelectAll" type="checkbox" checked>
-            <span id="marketAnnualSelectAllLabel">Select all</span>
+            <span id="marketAnnualSelectAllLabel">Vali kõik</span>
           </label>
           <div class="market-selection-presets" role="group" aria-label="Company preset">
             <!--
@@ -192,14 +233,14 @@
 
           <thead>
             <tr>
-              <th>Company</th>
-              <th>Year</th>
-              <th>Turnover, €</th>
-              <th>Equity, €</th>
-              <th>Profit, €</th>
-              <th>Profitability</th>
-              <th>Employees</th>
-              <th>Turnover / employee</th>
+              <th>Ettevõte</th>
+              <th>Aasta</th>
+              <th>Käive, €</th>
+              <th>Omakapital, €</th>
+              <th>Kasum, €</th>
+              <th>Kasumlikkus</th>
+              <th>Töötajad</th>
+              <th>Käive töötaja kohta</th>
             </tr>
           </thead>
 
@@ -219,68 +260,67 @@
       hidden>
 
       <p class="market-monitor-description">
-        Quarterly indicators of companies in the Estonian fish market.
+        Eesti kalaturu ettevõtete kvartalinäitajad.
       </p>
 
       <p class="quarterly-note">
-        Source: Estonian Tax and Customs Board (EMTA) and public Inforegister data.
-        Turnover — taxable turnover.
+        Allikas: Maksu- ja Tolliameti (EMTA) ning Inforegistri avalikud andmed. Käive tähendab maksustatavat käivet.
       </p>
 
 
       <div
         id="marketMonitorQuarterlyUpdated"
         class="market-monitor-updated"
-        data-prefix="Updated">
+        data-prefix="Uuendatud">
       </div>
 
       <div id="quarterlyStatus" class="market-monitor-quarterly-status">
-        Loading...
+        Laadimine...
       </div>
 
       <div class="quarterly-controls">
 
         <label>
-          Year:
+          Aasta:
           <select id="quarterlyYear"></select>
         </label>
 
         <label>
-          Quarter:
+          Kvartal:
           <select id="quarterlyQuarter"></select>
         </label>
 
         <label>
-          Sort:
+          Sorteerimine:
           <select id="quarterlySort">
-            <option value="taxableTurnover">Turnover</option>
-            <option value="projectedTurnover">Projected turnover</option>
-            <option value="stateTaxes">State taxes</option>
-            <option value="labourTaxes">Labour taxes</option>
-            <option value="employees">Employees</option>
-            <option value="taxableTurnoverPerEmployee">Turnover / employee</option>
-            <option value="projectedLabourProductivity">Projected labour productivity</option>
-            <option value="labourProductivity">Labour productivity</option>
-            <option value="profitPerEmployee">Profit / employee</option>
-            <option value="averageGrossWage">Average gross wage</option>
-            <option value="name">Name A–Z</option>
+            <option value="taxableTurnover">Käive</option>
+            <option value="projectedTurnover">Prognoositav käive</option>
+            <option value="stateTaxes">Riiklikud maksud</option>
+            <option value="labourTaxes">Tööjõumaksud</option>
+            <option value="employees">Töötajad</option>
+            <option value="taxableTurnoverPerEmployee">Käive töötaja kohta</option>
+            <option value="projectedLabourProductivity">Prognoositav tööviljakus</option>
+            <option value="labourProductivity">Tööviljakus</option>
+            <option value="profitPerEmployee">Kasum töötaja kohta</option>
+            <option value="averageGrossWage">Keskmine brutopalk</option>
+            <option value="name">Nimi A–Ü</option>
           </select>
         </label>
 
         <label>
-          Direction:
+          Suund:
           <select id="quarterlyDirection">
-            <option value="desc">Descending ↓</option>
-            <option value="asc">Ascending ↑</option>
+            <option value="desc">Kahanevalt ↓</option>
+            <option value="asc">Kasvavalt ↑</option>
           </select>
         </label>
 
         <label>
-          Search:
+          Otsing:
           <input
             id="quarterlySearch"
             type="search"
-            placeholder="Company name"
+            placeholder="Ettevõtte nimi"
           >
         </label>
 
@@ -291,7 +331,7 @@
           id="marketQuarterlySummaryButton"
           class="cv-link"
           type="button">
-          Market indicators
+          Turu näitajad
         </button>
       </div>
 
@@ -300,14 +340,14 @@
           id="marketQuarterlyExportSelection"
           class="cv-link market-selection-file-button"
           type="button">
-          Export selection
+          Ekspordi valik
         </button>
 
         <button
           id="marketQuarterlyImportSelection"
           class="cv-link market-selection-file-button"
           type="button">
-          Import selection
+          Impordi valik
         </button>
 
         <input
@@ -321,7 +361,7 @@
         <div class="market-selection-topline">
           <label class="market-selection-label">
             <input id="marketQuarterlySelectAll" type="checkbox" checked>
-            <span id="marketQuarterlySelectAllLabel">Select all</span>
+            <span id="marketQuarterlySelectAllLabel">Vali kõik</span>
           </label>
           <div class="market-selection-presets" role="group" aria-label="Company preset">
             <!--
@@ -339,18 +379,18 @@
 
           <thead>
             <tr>
-              <th>Company</th>
-              <th>Period</th>
-              <th>Turnover, €</th>
-              <th>Projected turnover, €</th>
-              <th>State taxes, €</th>
-              <th>Labour taxes, €</th>
-              <th>Employees</th>
-              <th>Turnover / employee, €</th>
-              <th>Projected labour productivity, €</th>
-              <th>Labour productivity, €</th>
-              <th>Profit / employee, €</th>
-              <th>Average gross wage, €</th>
+              <th>Ettevõte</th>
+              <th>Periood</th>
+              <th>Käive, €</th>
+              <th>Prognoositav käive, €</th>
+              <th>Riiklikud maksud, €</th>
+              <th>Tööjõumaksud, €</th>
+              <th>Töötajad</th>
+              <th>Käive töötaja kohta, €</th>
+              <th>Prognoositav tööviljakus, €</th>
+              <th>Tööviljakus, €</th>
+              <th>Kasum töötaja kohta, €</th>
+              <th>Keskmine brutopalk, €</th>
             </tr>
           </thead>
 
@@ -367,7 +407,7 @@
 <!-- CONTACTS -->
 <section id="contacts">
   <div class="card">
-    <h2>Contacts</h2>
+    <h2>Kontaktid</h2>
 
     <p>
       <!-- envelope -->
@@ -377,7 +417,7 @@
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"
               d="M21.75 7.5v9a2.25 2.25 0 01-2.25 2.25h-15A2.25 2.25 0 012.25 16.5v-9m19.5 0L12 13.5 2.25 7.5m19.5 0A2.25 2.25 0 0019.5 5.25h-15A2.25 2.25 0 002.25 7.5"/>
       </svg>
-      Email:
+      E-post:
       <a href="mailto:d.zhimirikin@gmail.com">d.zhimirikin@gmail.com</a>
     </p>
 
@@ -389,7 +429,7 @@
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"
               d="M2.25 6.75c0 8.284 6.716 15 15 15h1.5a2.25 2.25 0 002.25-2.25l.001-1.372a2.25 2.25 0 00-1.636-2.163l-2.605-.744a2.25 2.25 0 00-2.318.761l-.574.766a12.042 12.042 0 01-5.516-5.516l.766-.574a2.25 2.25 0 00.761-2.318l-.744-2.605A2.25 2.25 0 006.372 3H5A2.25 2.25 0 002.75 5.25v1.5z"/>
       </svg>
-      Phone (EST):
+      Telefon (Eesti):
       <a href="tel:+37253235078">+372-53235078</a>
     </p>
 
@@ -401,7 +441,7 @@
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"
               d="M2.25 6.75c0 8.284 6.716 15 15 15h1.5a2.25 2.25 0 002.25-2.25l.001-1.372a2.25 2.25 0 00-1.636-2.163l-2.605-.744a2.25 2.25 0 00-2.318.761l-.574.766a12.042 12.042 0 01-5.516-5.516l.766-.574a2.25 2.25 0 00.761-2.318l-.744-2.605A2.25 2.25 0 006.372 3H5A2.25 2.25 0 002.75 5.25v1.5z"/>
       </svg>
-      Phone (RUS):
+      Telefon (Venemaa):
       <a href="tel:+79313166455">+7-931-3166455</a>
     </p>
 
