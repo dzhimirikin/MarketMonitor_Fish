@@ -3,378 +3,467 @@ companies:
   registry_code: '11030441'
   website: null
   note: registry_code_verified_from_search
+
 - name: Osaühing Semilux VS
   registry_code: '10672290'
   website: null
   note: registry_code_verified_from_search
+
 - name: osaühing CONOREL GRUPP
   registry_code: '11363562'
   website: null
   note: registry_code_verified_from_search
+
 - name: osaühing Pepekala
   registry_code: '10110126'
   website: null
   note: registry_code_verified_from_search
+
 - name: Osaühing Kallaste Kalur
   registry_code: '10006498'
   website: null
   note: registry_code_verified_from_search
+
 - name: osaühing Rino Teenused
   registry_code: '10900779'
   website: null
   note: registry_code_verified_from_search
+
 - name: OÜ Koduranna TRV
   registry_code: '16295316'
   website: null
   note: registry_code_verified_from_search
+
 - name: SHTEINLE KAUBANDUS OÜ
   registry_code: '11246336'
   website: null
   note: registry_code_verified_from_search
+
 - name: CaviarHouse.ee OÜ
-  registry_code: ''
+  registry_code: '12111124'
   website: null
   note: REGISTRY CODE NOT VERIFIED — excluded from matching until corrected
+
 - name: Kalaarsenal OÜ
   registry_code: '14245461'
   website: null
   note: registry_code_verified_from_search
+
 - name: Osaühing Latikas
   registry_code: '10009723'
   website: null
   note: registry_code_verified_from_search
+
 - name: SIIN EI OLE KALA OÜ
   registry_code: '16497758'
   website: null
   note: registry_code_verified_from_search
+
 - name: osaühing Mipron Kaubanduse
   registry_code: '10175962'
   website: null
   note: registry_code_verified_from_search
+
 - name: OÜ SAAREPIIGA
   registry_code: '11540863'
   website: null
   note: registry_code_verified_from_search
+
 - name: Leokikala OÜ
-  registry_code: ''
+  registry_code: '14876718'
   website: null
   note: REGISTRY CODE NOT VERIFIED — excluded from matching until corrected
+
 - name: osaühing MERINEITSI
   registry_code: '10212022'
   website: null
   note: registry_code_verified_from_search
+
 - name: SPEKTRUM OÜ
-  registry_code: ''
+  registry_code: '11582258'
   website: null
   note: REGISTRY CODE NOT VERIFIED — excluded from matching until corrected
+
 - name: osaühing HK Kodeste
   registry_code: '11083420'
   website: null
   note: registry_code_verified_from_search
+
 - name: Viinimestarit OÜ
-  registry_code: ''
+  registry_code: '14709908'
   website: null
   note: REGISTRY CODE NOT VERIFIED — excluded from matching until corrected
+
 - name: Peipsi Kalandusühistu
   registry_code: '12758475'
   website: null
   note: registry_code_verified_from_search
+
 - name: Osaühing Vika VKN
   registry_code: '10297225'
   website: null
   note: registry_code_verified_from_search
+
 - name: Sepa Kala OÜ
   registry_code: '14015525'
   website: null
   note: registry_code_verified_from_search
+
 - name: Võrtsukala OÜ
-  registry_code: ''
+  registry_code: '11464079'
   website: null
   note: REGISTRY CODE NOT VERIFIED — excluded from matching until corrected
+
 - name: Osaühing MoJunk
   registry_code: '11335790'
   website: null
   note: registry_code_verified_from_search
+
 - name: BM Nord OÜ
-  registry_code: ''
+  registry_code: '12300606'
   website: null
   note: REGISTRY CODE NOT VERIFIED — excluded from matching until corrected
+
 - name: Osaühing VÕIDUKAAR
   registry_code: '11291377'
   website: null
   note: registry_code_verified_from_search
+
 - name: AVIKALA OÜ
   registry_code: '14819376'
   website: null
   note: registry_code_verified_from_search
+
 - name: Alfred Gurmee OÜ
   registry_code: '12780243'
   website: null
   note: registry_code_verified_from_search
-- name: merekalur OÜ
-  registry_code: ''
+
+- name: Merekalur OÜ
+  registry_code: '14970742'
   website: null
   note: REGISTRY CODE NOT VERIFIED — excluded from matching until corrected
+
 - name: Rahvakala OÜ
   registry_code: '12399734'
   website: null
   note: registry_code_verified_from_search
+
 - name: Osaühing Forellipüük
   registry_code: '11167173'
   website: null
   note: registry_code_verified_from_search
+
 - name: OÜ UNODOR
   registry_code: '11127092'
   website: null
   note: registry_code_verified_from_search
+
 - name: OÜ Luigelahe Kaubandus
   registry_code: '11945175'
   website: null
   note: registry_code_verified_from_search
+
 - name: VALKET OÜ
-  registry_code: ''
+  registry_code: '10756733'
   website: null
   note: REGISTRY CODE NOT VERIFIED — excluded from matching until corrected
+
 - name: HilFish OÜ
   registry_code: '16503074'
   website: null
   note: registry_code_verified_from_search
+
 - name: Isabella Capital OÜ
   registry_code: '14791595'
   website: null
   note: registry_code_verified_from_search
-- name: fornax OÜ
-  registry_code: ''
+
+- name: Fornax OÜ
+  registry_code: '12531837'
   website: null
   note: REGISTRY CODE NOT VERIFIED — excluded from matching until corrected
+
 - name: Leokitalu OÜ
   registry_code: '12085237'
   website: null
   note: registry_code_verified_from_search
+
 - name: OÜ AUSPEX GRUPP
   registry_code: '10943257'
   website: null
   note: registry_code_verified_from_search
+
 - name: Kalamehe Rõõm OÜ
   registry_code: '12695059'
   website: null
   note: registry_code_verified_from_search
+
 - name: Fumus Trade OÜ
   registry_code: '16052447'
   website: null
   note: registry_code_verified_from_search
+
 - name: Sargus OÜ
   registry_code: '14555888'
   website: null
   note: registry_code_verified_from_search
-- name: OÜ Alpha Multitrade
-  registry_code: ''
+
+- name: Alpha Multitrade OÜ
+  registry_code: '11726361'
   website: null
   note: REGISTRY CODE NOT VERIFIED — excluded from matching until corrected
+
 - name: Osaühing Bullmann Balti
   registry_code: '11187680'
   website: null
   note: registry_code_verified_from_search
+
 - name: Hõrnas OÜ
-  registry_code: ''
+  registry_code: '16156833'
   website: null
   note: REGISTRY CODE NOT VERIFIED — excluded from matching until corrected
+
 - name: Teepuu OÜ
-  registry_code: ''
+  registry_code: '12159869'
   website: null
   note: REGISTRY CODE NOT VERIFIED — excluded from matching until corrected
+
 - name: NURMEOTSA OÜ
   registry_code: '16699963'
   website: null
   note: registry_code_verified_from_search
+
 - name: Unveiltouch Massage OÜ
-  registry_code: ''
+  registry_code: '17261503'
   website: null
   note: REGISTRY CODE NOT VERIFIED — excluded from matching until corrected
+
 - name: Kipperi Kala OÜ
   registry_code: '11883505'
   website: null
   note: registry_code_verified_from_search
+
 - name: Osaühing PEIPSI PLUSS
-  registry_code: ''
+  registry_code: '11236220'
   website: null
   note: REGISTRY CODE NOT VERIFIED — excluded from matching until corrected
+
 - name: Miroslada OÜ
-  registry_code: ''
+  registry_code: '16126588'
   website: null
   note: REGISTRY CODE NOT VERIFIED — excluded from matching until corrected
+
 - name: Osaühing FORKALA
   registry_code: '10346188'
   website: null
   note: registry_code_verified_from_search
+
 - name: OÜ Peipsi Kalatoode
   registry_code: '14613232'
   website: null
   note: registry_code_verified_from_search
+
 - name: Suitsumaja OÜ
   registry_code: '16949516'
   website: null
   note: registry_code_verified_from_search
+
 - name: Pühajõe kala OÜ
   registry_code: '16061564'
   website: null
   note: registry_code_verified_from_search
+
 - name: Peipsilane OÜ
-  registry_code: ''
+  registry_code: '14719261'
   website: null
   note: REGISTRY CODE NOT VERIFIED — excluded from matching until corrected
+
 - name: OÜ Fellinfish
   registry_code: '14623093'
   website: null
   note: registry_code_verified_from_search
+
 - name: AY Kuldkala OÜ
   registry_code: '16681640'
   website: null
   note: registry_code_verified_from_search
+
 - name: Osaühing SK kauplus
   registry_code: '16332738'
   website: null
   note: registry_code_verified_from_search
+
 - name: Paadivennad OÜ
   registry_code: '17180348'
   website: null
   note: registry_code_verified_from_search
+
 - name: Pärlilugu OÜ
   registry_code: '14903869'
   website: null
   note: registry_code_verified_from_search
-- name: TUMA Auto OÜ
-  registry_code: ''
-  website: null
-  note: REGISTRY CODE NOT VERIFIED — excluded from matching until corrected
+
 - name: Iris Partners OÜ
-  registry_code: ''
+  registry_code: '12034033'
   website: null
   note: REGISTRY CODE NOT VERIFIED — excluded from matching until corrected
+
 - name: JANK GRUPP OÜ
-  registry_code: ''
+  registry_code: '12592323'
   website: null
   note: REGISTRY CODE NOT VERIFIED — excluded from matching until corrected
+
 - name: Annlorii OÜ
-  registry_code: ''
+  registry_code: '17213562'
   website: null
   note: REGISTRY CODE NOT VERIFIED — excluded from matching until corrected
+
 - name: Fishy OÜ
   registry_code: '12981078'
   website: null
   note: registry_code_verified_from_search
-- name: Aile Arula
-  registry_code: ''
+
+- name: Aile Arula FIE
+  registry_code: '11562959'
   website: null
   note: REGISTRY CODE NOT VERIFIED — excluded from matching until corrected
-- name: Alar Aas
-  registry_code: ''
+
+- name: Alar Aas FIE
+  registry_code: '10207564'
   website: null
   note: REGISTRY CODE NOT VERIFIED — excluded from matching until corrected
-- name: Anatoli Malõš
-  registry_code: ''
+
+- name: Anatoli Malõš FIE
+  registry_code: '11553723'
   website: null
   note: REGISTRY CODE NOT VERIFIED — excluded from matching until corrected
-- name: Ärni Juhansoo
-  registry_code: ''
+
+- name: Ärni Juhansoo FIE
+  registry_code: '14316847'
   website: null
   note: REGISTRY CODE NOT VERIFIED — excluded from matching until corrected
+
 - name: ArtFish OÜ
-  registry_code: ''
+  registry_code: '12954851'
   website: null
   note: REGISTRY CODE NOT VERIFIED — excluded from matching until corrected
-- name: Dmitri Kuznetsov
-  registry_code: ''
+
+- name: Dmitri Kuznetsov FIE
+  registry_code: '11572923'
   website: null
   note: REGISTRY CODE NOT VERIFIED — excluded from matching until corrected
+
 - name: EelFish OÜ
-  registry_code: ''
+  registry_code: '17559616'
   website: null
   note: REGISTRY CODE NOT VERIFIED — excluded from matching until corrected
+
 - name: EstMeriva OÜ
-  registry_code: ''
+  registry_code: '17511561'
   website: null
   note: REGISTRY CODE NOT VERIFIED — excluded from matching until corrected
+
 - name: Estonian Fish Lovers OÜ
   registry_code: '12759374'
   website: null
   note: registry_code_verified_from_search
+
 - name: Fish Service Eesti OÜ
-  registry_code: ''
+  registry_code: '14552698'
   website: null
   note: REGISTRY CODE NOT VERIFIED — excluded from matching until corrected
-- name: Ivan Kozlovski
-  registry_code: ''
+
+- name: Ivan Kozlovski FIE
+  registry_code: '11973958'
   website: null
   note: REGISTRY CODE NOT VERIFIED — excluded from matching until corrected
-- name: Kalle Kreis
-  registry_code: ''
+
+- name: Kalle Kreis FIE
+  registry_code: '11322824'
   website: null
   note: REGISTRY CODE NOT VERIFIED — excluded from matching until corrected
-- name: KUUM ANDRES KALABUSS
-  registry_code: ''
+
+- name: KUUM ANDRES KALABUSS FIE
+  registry_code: '16556633'
   website: null
   note: REGISTRY CODE NOT VERIFIED — excluded from matching until corrected
+
 - name: Merela Kala OÜ
   registry_code: '17433200'
   website: null
   note: registry_code_verified_from_search
+
 - name: MereMaitse OÜ
-  registry_code: ''
+  registry_code: '17470193'
   website: null
   note: REGISTRY CODE NOT VERIFIED — excluded from matching until corrected
+
 - name: Novafish OÜ
   registry_code: '14980901'
   website: null
   note: registry_code_verified_from_search
-- name: Õnne Kasvo
-  registry_code: ''
+
+- name: Õnne Kasvo FIE
+  registry_code: '11669657'
   website: null
   note: REGISTRY CODE NOT VERIFIED — excluded from matching until corrected
+
 - name: Osaühing LAVANIT
-  registry_code: ''
+  registry_code: '11718870'
   website: null
   note: REGISTRY CODE NOT VERIFIED — excluded from matching until corrected
+
 - name: OSAÜHING TEK ELEKTROTRANS
-  registry_code: ''
+  registry_code: '10871569'
   website: null
   note: REGISTRY CODE NOT VERIFIED — excluded from matching until corrected
+
 - name: OÜ FishWave
   registry_code: '17320453'
   website: null
   note: registry_code_verified_from_search
+
 - name: OÜ GUSNAR EST
   registry_code: '11257676'
   website: null
   note: registry_code_verified_from_search
+
 - name: RAIV Fish OÜ
   registry_code: '17380946'
   website: null
   note: registry_code_verified_from_search
+
 - name: Red & Black OÜ
-  registry_code: ''
+  registry_code: '17427851'
   website: null
   note: REGISTRY CODE NOT VERIFIED — excluded from matching until corrected
-- name: Reet Säinas
-  registry_code: ''
+
+- name: Reet Säinas FIE
+  registry_code: '12743433'
   website: null
   note: REGISTRY CODE NOT VERIFIED — excluded from matching until corrected
-- name: Reimo Saarkoppel
-  registry_code: ''
+
+- name: Reimo Saarkoppel FIE
+  registry_code: '10374173'
   website: null
   note: REGISTRY CODE NOT VERIFIED — excluded from matching until corrected
-- name: Sergei Kosov
-  registry_code: ''
+
+- name: Sergei Kosov FIE
+  registry_code: '11895922'
   website: null
   note: REGISTRY CODE NOT VERIFIED — excluded from matching until corrected
-- name: Tõnis Malla
-  registry_code: ''
+
+- name: Tõnis Malla FIE
+  registry_code: '11541495'
   website: null
   note: REGISTRY CODE NOT VERIFIED — excluded from matching until corrected
-- name: Valdur Saarkoppel
-  registry_code: ''
+
+- name: Valdur Saarkoppel FIE
+  registry_code: '10187608'
   website: null
   note: REGISTRY CODE NOT VERIFIED — excluded from matching until corrected
+
 - name: MaarduKala OÜ
   registry_code: '14783230'
   website: null
