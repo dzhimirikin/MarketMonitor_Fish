@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   schedule:
     # Monthly on the 1st at 04:00 UTC. Manual runs are available under Actions.
-    - cron: '0 4 1 * *'
+    - cron: '0 4 11 * *'
 
 permissions:
   contents: write
