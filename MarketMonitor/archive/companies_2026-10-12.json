@@ -1,0 +1,6526 @@
+{
+  "updated": "2026-10-11T13:19:24.601229",
+  "source": {
+    "generalReports": "https://avaandmed.ariregister.rik.ee/sites/default/files/1.aruannete_yldandmed_kuni_31082026_0.zip",
+    "keyIndicators": [
+      "https://avaandmed.ariregister.rik.ee/sites/default/files/4.2025_aruannete_elemendid_kuni_31082026_0.zip",
+      "https://avaandmed.ariregister.rik.ee/sites/default/files/4.2024_aruannete_elemendid_kuni_31082026_0.zip",
+      "https://avaandmed.ariregister.rik.ee/sites/default/files/4.2023_aruannete_elemendid_kuni_31082026_0.zip",
+      "https://avaandmed.ariregister.rik.ee/sites/default/files/4.2022_aruannete_elemendid_kuni_31082026_0.zip",
+      "https://avaandmed.ariregister.rik.ee/sites/default/files/4.2021_aruannete_elemendid_kuni_31082026_0.zip",
+      "https://avaandmed.ariregister.rik.ee/sites/default/files/4.2020_aruannete_elemendid_kuni_31082026_0.zip",
+      "https://avaandmed.ariregister.rik.ee/sites/default/files/4.2019_aruannete_elemendid_kuni_31082026_0.zip"
+    ]
+  },
+  "companies": [
+    {
+      "name": "Kalamajakas OÜ",
+      "registryCode": "11030441",
+      "website": null,
+      "note": "registry_code_verified_from_search",
+      "dataStatus": "ok",
+      "latest": {
+        "reportId": "3508294",
+        "year": 2025,
+        "submitted": "2025-12-31T00:00:00.000",
+        "turnover": 3391986.0,
+        "equity": 232788.0,
+        "profit": 384.0,
+        "employees": 18.0,
+        "margin": 0.011320801441987082,
+        "turnoverPerEmployee": 188443.66666666666
+      },
+      "history": [
+        {
+          "reportId": "3508294",
+          "year": 2025,
+          "submitted": "2025-12-31T00:00:00.000",
+          "turnover": 3391986.0,
+          "equity": 232788.0,
+          "profit": 384.0,
+          "employees": 18.0,
+          "margin": 0.011320801441987082,
+          "turnoverPerEmployee": 188443.66666666666
+        },
+        {
+          "reportId": "3108139",
+          "year": 2024,
+          "submitted": "2024-12-31T00:00:00.000",
+          "turnover": 3593743.0,
+          "equity": 232404.0,
+          "profit": 135.0,
+          "employees": 18.0,
+          "margin": 0.003756529056195727,
+          "turnoverPerEmployee": 199652.38888888888
+        },
+        {
+          "reportId": "2792584",
+          "year": 2023,
+          "submitted": "2023-12-31T00:00:00.000",
+          "turnover": 3727137.0,
+          "equity": 232269.0,
+          "profit": 666.0,
+          "employees": 18.0,
+          "margin": 0.017868943373962373,
+          "turnoverPerEmployee": 207063.16666666666
+        },
+        {
+          "reportId": "2506144",
+          "year": 2022,
+          "submitted": "2022-12-31T00:00:00.000",
+          "turnover": 3583547.0,
+          "equity": 281603.0,
+          "profit": 609.0,
+          "employees": 18.0,
+          "margin": 0.016994335500552942,
+          "turnoverPerEmployee": 199085.94444444444
+        },
+        {
+          "reportId": "2215002",
+          "year": 2021,
+          "submitted": "2021-12-31T00:00:00.000",
+          "turnover": 4340286.0,
+          "equity": 281311.0,
+          "profit": 19035.0,
+          "employees": 20.0,
+          "margin": 0.43856556918138573,
+          "turnoverPerEmployee": 217014.3
+        },
+        {
+          "reportId": "2009302",
+          "year": 2020,
+          "submitted": "2020-12-31T00:00:00.000",
+          "turnover": 3579889.0,
+          "equity": 262276.0,
+          "profit": 40880.0,
+          "employees": 22.0,
+          "margin": 1.141934847700585,
+          "turnoverPerEmployee": 162722.22727272726
+        },
+        {
+          "reportId": "1764876",
+          "year": 2019,
+          "submitted": "2019-12-31T00:00:00.000",
+          "turnover": 3545093.0,
+          "equity": 221395.0,
+          "profit": 597.0,
+          "employees": 21.0,
+          "margin": 0.016840178804900182,
+          "turnoverPerEmployee": 168813.95238095237
+        }
+      ]
+    },
+    {
+      "name": "Osaühing Semilux VS",
+      "registryCode": "10672290",
+      "website": null,
+      "note": "registry_code_verified_from_search",
+      "dataStatus": "ok",
+      "latest": {
+        "reportId": "3490813",
+        "year": 2025,
+        "submitted": "2025-12-31T00:00:00.000",
+        "turnover": 2060861.0,
+        "equity": 10875.0,
+        "profit": 3222.0,
+        "employees": 3.0,
+        "margin": 0.15634242192947512,
+        "turnoverPerEmployee": 686953.6666666666
+      },
+      "history": [
+        {
+          "reportId": "3490813",
+          "year": 2025,
+          "submitted": "2025-12-31T00:00:00.000",
+          "turnover": 2060861.0,
+          "equity": 10875.0,
+          "profit": 3222.0,
+          "employees": 3.0,
+          "margin": 0.15634242192947512,
+          "turnoverPerEmployee": 686953.6666666666
+        },
+        {
+          "reportId": "3104599",
+          "year": 2024,
+          "submitted": "2024-12-31T00:00:00.000",
+          "turnover": 1819861.0,
+          "equity": 21580.0,
+          "profit": 5097.0,
+          "employees": 3.0,
+          "margin": 0.28007633550034866,
+          "turnoverPerEmployee": 606620.3333333334
+        },
+        {
+          "reportId": "2867793",
+          "year": 2023,
+          "submitted": "2023-12-31T00:00:00.000",
+          "turnover": 1553062.0,
+          "equity": 16451.0,
+          "profit": 13927.0,
+          "employees": 3.0,
+          "margin": 0.8967446244902008,
+          "turnoverPerEmployee": 517687.3333333333
+        },
+        {
+          "reportId": "2487840",
+          "year": 2022,
+          "submitted": "2022-12-31T00:00:00.000",
+          "turnover": 41324.0,
+          "equity": 2819.0,
+          "profit": -32.0,
+          "employees": 2.0,
+          "margin": -0.07743684057690446,
+          "turnoverPerEmployee": 20662.0
+        },
+        {
+          "reportId": "2229490",
+          "year": 2021,
+          "submitted": "2021-12-31T00:00:00.000",
+          "turnover": 40185.0,
+          "equity": 2851.0,
+          "profit": -96.0,
+          "employees": 2.0,
+          "margin": -0.2388951101157148,
+          "turnoverPerEmployee": 20092.5
+        },
+        {
+          "reportId": "1974167",
+          "year": 2020,
+          "submitted": "2020-12-31T00:00:00.000",
+          "turnover": 46393.0,
+          "equity": 2947.0,
+          "profit": 80.0,
+          "employees": 2.0,
+          "margin": 0.1724398077296144,
+          "turnoverPerEmployee": 23196.5
+        },
+        {
+          "reportId": "1714603",
+          "year": 2019,
+          "submitted": "2019-12-31T00:00:00.000",
+          "turnover": 41835.0,
+          "equity": 2867.0,
+          "profit": -8738.0,
+          "employees": 2.0,
+          "margin": -20.88681725827656,
+          "turnoverPerEmployee": 20917.5
+        }
+      ]
+    },
+    {
+      "name": "osaühing CONOREL GRUPP",
+      "registryCode": "11363562",
+      "website": null,
+      "note": "registry_code_verified_from_search",
+      "dataStatus": "ok",
+      "latest": {
+        "reportId": "3407355",
+        "year": 2025,
+        "submitted": "2025-12-31T00:00:00.000",
+        "turnover": 1901863.0,
+        "equity": 981107.0,
+        "profit": 710592.0,
+        "employees": 6.0,
+        "margin": 37.36294359793529,
+        "turnoverPerEmployee": 316977.1666666667
+      },
+      "history": [
+        {
+          "reportId": "3407355",
+          "year": 2025,
+          "submitted": "2025-12-31T00:00:00.000",
+          "turnover": 1901863.0,
+          "equity": 981107.0,
+          "profit": 710592.0,
+          "employees": 6.0,
+          "margin": 37.36294359793529,
+          "turnoverPerEmployee": 316977.1666666667
+        },
+        {
+          "reportId": "3136449",
+          "year": 2024,
+          "submitted": "2024-12-31T00:00:00.000",
+          "turnover": 1334401.0,
+          "equity": 270515.0,
+          "profit": 12549.0,
+          "employees": 8.0,
+          "margin": 0.9404219571178379,
+          "turnoverPerEmployee": 166800.125
+        },
+        {
+          "reportId": "2830594",
+          "year": 2023,
+          "submitted": "2023-12-31T00:00:00.000",
+          "turnover": 1821205.0,
+          "equity": 257966.0,
+          "profit": 320.0,
+          "employees": 8.0,
+          "margin": 0.01757078417860702,
+          "turnoverPerEmployee": 227650.625
+        },
+        {
+          "reportId": "2530128",
+          "year": 2022,
+          "submitted": "2022-12-31T00:00:00.000",
+          "turnover": 877641.0,
+          "equity": 257646.0,
+          "profit": -78982.0,
+          "employees": 9.0,
+          "margin": -8.999351671127489,
+          "turnoverPerEmployee": 97515.66666666667
+        },
+        {
+          "reportId": "2265677",
+          "year": 2021,
+          "submitted": "2021-12-31T00:00:00.000",
+          "turnover": 1179726.0,
+          "equity": 336628.0,
+          "profit": -146936.0,
+          "employees": 12.0,
+          "margin": -12.455095505227485,
+          "turnoverPerEmployee": 98310.5
+        },
+        {
+          "reportId": "1962180",
+          "year": 2020,
+          "submitted": "2020-12-31T00:00:00.000",
+          "turnover": 1225591.0,
+          "equity": 483564.0,
+          "profit": 18441.0,
+          "employees": 12.0,
+          "margin": 1.504661832536303,
+          "turnoverPerEmployee": 102132.58333333333
+        },
+        {
+          "reportId": "1694260",
+          "year": 2019,
+          "submitted": "2019-12-31T00:00:00.000",
+          "turnover": 775732.0,
+          "equity": 465123.0,
+          "profit": 12938.0,
+          "employees": 8.0,
+          "margin": 1.667844049233498,
+          "turnoverPerEmployee": 96966.5
+        }
+      ]
+    },
+    {
+      "name": "osaühing Pepekala",
+      "registryCode": "10110126",
+      "website": null,
+      "note": "registry_code_verified_from_search",
+      "dataStatus": "ok",
+      "latest": {
+        "reportId": "3444247",
+        "year": 2025,
+        "submitted": "2025-12-31T00:00:00.000",
+        "turnover": 1627139.0,
+        "equity": 70189.0,
+        "profit": 61292.0,
+        "employees": 7.0,
+        "margin": 3.766857041715551,
+        "turnoverPerEmployee": 232448.42857142858
+      },
+      "history": [
+        {
+          "reportId": "3444247",
+          "year": 2025,
+          "submitted": "2025-12-31T00:00:00.000",
+          "turnover": 1627139.0,
+          "equity": 70189.0,
+          "profit": 61292.0,
+          "employees": 7.0,
+          "margin": 3.766857041715551,
+          "turnoverPerEmployee": 232448.42857142858
+        },
+        {
+          "reportId": "3167207",
+          "year": 2024,
+          "submitted": "2024-12-31T00:00:00.000",
+          "turnover": 1497625.0,
+          "equity": 58897.0,
+          "profit": 50044.0,
+          "employees": 7.0,
+          "margin": 3.341557465987814,
+          "turnoverPerEmployee": 213946.42857142858
+        },
+        {
+          "reportId": "2866937",
+          "year": 2023,
+          "submitted": "2023-12-31T00:00:00.000",
+          "turnover": 1481710.0,
+          "equity": 103853.0,
+          "profit": 78482.0,
+          "employees": 7.0,
+          "margin": 5.296717981251392,
+          "turnoverPerEmployee": 211672.85714285713
+        },
+        {
+          "reportId": "2520137",
+          "year": 2022,
+          "submitted": "2022-12-31T00:00:00.000",
+          "turnover": 1404800.0,
+          "equity": 55370.0,
+          "profit": 35412.0,
+          "employees": 6.0,
+          "margin": 2.520785876993166,
+          "turnoverPerEmployee": 234133.33333333334
+        },
+        {
+          "reportId": "2202791",
+          "year": 2021,
+          "submitted": "2021-12-31T00:00:00.000",
+          "turnover": 1255591.0,
+          "equity": 99958.0,
+          "profit": 71005.0,
+          "employees": 7.0,
+          "margin": 5.655105842587275,
+          "turnoverPerEmployee": 179370.14285714287
+        },
+        {
+          "reportId": "1906611",
+          "year": 2020,
+          "submitted": "2020-12-31T00:00:00.000",
+          "turnover": 991620.0,
+          "equity": 68953.0,
+          "profit": 58749.0,
+          "employees": 7.0,
+          "margin": 5.924547709808193,
+          "turnoverPerEmployee": 141660.0
+        },
+        {
+          "reportId": "1709503",
+          "year": 2019,
+          "submitted": "2019-12-31T00:00:00.000",
+          "turnover": 1139748.0,
+          "equity": 10204.0,
+          "profit": 682.0,
+          "employees": 7.0,
+          "margin": 0.05983778870416969,
+          "turnoverPerEmployee": 162821.14285714287
+        }
+      ]
+    },
+    {
+      "name": "Osaühing Kallaste Kalur",
+      "registryCode": "10006498",
+      "website": null,
+      "note": "registry_code_verified_from_search",
+      "dataStatus": "ok",
+      "latest": {
+        "reportId": "3455642",
+        "year": 2025,
+        "submitted": "2025-12-31T00:00:00.000",
+        "turnover": 1225833.0,
+        "equity": 191546.0,
+        "profit": -122069.0,
+        "employees": 21.0,
+        "margin": -9.958044856028513,
+        "turnoverPerEmployee": 58373.0
+      },
+      "history": [
+        {
+          "reportId": "3455642",
+          "year": 2025,
+          "submitted": "2025-12-31T00:00:00.000",
+          "turnover": 1225833.0,
+          "equity": 191546.0,
+          "profit": -122069.0,
+          "employees": 21.0,
+          "margin": -9.958044856028513,
+          "turnoverPerEmployee": 58373.0
+        },
+        {
+          "reportId": "3164692",
+          "year": 2024,
+          "submitted": "2024-12-31T00:00:00.000",
+          "turnover": 1233144.0,
+          "equity": 313615.0,
+          "profit": -54362.0,
+          "employees": 20.0,
+          "margin": -4.408406479697423,
+          "turnoverPerEmployee": 61657.2
+        },
+        {
+          "reportId": "2880613",
+          "year": 2023,
+          "submitted": "2023-12-31T00:00:00.000",
+          "turnover": 1024322.0,
+          "equity": 367977.0,
+          "profit": -375444.0,
+          "employees": 21.0,
+          "margin": -36.652927497408044,
+          "turnoverPerEmployee": 48777.23809523809
+        },
+        {
+          "reportId": "2550853",
+          "year": 2022,
+          "submitted": "2022-12-31T00:00:00.000",
+          "turnover": 695840.0,
+          "equity": 743421.0,
+          "profit": -469401.0,
+          "employees": 21.0,
+          "margin": -67.45818004138883,
+          "turnoverPerEmployee": 33135.23809523809
+        },
+        {
+          "reportId": "2287057",
+          "year": 2021,
+          "submitted": "2021-12-31T00:00:00.000",
+          "turnover": 1076136.0,
+          "equity": 1212822.0,
+          "profit": -383140.0,
+          "employees": 24.0,
+          "margin": -35.60330664525673,
+          "turnoverPerEmployee": 44839.0
+        },
+        {
+          "reportId": "2024252",
+          "year": 2020,
+          "submitted": "2020-12-31T00:00:00.000",
+          "turnover": 1437230.0,
+          "equity": 1595962.0,
+          "profit": -485358.0,
+          "employees": 42.0,
+          "margin": -33.77037774051474,
+          "turnoverPerEmployee": 34219.76190476191
+        },
+        {
+          "reportId": "1753355",
+          "year": 2019,
+          "submitted": "2019-12-31T00:00:00.000",
+          "turnover": 1309850.0,
+          "equity": 2081320.0,
+          "profit": -341297.0,
+          "employees": 42.0,
+          "margin": -26.05618964003512,
+          "turnoverPerEmployee": 31186.904761904763
+        }
+      ]
+    },
+    {
+      "name": "osaühing Rino Teenused",
+      "registryCode": "10900779",
+      "website": null,
+      "note": "registry_code_verified_from_search",
+      "dataStatus": "ok",
+      "latest": {
+        "reportId": "3626985",
+        "year": 2025,
+        "submitted": "2025-12-31T00:00:00.000",
+        "turnover": 1005957.0,
+        "equity": 7742.0,
+        "profit": 3493.0,
+        "employees": 6.0,
+        "margin": 0.347231541706057,
+        "turnoverPerEmployee": 167659.5
+      },
+      "history": [
+        {
+          "reportId": "3626985",
+          "year": 2025,
+          "submitted": "2025-12-31T00:00:00.000",
+          "turnover": 1005957.0,
+          "equity": 7742.0,
+          "profit": 3493.0,
+          "employees": 6.0,
+          "margin": 0.347231541706057,
+          "turnoverPerEmployee": 167659.5
+        },
+        {
+          "reportId": "3135909",
+          "year": 2024,
+          "submitted": "2024-12-31T00:00:00.000",
+          "turnover": 875343.0,
+          "equity": 4249.0,
+          "profit": 189.0,
+          "employees": 6.0,
+          "margin": 0.021591536117841804,
+          "turnoverPerEmployee": 145890.5
+        },
+        {
+          "reportId": "2928894",
+          "year": 2023,
+          "submitted": "2023-12-31T00:00:00.000",
+          "turnover": 636641.0,
+          "equity": 4060.0,
+          "profit": 2288.0,
+          "employees": 5.0,
+          "margin": 0.3593862160935284,
+          "turnoverPerEmployee": 127328.2
+        },
+        {
+          "reportId": "2559321",
+          "year": 2022,
+          "submitted": "2022-12-31T00:00:00.000",
+          "turnover": 531032.0,
+          "equity": 1772.0,
+          "profit": 11111.0,
+          "employees": 4.0,
+          "margin": 2.0923409512044473,
+          "turnoverPerEmployee": 132758.0
+        },
+        {
+          "reportId": "2242032",
+          "year": 2021,
+          "submitted": "2021-12-31T00:00:00.000",
+          "turnover": 503163.0,
+          "equity": -9339.0,
+          "profit": -19669.0,
+          "employees": 4.0,
+          "margin": -3.909071215490805,
+          "turnoverPerEmployee": 125790.75
+        },
+        {
+          "reportId": "2085033",
+          "year": 2020,
+          "submitted": "2020-12-31T00:00:00.000",
+          "turnover": 440364.0,
+          "equity": 10330.0,
+          "profit": -1203.0,
+          "employees": 2.0,
+          "margin": -0.2731830939858844,
+          "turnoverPerEmployee": 220182.0
+        },
+        {
+          "reportId": "1845938",
+          "year": 2019,
+          "submitted": "2019-12-31T00:00:00.000",
+          "turnover": 317575.0,
+          "equity": 11533.0,
+          "profit": 2169.0,
+          "employees": 1.0,
+          "margin": 0.6829882704872865,
+          "turnoverPerEmployee": 317575.0
+        }
+      ]
+    },
+    {
+      "name": "OÜ Koduranna TRV",
+      "registryCode": "16295316",
+      "website": null,
+      "note": "registry_code_verified_from_search",
+      "dataStatus": "ok",
+      "latest": {
+        "reportId": "3625666",
+        "year": 2025,
+        "submitted": "2025-12-31T00:00:00.000",
+        "turnover": 922630.0,
+        "equity": 206510.0,
+        "profit": 73288.0,
+        "employees": 0.0,
+        "margin": 7.943379252788225,
+        "turnoverPerEmployee": null
+      },
+      "history": [
+        {
+          "reportId": "3625666",
+          "year": 2025,
+          "submitted": "2025-12-31T00:00:00.000",
+          "turnover": 922630.0,
+          "equity": 206510.0,
+          "profit": 73288.0,
+          "employees": 0.0,
+          "margin": 7.943379252788225,
+          "turnoverPerEmployee": null
+        },
+        {
+          "reportId": "3273441",
+          "year": 2024,
+          "submitted": "2024-12-31T00:00:00.000",
+          "turnover": 832515.0,
+          "equity": 153356.0,
+          "profit": 86079.0,
+          "employees": 0.0,
+          "margin": 10.339633520116754,
+          "turnoverPerEmployee": null
+        },
+        {
+          "reportId": "3000947",
+          "year": 2023,
+          "submitted": "2023-12-31T00:00:00.000",
+          "turnover": 588349.0,
+          "equity": 69532.0,
+          "profit": 59024.0,
+          "employees": 0.0,
+          "margin": 10.032140787185837,
+          "turnoverPerEmployee": null
+        },
+        {
+          "reportId": "2693306",
+          "year": 2022,
+          "submitted": "2022-12-31T00:00:00.000",
+          "turnover": 240773.0,
+          "equity": 10508.0,
+          "profit": 10508.0,
+          "employees": 0.0,
+          "margin": 4.364276725380337,
+          "turnoverPerEmployee": null
+        }
+      ]
+    },
+    {
+      "name": "SHTEINLE KAUBANDUS OÜ",
+      "registryCode": "11246336",
+      "website": null,
+      "note": "registry_code_verified_from_search",
+      "dataStatus": "ok",
+      "latest": {
+        "reportId": "3414044",
+        "year": 2025,
+        "submitted": "2025-12-31T00:00:00.000",
+        "turnover": 708039.0,
+        "equity": 4344.0,
+        "profit": 550.0,
+        "employees": 7.0,
+        "margin": 0.0776793368726864,
+        "turnoverPerEmployee": 101148.42857142857
+      },
+      "history": [
+        {
+          "reportId": "3414044",
+          "year": 2025,
+          "submitted": "2025-12-31T00:00:00.000",
+          "turnover": 708039.0,
+          "equity": 4344.0,
+          "profit": 550.0,
+          "employees": 7.0,
+          "margin": 0.0776793368726864,
+          "turnoverPerEmployee": 101148.42857142857
+        },
+        {
+          "reportId": "3212262",
+          "year": 2024,
+          "submitted": "2024-12-31T00:00:00.000",
+          "turnover": 709004.0,
+          "equity": 28844.0,
+          "profit": 15081.0,
+          "employees": 6.0,
+          "margin": 2.127068394536561,
+          "turnoverPerEmployee": 118167.33333333333
+        },
+        {
+          "reportId": "2801910",
+          "year": 2023,
+          "submitted": "2023-12-31T00:00:00.000",
+          "turnover": 703847.0,
+          "equity": 45363.0,
+          "profit": 34456.0,
+          "employees": 6.0,
+          "margin": 4.895382092983276,
+          "turnoverPerEmployee": 117307.83333333333
+        },
+        {
+          "reportId": "2567764",
+          "year": 2022,
+          "submitted": "2022-12-31T00:00:00.000",
+          "turnover": 690053.0,
+          "equity": 36000.0,
+          "profit": 22824.0,
+          "employees": 8.0,
+          "margin": 3.3075720270761813,
+          "turnoverPerEmployee": 86256.625
+        },
+        {
+          "reportId": "2177203",
+          "year": 2021,
+          "submitted": "2021-12-31T00:00:00.000",
+          "turnover": 667827.0,
+          "equity": 29305.0,
+          "profit": 16059.0,
+          "employees": 9.0,
+          "margin": 2.4046646811225063,
+          "turnoverPerEmployee": 74203.0
+        },
+        {
+          "reportId": "1903067",
+          "year": 2020,
+          "submitted": "2020-12-31T00:00:00.000",
+          "turnover": 618226.0,
+          "equity": 43246.0,
+          "profit": 24136.0,
+          "employees": 8.0,
+          "margin": 3.9040739147172716,
+          "turnoverPerEmployee": 77278.25
+        },
+        {
+          "reportId": "1658936",
+          "year": 2019,
+          "submitted": "2019-12-31T00:00:00.000",
+          "turnover": 494167.0,
+          "equity": 19110.0,
+          "profit": 7001.0,
+          "employees": 8.0,
+          "margin": 1.4167275435227362,
+          "turnoverPerEmployee": 61770.875
+        }
+      ]
+    },
+    {
+      "name": "CaviarHouse.ee OÜ",
+      "registryCode": "12111124",
+      "website": null,
+      "note": "REGISTRY CODE NOT VERIFIED — excluded from matching until corrected",
+      "dataStatus": "ok",
+      "latest": {
+        "reportId": "3318695",
+        "year": 2024,
+        "submitted": "2024-12-31T00:00:00.000",
+        "turnover": 675698.0,
+        "equity": 194803.0,
+        "profit": 59981.0,
+        "employees": 1.0,
+        "margin": 8.876894707398868,
+        "turnoverPerEmployee": 675698.0
+      },
+      "history": [
+        {
+          "reportId": "3318695",
+          "year": 2024,
+          "submitted": "2024-12-31T00:00:00.000",
+          "turnover": 675698.0,
+          "equity": 194803.0,
+          "profit": 59981.0,
+          "employees": 1.0,
+          "margin": 8.876894707398868,
+          "turnoverPerEmployee": 675698.0
+        },
+        {
+          "reportId": "2970982",
+          "year": 2023,
+          "submitted": "2023-12-31T00:00:00.000",
+          "turnover": 627241.0,
+          "equity": 168633.0,
+          "profit": 40055.0,
+          "employees": 0.0,
+          "margin": 6.385902707252875,
+          "turnoverPerEmployee": null
+        },
+        {
+          "reportId": "2531027",
+          "year": 2022,
+          "submitted": "2022-12-31T00:00:00.000",
+          "turnover": 353677.0,
+          "equity": 187177.0,
+          "profit": 56479.0,
+          "employees": 0.0,
+          "margin": 15.969090441278341,
+          "turnoverPerEmployee": null
+        },
+        {
+          "reportId": "2300730",
+          "year": 2021,
+          "submitted": "2021-12-31T00:00:00.000",
+          "turnover": 60671.0,
+          "equity": 155698.0,
+          "profit": 23481.0,
+          "employees": 0.0,
+          "margin": 38.70218061347266,
+          "turnoverPerEmployee": null
+        },
+        {
+          "reportId": "1908806",
+          "year": 2020,
+          "submitted": "2020-12-31T00:00:00.000",
+          "turnover": 368.0,
+          "equity": 132217.0,
+          "profit": 397.0,
+          "employees": 0.0,
+          "margin": 107.88043478260869,
+          "turnoverPerEmployee": null
+        },
+        {
+          "reportId": "1800873",
+          "year": 2019,
+          "submitted": "2019-12-31T00:00:00.000",
+          "turnover": 106828.0,
+          "equity": 131820.0,
+          "profit": -13657.0,
+          "employees": 0.0,
+          "margin": -12.784101546411053,
+          "turnoverPerEmployee": null
+        }
+      ]
+    },
+    {
+      "name": "Kalaarsenal OÜ",
+      "registryCode": "14245461",
+      "website": null,
+      "note": "registry_code_verified_from_search",
+      "dataStatus": "ok",
+      "latest": {
+        "reportId": "3459947",
+        "year": 2025,
+        "submitted": "2025-12-31T00:00:00.000",
+        "turnover": 605348.0,
+        "equity": 33130.0,
+        "profit": 19439.0,
+        "employees": 4.0,
+        "margin": 3.2112107415899613,
+        "turnoverPerEmployee": 151337.0
+      },
+      "history": [
+        {
+          "reportId": "3459947",
+          "year": 2025,
+          "submitted": "2025-12-31T00:00:00.000",
+          "turnover": 605348.0,
+          "equity": 33130.0,
+          "profit": 19439.0,
+          "employees": 4.0,
+          "margin": 3.2112107415899613,
+          "turnoverPerEmployee": 151337.0
+        },
+        {
+          "reportId": "3097484",
+          "year": 2024,
+          "submitted": "2024-12-31T00:00:00.000",
+          "turnover": 519419.0,
+          "equity": 13691.0,
+          "profit": -24032.0,
+          "employees": 4.0,
+          "margin": -4.6267079178851755,
+          "turnoverPerEmployee": 129854.75
+        },
+        {
+          "reportId": "2953113",
+          "year": 2023,
+          "submitted": "2023-12-31T00:00:00.000",
+          "turnover": 383407.0,
+          "equity": 37723.0,
+          "profit": -2981.0,
+          "employees": 3.0,
+          "margin": -0.7775027581656047,
+          "turnoverPerEmployee": 127802.33333333333
+        },
+        {
+          "reportId": "2470360",
+          "year": 2022,
+          "submitted": "2022-12-31T00:00:00.000",
+          "turnover": 527181.0,
+          "equity": 40705.0,
+          "profit": -13904.0,
+          "employees": 4.0,
+          "margin": -2.6374243381305473,
+          "turnoverPerEmployee": 131795.25
+        },
+        {
+          "reportId": "2221481",
+          "year": 2021,
+          "submitted": "2021-12-31T00:00:00.000",
+          "turnover": 610612.0,
+          "equity": 54609.0,
+          "profit": 20110.0,
+          "employees": 3.0,
+          "margin": 3.293417096290279,
+          "turnoverPerEmployee": 203537.33333333334
+        },
+        {
+          "reportId": "1964508",
+          "year": 2020,
+          "submitted": "2020-12-31T00:00:00.000",
+          "turnover": 506800.0,
+          "equity": 34499.0,
+          "profit": 16473.0,
+          "employees": 3.0,
+          "margin": 3.250394632991318,
+          "turnoverPerEmployee": 168933.33333333334
+        },
+        {
+          "reportId": "1689578",
+          "year": 2019,
+          "submitted": "2019-12-31T00:00:00.000",
+          "turnover": 336629.0,
+          "equity": 18026.0,
+          "profit": 12060.0,
+          "employees": 2.0,
+          "margin": 3.5825790410214213,
+          "turnoverPerEmployee": 168314.5
+        }
+      ]
+    },
+    {
+      "name": "Osaühing Latikas",
+      "registryCode": "10009723",
+      "website": null,
+      "note": "registry_code_verified_from_search",
+      "dataStatus": "ok",
+      "latest": {
+        "reportId": "3556799",
+        "year": 2025,
+        "submitted": "2025-12-31T00:00:00.000",
+        "turnover": 603534.0,
+        "equity": 86503.0,
+        "profit": 10108.0,
+        "employees": 20.0,
+        "margin": 1.6748020824013228,
+        "turnoverPerEmployee": 30176.7
+      },
+      "history": [
+        {
+          "reportId": "3556799",
+          "year": 2025,
+          "submitted": "2025-12-31T00:00:00.000",
+          "turnover": 603534.0,
+          "equity": 86503.0,
+          "profit": 10108.0,
+          "employees": 20.0,
+          "margin": 1.6748020824013228,
+          "turnoverPerEmployee": 30176.7
+        },
+        {
+          "reportId": "3242904",
+          "year": 2024,
+          "submitted": "2024-12-31T00:00:00.000",
+          "turnover": 637191.0,
+          "equity": 76395.0,
+          "profit": 642.0,
+          "employees": 17.0,
+          "margin": 0.10075471875779789,
+          "turnoverPerEmployee": 37481.82352941176
+        },
+        {
+          "reportId": "2947194",
+          "year": 2023,
+          "submitted": "2023-12-31T00:00:00.000",
+          "turnover": 575474.0,
+          "equity": 75754.0,
+          "profit": -118221.0,
+          "employees": 19.0,
+          "margin": -20.543239138518857,
+          "turnoverPerEmployee": 30288.105263157893
+        },
+        {
+          "reportId": "2617023",
+          "year": 2022,
+          "submitted": "2022-12-31T00:00:00.000",
+          "turnover": 640002.0,
+          "equity": 193975.0,
+          "profit": 105807.0,
+          "employees": 17.0,
+          "margin": 16.53229208658723,
+          "turnoverPerEmployee": 37647.17647058824
+        },
+        {
+          "reportId": "2336683",
+          "year": 2021,
+          "submitted": "2021-12-31T00:00:00.000",
+          "turnover": 540644.0,
+          "equity": 88168.0,
+          "profit": 1395.0,
+          "employees": 14.0,
+          "margin": 0.2580256138975,
+          "turnoverPerEmployee": 38617.42857142857
+        },
+        {
+          "reportId": "2057101",
+          "year": 2020,
+          "submitted": "2020-12-31T00:00:00.000",
+          "turnover": 581007.0,
+          "equity": 86773.0,
+          "profit": -65314.0,
+          "employees": 22.0,
+          "margin": -11.241516883617582,
+          "turnoverPerEmployee": 26409.409090909092
+        },
+        {
+          "reportId": "1776382",
+          "year": 2019,
+          "submitted": "2019-12-31T00:00:00.000",
+          "turnover": 736080.0,
+          "equity": 152087.0,
+          "profit": 8620.0,
+          "employees": 27.0,
+          "margin": 1.1710683621345506,
+          "turnoverPerEmployee": 27262.222222222223
+        }
+      ]
+    },
+    {
+      "name": "SIIN EI OLE KALA OÜ",
+      "registryCode": "16497758",
+      "website": null,
+      "note": "registry_code_verified_from_search",
+      "dataStatus": "ok",
+      "latest": {
+        "reportId": "3452635",
+        "year": 2025,
+        "submitted": "2025-12-31T00:00:00.000",
+        "turnover": 564059.0,
+        "equity": 67623.0,
+        "profit": 27226.0,
+        "employees": 4.0,
+        "margin": 4.826800033329846,
+        "turnoverPerEmployee": 141014.75
+      },
+      "history": [
+        {
+          "reportId": "3452635",
+          "year": 2025,
+          "submitted": "2025-12-31T00:00:00.000",
+          "turnover": 564059.0,
+          "equity": 67623.0,
+          "profit": 27226.0,
+          "employees": 4.0,
+          "margin": 4.826800033329846,
+          "turnoverPerEmployee": 141014.75
+        },
+        {
+          "reportId": "3173338",
+          "year": 2024,
+          "submitted": "2024-12-31T00:00:00.000",
+          "turnover": 589052.0,
+          "equity": 40398.0,
+          "profit": -9499.0,
+          "employees": 4.0,
+          "margin": -1.612591078546546,
+          "turnoverPerEmployee": 147263.0
+        },
+        {
+          "reportId": "2891294",
+          "year": 2023,
+          "submitted": "2023-12-31T00:00:00.000",
+          "turnover": 646145.0,
+          "equity": 45038.0,
+          "profit": 30838.0,
+          "employees": 4.0,
+          "margin": 4.772612958391692,
+          "turnoverPerEmployee": 161536.25
+        },
+        {
+          "reportId": "2599064",
+          "year": 2022,
+          "submitted": "2022-12-31T00:00:00.000",
+          "turnover": 295345.0,
+          "equity": 14200.0,
+          "profit": 11700.0,
+          "employees": 4.0,
+          "margin": 3.961468790736258,
+          "turnoverPerEmployee": 73836.25
+        }
+      ]
+    },
+    {
+      "name": "osaühing Mipron Kaubanduse",
+      "registryCode": "10175962",
+      "website": null,
+      "note": "registry_code_verified_from_search",
+      "dataStatus": "ok",
+      "latest": {
+        "reportId": "3569575",
+        "year": 2025,
+        "submitted": "2025-12-31T00:00:00.000",
+        "turnover": 521622.0,
+        "equity": 37794.0,
+        "profit": 5396.0,
+        "employees": 4.0,
+        "margin": 1.03446557085399,
+        "turnoverPerEmployee": 130405.5
+      },
+      "history": [
+        {
+          "reportId": "3569575",
+          "year": 2025,
+          "submitted": "2025-12-31T00:00:00.000",
+          "turnover": 521622.0,
+          "equity": 37794.0,
+          "profit": 5396.0,
+          "employees": 4.0,
+          "margin": 1.03446557085399,
+          "turnoverPerEmployee": 130405.5
+        },
+        {
+          "reportId": "3240721",
+          "year": 2024,
+          "submitted": "2024-12-31T00:00:00.000",
+          "turnover": 402728.0,
+          "equity": 32398.0,
+          "profit": 2815.0,
+          "employees": 4.0,
+          "margin": 0.6989829363739297,
+          "turnoverPerEmployee": 100682.0
+        },
+        {
+          "reportId": "2941711",
+          "year": 2023,
+          "submitted": "2023-12-31T00:00:00.000",
+          "turnover": 323185.0,
+          "equity": 29583.0,
+          "profit": 957.0,
+          "employees": 4.0,
+          "margin": 0.2961152281201169,
+          "turnoverPerEmployee": 80796.25
+        },
+        {
+          "reportId": "2617948",
+          "year": 2022,
+          "submitted": "2022-12-31T00:00:00.000",
+          "turnover": 319380.0,
+          "equity": 28626.0,
+          "profit": 2510.0,
+          "employees": 4.0,
+          "margin": 0.7858976767487006,
+          "turnoverPerEmployee": 79845.0
+        },
+        {
+          "reportId": "2336803",
+          "year": 2021,
+          "submitted": "2021-12-31T00:00:00.000",
+          "turnover": 308659.0,
+          "equity": 26116.0,
+          "profit": 5661.0,
+          "employees": 4.0,
+          "margin": 1.8340628330941264,
+          "turnoverPerEmployee": 77164.75
+        },
+        {
+          "reportId": "1939579",
+          "year": 2020,
+          "submitted": "2020-12-31T00:00:00.000",
+          "turnover": 289257.0,
+          "equity": 20455.0,
+          "profit": 2765.0,
+          "employees": 4.0,
+          "margin": 0.9558973507987706,
+          "turnoverPerEmployee": 72314.25
+        },
+        {
+          "reportId": "1692598",
+          "year": 2019,
+          "submitted": "2019-12-31T00:00:00.000",
+          "turnover": 232117.0,
+          "equity": 17690.0,
+          "profit": 1763.0,
+          "employees": 3.0,
+          "margin": 0.7595307538870484,
+          "turnoverPerEmployee": 77372.33333333333
+        }
+      ]
+    },
+    {
+      "name": "OÜ SAAREPIIGA",
+      "registryCode": "11540863",
+      "website": null,
+      "note": "registry_code_verified_from_search",
+      "dataStatus": "ok",
+      "latest": {
+        "reportId": "3625396",
+        "year": 2025,
+        "submitted": "2025-12-31T00:00:00.000",
+        "turnover": 452821.0,
+        "equity": 3497.0,
+        "profit": 792.0,
+        "employees": 6.0,
+        "margin": 0.17490354908451686,
+        "turnoverPerEmployee": 75470.16666666667
+      },
+      "history": [
+        {
+          "reportId": "3625396",
+          "year": 2025,
+          "submitted": "2025-12-31T00:00:00.000",
+          "turnover": 452821.0,
+          "equity": 3497.0,
+          "profit": 792.0,
+          "employees": 6.0,
+          "margin": 0.17490354908451686,
+          "turnoverPerEmployee": 75470.16666666667
+        },
+        {
+          "reportId": "3347611",
+          "year": 2024,
+          "submitted": "2024-12-31T00:00:00.000",
+          "turnover": 434150.0,
+          "equity": 2706.0,
+          "profit": -1500.0,
+          "employees": 6.0,
+          "margin": -0.3455027064378671,
+          "turnoverPerEmployee": 72358.33333333333
+        },
+        {
+          "reportId": "3015783",
+          "year": 2023,
+          "submitted": "2023-12-31T00:00:00.000",
+          "turnover": 434885.0,
+          "equity": 4206.0,
+          "profit": 682.0,
+          "employees": 6.0,
+          "margin": 0.15682306816744657,
+          "turnoverPerEmployee": 72480.83333333333
+        },
+        {
+          "reportId": "2736358",
+          "year": 2022,
+          "submitted": "2022-12-31T00:00:00.000",
+          "turnover": 349348.0,
+          "equity": 3524.0,
+          "profit": 605.0,
+          "employees": 6.0,
+          "margin": 0.17317975199514524,
+          "turnoverPerEmployee": 58224.666666666664
+        },
+        {
+          "reportId": "2709001",
+          "year": 2021,
+          "submitted": "2021-12-31T00:00:00.000",
+          "turnover": 296550.0,
+          "equity": 2920.0,
+          "profit": 101.0,
+          "employees": 6.0,
+          "margin": 0.03405833754847412,
+          "turnoverPerEmployee": 49425.0
+        },
+        {
+          "reportId": "2460582",
+          "year": 2020,
+          "submitted": "2020-12-31T00:00:00.000",
+          "turnover": 277817.0,
+          "equity": 2819.0,
+          "profit": -2439.0,
+          "employees": 5.0,
+          "margin": -0.8779160382553983,
+          "turnoverPerEmployee": 55563.4
+        },
+        {
+          "reportId": "1856398",
+          "year": 2019,
+          "submitted": "2019-12-31T00:00:00.000",
+          "turnover": 233959.0,
+          "equity": 3747.0,
+          "profit": -1326.0,
+          "employees": 5.0,
+          "margin": -0.5667659718155745,
+          "turnoverPerEmployee": 46791.8
+        }
+      ]
+    },
+    {
+      "name": "Leokikala OÜ",
+      "registryCode": "14876718",
+      "website": null,
+      "note": "REGISTRY CODE NOT VERIFIED — excluded from matching until corrected",
+      "dataStatus": "ok",
+      "latest": {
+        "reportId": "3426002",
+        "year": 2025,
+        "submitted": "2025-12-31T00:00:00.000",
+        "turnover": 411812.0,
+        "equity": 120185.0,
+        "profit": 3608.0,
+        "employees": 3.0,
+        "margin": 0.8761279418763902,
+        "turnoverPerEmployee": 137270.66666666666
+      },
+      "history": [
+        {
+          "reportId": "3426002",
+          "year": 2025,
+          "submitted": "2025-12-31T00:00:00.000",
+          "turnover": 411812.0,
+          "equity": 120185.0,
+          "profit": 3608.0,
+          "employees": 3.0,
+          "margin": 0.8761279418763902,
+          "turnoverPerEmployee": 137270.66666666666
+        },
+        {
+          "reportId": "3131672",
+          "year": 2024,
+          "submitted": "2024-12-31T00:00:00.000",
+          "turnover": 430486.0,
+          "equity": 116577.0,
+          "profit": 10356.0,
+          "employees": 4.0,
+          "margin": 2.4056531455146044,
+          "turnoverPerEmployee": 107621.5
+        },
+        {
+          "reportId": "2777467",
+          "year": 2023,
+          "submitted": "2023-12-31T00:00:00.000",
+          "turnover": 403490.0,
+          "equity": 106221.0,
+          "profit": 45054.0,
+          "employees": 4.0,
+          "margin": 11.16607598701331,
+          "turnoverPerEmployee": 100872.5
+        },
+        {
+          "reportId": "2470843",
+          "year": 2022,
+          "submitted": "2022-12-31T00:00:00.000",
+          "turnover": 313862.0,
+          "equity": 61167.0,
+          "profit": 14195.0,
+          "employees": 3.0,
+          "margin": 4.522688315246828,
+          "turnoverPerEmployee": 104620.66666666667
+        },
+        {
+          "reportId": "2208635",
+          "year": 2021,
+          "submitted": "2021-12-31T00:00:00.000",
+          "turnover": 244966.0,
+          "equity": 46972.0,
+          "profit": 27483.0,
+          "employees": 3.0,
+          "margin": 11.219107957839046,
+          "turnoverPerEmployee": 81655.33333333333
+        },
+        {
+          "reportId": "1907003",
+          "year": 2020,
+          "submitted": "2020-12-31T00:00:00.000",
+          "turnover": 252302.0,
+          "equity": 16989.0,
+          "profit": 16989.0,
+          "employees": 3.0,
+          "margin": 6.73359703846977,
+          "turnoverPerEmployee": 84100.66666666667
+        }
+      ]
+    },
+    {
+      "name": "osaühing MERINEITSI",
+      "registryCode": "10212022",
+      "website": null,
+      "note": "registry_code_verified_from_search",
+      "dataStatus": "ok",
+      "latest": {
+        "reportId": "3585570",
+        "year": 2025,
+        "submitted": "2025-12-31T00:00:00.000",
+        "turnover": 430682.0,
+        "equity": 290260.0,
+        "profit": -30225.0,
+        "employees": 3.0,
+        "margin": -7.017938989788289,
+        "turnoverPerEmployee": 143560.66666666666
+      },
+      "history": [
+        {
+          "reportId": "3585570",
+          "year": 2025,
+          "submitted": "2025-12-31T00:00:00.000",
+          "turnover": 430682.0,
+          "equity": 290260.0,
+          "profit": -30225.0,
+          "employees": 3.0,
+          "margin": -7.017938989788289,
+          "turnoverPerEmployee": 143560.66666666666
+        },
+        {
+          "reportId": "3251119",
+          "year": 2024,
+          "submitted": "2024-12-31T00:00:00.000",
+          "turnover": 469153.0,
+          "equity": 320485.0,
+          "profit": 25010.0,
+          "employees": 4.0,
+          "margin": 5.330883528401182,
+          "turnoverPerEmployee": 117288.25
+        },
+        {
+          "reportId": "2959998",
+          "year": 2023,
+          "submitted": "2023-12-31T00:00:00.000",
+          "turnover": 369246.0,
+          "equity": 295475.0,
+          "profit": -30060.0,
+          "employees": 4.0,
+          "margin": -8.140914187289775,
+          "turnoverPerEmployee": 92311.5
+        },
+        {
+          "reportId": "2612104",
+          "year": 2022,
+          "submitted": "2022-12-31T00:00:00.000",
+          "turnover": 445005.0,
+          "equity": 325535.0,
+          "profit": 6625.0,
+          "employees": 4.0,
+          "margin": 1.4887473174458714,
+          "turnoverPerEmployee": 111251.25
+        },
+        {
+          "reportId": "2363513",
+          "year": 2021,
+          "submitted": "2021-12-31T00:00:00.000",
+          "turnover": 427008.0,
+          "equity": 324474.0,
+          "profit": 6020.0,
+          "employees": 4.0,
+          "margin": 1.4098096522781776,
+          "turnoverPerEmployee": 106752.0
+        },
+        {
+          "reportId": "2095944",
+          "year": 2020,
+          "submitted": "2020-12-31T00:00:00.000",
+          "turnover": 348223.0,
+          "equity": 318395.0,
+          "profit": -381.0,
+          "employees": 5.0,
+          "margin": -0.10941264649376979,
+          "turnoverPerEmployee": 69644.6
+        },
+        {
+          "reportId": "1810212",
+          "year": 2019,
+          "submitted": "2019-12-31T00:00:00.000",
+          "turnover": 476707.0,
+          "equity": 318501.0,
+          "profit": 3887.0,
+          "employees": 5.0,
+          "margin": 0.8153855512925131,
+          "turnoverPerEmployee": 95341.4
+        }
+      ]
+    },
+    {
+      "name": "SPEKTRUM OÜ",
+      "registryCode": "11582258",
+      "website": null,
+      "note": "REGISTRY CODE NOT VERIFIED — excluded from matching until corrected",
+      "dataStatus": "ok",
+      "latest": {
+        "reportId": "3497834",
+        "year": 2025,
+        "submitted": "2025-12-31T00:00:00.000",
+        "turnover": 359374.0,
+        "equity": 8854.0,
+        "profit": 1234.0,
+        "employees": 2.0,
+        "margin": 0.3433748685213733,
+        "turnoverPerEmployee": 179687.0
+      },
+      "history": [
+        {
+          "reportId": "3497834",
+          "year": 2025,
+          "submitted": "2025-12-31T00:00:00.000",
+          "turnover": 359374.0,
+          "equity": 8854.0,
+          "profit": 1234.0,
+          "employees": 2.0,
+          "margin": 0.3433748685213733,
+          "turnoverPerEmployee": 179687.0
+        },
+        {
+          "reportId": "3204679",
+          "year": 2024,
+          "submitted": "2024-12-31T00:00:00.000",
+          "turnover": 384039.0,
+          "equity": 7621.0,
+          "profit": -316.0,
+          "employees": 4.0,
+          "margin": -0.08228330976801836,
+          "turnoverPerEmployee": 96009.75
+        },
+        {
+          "reportId": "2894595",
+          "year": 2023,
+          "submitted": "2023-12-31T00:00:00.000",
+          "turnover": 405229.0,
+          "equity": 7937.0,
+          "profit": 4943.0,
+          "employees": 4.0,
+          "margin": 1.219804110762063,
+          "turnoverPerEmployee": 101307.25
+        },
+        {
+          "reportId": "2532471",
+          "year": 2022,
+          "submitted": "2022-12-31T00:00:00.000",
+          "turnover": 423148.0,
+          "equity": 2994.0,
+          "profit": -689.0,
+          "employees": 4.0,
+          "margin": -0.1628271904865437,
+          "turnoverPerEmployee": 105787.0
+        },
+        {
+          "reportId": "2239568",
+          "year": 2021,
+          "submitted": "2021-12-31T00:00:00.000",
+          "turnover": 375094.0,
+          "equity": 3684.0,
+          "profit": -3815.0,
+          "employees": 5.0,
+          "margin": -1.017078385684655,
+          "turnoverPerEmployee": 75018.8
+        },
+        {
+          "reportId": "2005139",
+          "year": 2020,
+          "submitted": "2020-12-31T00:00:00.000",
+          "turnover": 418044.0,
+          "equity": 7499.0,
+          "profit": -11231.0,
+          "employees": 5.0,
+          "margin": -2.6865593095463636,
+          "turnoverPerEmployee": 83608.8
+        },
+        {
+          "reportId": "1741518",
+          "year": 2019,
+          "submitted": "2019-12-31T00:00:00.000",
+          "turnover": 433822.0,
+          "equity": 18730.0,
+          "profit": 236.0,
+          "employees": 5.0,
+          "margin": 0.054400191783726966,
+          "turnoverPerEmployee": 86764.4
+        }
+      ]
+    },
+    {
+      "name": "osaühing HK Kodeste",
+      "registryCode": "11083420",
+      "website": null,
+      "note": "registry_code_verified_from_search",
+      "dataStatus": "ok",
+      "latest": {
+        "reportId": "3502296",
+        "year": 2025,
+        "submitted": "2025-12-31T00:00:00.000",
+        "turnover": 273720.0,
+        "equity": 491159.0,
+        "profit": 37749.0,
+        "employees": 2.0,
+        "margin": 13.791100394563788,
+        "turnoverPerEmployee": 136860.0
+      },
+      "history": [
+        {
+          "reportId": "3502296",
+          "year": 2025,
+          "submitted": "2025-12-31T00:00:00.000",
+          "turnover": 273720.0,
+          "equity": 491159.0,
+          "profit": 37749.0,
+          "employees": 2.0,
+          "margin": 13.791100394563788,
+          "turnoverPerEmployee": 136860.0
+        },
+        {
+          "reportId": "3351886",
+          "year": 2024,
+          "submitted": "2024-12-31T00:00:00.000",
+          "turnover": 224014.0,
+          "equity": 445873.0,
+          "profit": 31859.0,
+          "employees": 1.0,
+          "margin": 14.221878989706,
+          "turnoverPerEmployee": 224014.0
+        },
+        {
+          "reportId": "2892652",
+          "year": 2023,
+          "submitted": "2023-12-31T00:00:00.000",
+          "turnover": 208591.0,
+          "equity": 387166.0,
+          "profit": 24992.0,
+          "employees": 1.0,
+          "margin": 11.981341476861418,
+          "turnoverPerEmployee": 208591.0
+        },
+        {
+          "reportId": "2509816",
+          "year": 2022,
+          "submitted": "2022-12-31T00:00:00.000",
+          "turnover": 250012.0,
+          "equity": 345705.0,
+          "profit": 67836.0,
+          "employees": 0.0,
+          "margin": 27.133097611314653,
+          "turnoverPerEmployee": null
+        },
+        {
+          "reportId": "2246292",
+          "year": 2021,
+          "submitted": "2021-12-31T00:00:00.000",
+          "turnover": 184527.0,
+          "equity": 254150.0,
+          "profit": 18888.0,
+          "employees": 0.0,
+          "margin": 10.235900437334374,
+          "turnoverPerEmployee": null
+        },
+        {
+          "reportId": "2062861",
+          "year": 2020,
+          "submitted": "2020-12-31T00:00:00.000",
+          "turnover": 130594.0,
+          "equity": 235263.0,
+          "profit": 53504.0,
+          "employees": 0.0,
+          "margin": 40.96972295817572,
+          "turnoverPerEmployee": null
+        },
+        {
+          "reportId": "1664211",
+          "year": 2019,
+          "submitted": "2019-12-31T00:00:00.000",
+          "turnover": 109037.0,
+          "equity": 181759.0,
+          "profit": 19226.0,
+          "employees": 0.0,
+          "margin": 17.632546750185718,
+          "turnoverPerEmployee": null
+        }
+      ]
+    },
+    {
+      "name": "Viinimestarit OÜ",
+      "registryCode": "14709908",
+      "website": null,
+      "note": "REGISTRY CODE NOT VERIFIED — excluded from matching until corrected",
+      "dataStatus": "ok",
+      "latest": {
+        "reportId": "3557893",
+        "year": 2025,
+        "submitted": "2025-12-31T00:00:00.000",
+        "turnover": 249534.0,
+        "equity": 4085.0,
+        "profit": 579.0,
+        "employees": 1.0,
+        "margin": 0.232032508596023,
+        "turnoverPerEmployee": 249534.0
+      },
+      "history": [
+        {
+          "reportId": "3557893",
+          "year": 2025,
+          "submitted": "2025-12-31T00:00:00.000",
+          "turnover": 249534.0,
+          "equity": 4085.0,
+          "profit": 579.0,
+          "employees": 1.0,
+          "margin": 0.232032508596023,
+          "turnoverPerEmployee": 249534.0
+        },
+        {
+          "reportId": "3369482",
+          "year": 2024,
+          "submitted": "2024-12-31T00:00:00.000",
+          "turnover": 251731.0,
+          "equity": 3505.0,
+          "profit": -3254.0,
+          "employees": 1.0,
+          "margin": -1.2926496935220533,
+          "turnoverPerEmployee": 251731.0
+        },
+        {
+          "reportId": "2966387",
+          "year": 2023,
+          "submitted": "2023-12-31T00:00:00.000",
+          "turnover": 293482.0,
+          "equity": 6760.0,
+          "profit": 4101.0,
+          "employees": 1.0,
+          "margin": 1.3973599743766227,
+          "turnoverPerEmployee": 293482.0
+        },
+        {
+          "reportId": "2615560",
+          "year": 2022,
+          "submitted": "2022-12-31T00:00:00.000",
+          "turnover": 337285.0,
+          "equity": 2659.0,
+          "profit": -1637.0,
+          "employees": 1.0,
+          "margin": -0.48534622055531673,
+          "turnoverPerEmployee": 337285.0
+        },
+        {
+          "reportId": "2351731",
+          "year": 2021,
+          "submitted": "2021-12-31T00:00:00.000",
+          "turnover": 411806.0,
+          "equity": 3297.0,
+          "profit": 2110.0,
+          "employees": 1.0,
+          "margin": 0.5123771873163577,
+          "turnoverPerEmployee": 411806.0
+        },
+        {
+          "reportId": "1946984",
+          "year": 2020,
+          "submitted": "2020-12-31T00:00:00.000",
+          "turnover": 435720.0,
+          "equity": 2587.0,
+          "profit": -1593.0,
+          "employees": 1.0,
+          "margin": -0.36560176259983473,
+          "turnoverPerEmployee": 435720.0
+        }
+      ]
+    },
+    {
+      "name": "Peipsi Kalandusühistu",
+      "registryCode": "12758475",
+      "website": null,
+      "note": "registry_code_verified_from_search",
+      "dataStatus": "ok",
+      "latest": {
+        "reportId": "3382902",
+        "year": 2025,
+        "submitted": "2025-12-31T00:00:00.000",
+        "turnover": 242188.0,
+        "equity": 21907.0,
+        "profit": 79.0,
+        "employees": 2.0,
+        "margin": 0.03261928749566453,
+        "turnoverPerEmployee": 121094.0
+      },
+      "history": [
+        {
+          "reportId": "3382902",
+          "year": 2025,
+          "submitted": "2025-12-31T00:00:00.000",
+          "turnover": 242188.0,
+          "equity": 21907.0,
+          "profit": 79.0,
+          "employees": 2.0,
+          "margin": 0.03261928749566453,
+          "turnoverPerEmployee": 121094.0
+        },
+        {
+          "reportId": "3082762",
+          "year": 2024,
+          "submitted": "2024-12-31T00:00:00.000",
+          "turnover": 272590.0,
+          "equity": 21828.0,
+          "profit": 33017.0,
+          "employees": 3.0,
+          "margin": 12.112329872702594,
+          "turnoverPerEmployee": 90863.33333333333
+        },
+        {
+          "reportId": "2760870",
+          "year": 2023,
+          "submitted": "2023-12-31T00:00:00.000",
+          "turnover": 330989.0,
+          "equity": 8980.0,
+          "profit": 4306.0,
+          "employees": 3.0,
+          "margin": 1.3009495783847802,
+          "turnoverPerEmployee": 110329.66666666667
+        },
+        {
+          "reportId": "2457829",
+          "year": 2022,
+          "submitted": "2022-12-31T00:00:00.000",
+          "turnover": 420459.0,
+          "equity": -64495.0,
+          "profit": 5718.0,
+          "employees": 5.0,
+          "margin": 1.3599423487189,
+          "turnoverPerEmployee": 84091.8
+        },
+        {
+          "reportId": "2164795",
+          "year": 2021,
+          "submitted": "2021-12-31T00:00:00.000",
+          "turnover": 465450.0,
+          "equity": -70213.0,
+          "profit": -89244.0,
+          "employees": 7.0,
+          "margin": -19.173702868192073,
+          "turnoverPerEmployee": 66492.85714285714
+        },
+        {
+          "reportId": "1886024",
+          "year": 2020,
+          "submitted": "2020-12-31T00:00:00.000",
+          "turnover": 17032.0,
+          "equity": 19030.0,
+          "profit": 11998.0,
+          "employees": 1.0,
+          "margin": 70.44387036167214,
+          "turnoverPerEmployee": 17032.0
+        },
+        {
+          "reportId": "1719543",
+          "year": 2019,
+          "submitted": "2019-12-31T00:00:00.000",
+          "turnover": 0.0,
+          "equity": 7032.0,
+          "profit": -2768.0,
+          "employees": 1.0,
+          "margin": null,
+          "turnoverPerEmployee": 0.0
+        }
+      ]
+    },
+    {
+      "name": "Osaühing Vika VKN",
+      "registryCode": "10297225",
+      "website": null,
+      "note": "registry_code_verified_from_search",
+      "dataStatus": "ok",
+      "latest": {
+        "reportId": "3552375",
+        "year": 2025,
+        "submitted": "2025-12-31T00:00:00.000",
+        "turnover": 187169.0,
+        "equity": 51511.0,
+        "profit": 8905.0,
+        "employees": 4.0,
+        "margin": 4.757732316783228,
+        "turnoverPerEmployee": 46792.25
+      },
+      "history": [
+        {
+          "reportId": "3552375",
+          "year": 2025,
+          "submitted": "2025-12-31T00:00:00.000",
+          "turnover": 187169.0,
+          "equity": 51511.0,
+          "profit": 8905.0,
+          "employees": 4.0,
+          "margin": 4.757732316783228,
+          "turnoverPerEmployee": 46792.25
+        },
+        {
+          "reportId": "3214023",
+          "year": 2024,
+          "submitted": "2024-12-31T00:00:00.000",
+          "turnover": 129235.0,
+          "equity": 42606.0,
+          "profit": 7148.0,
+          "employees": 4.0,
+          "margin": 5.531009401477928,
+          "turnoverPerEmployee": 32308.75
+        },
+        {
+          "reportId": "2882166",
+          "year": 2023,
+          "submitted": "2023-12-31T00:00:00.000",
+          "turnover": 124515.0,
+          "equity": 35458.0,
+          "profit": 3145.0,
+          "employees": 3.0,
+          "margin": 2.525800104405092,
+          "turnoverPerEmployee": 41505.0
+        },
+        {
+          "reportId": "2514438",
+          "year": 2022,
+          "submitted": "2022-12-31T00:00:00.000",
+          "turnover": 101323.0,
+          "equity": 32313.0,
+          "profit": -10674.0,
+          "employees": 3.0,
+          "margin": -10.534626886294326,
+          "turnoverPerEmployee": 33774.333333333336
+        },
+        {
+          "reportId": "2238291",
+          "year": 2021,
+          "submitted": "2021-12-31T00:00:00.000",
+          "turnover": 81907.0,
+          "equity": 42988.0,
+          "profit": 7327.0,
+          "employees": 3.0,
+          "margin": 8.945511372654352,
+          "turnoverPerEmployee": 27302.333333333332
+        },
+        {
+          "reportId": "1952499",
+          "year": 2020,
+          "submitted": "2020-12-31T00:00:00.000",
+          "turnover": 88191.0,
+          "equity": 35661.0,
+          "profit": -8026.0,
+          "employees": 4.0,
+          "margin": -9.100701885679944,
+          "turnoverPerEmployee": 22047.75
+        },
+        {
+          "reportId": "1762115",
+          "year": 2019,
+          "submitted": "2019-12-31T00:00:00.000",
+          "turnover": 93276.0,
+          "equity": 43687.0,
+          "profit": -2464.0,
+          "employees": 6.0,
+          "margin": -2.641622711093958,
+          "turnoverPerEmployee": 15546.0
+        }
+      ]
+    },
+    {
+      "name": "Sepa Kala OÜ",
+      "registryCode": "14015525",
+      "website": null,
+      "note": "registry_code_verified_from_search",
+      "dataStatus": "ok",
+      "latest": {
+        "reportId": "3530916",
+        "year": 2025,
+        "submitted": "2025-12-31T00:00:00.000",
+        "turnover": 186589.0,
+        "equity": 1053.0,
+        "profit": -538.0,
+        "employees": 2.0,
+        "margin": -0.2883342533589869,
+        "turnoverPerEmployee": 93294.5
+      },
+      "history": [
+        {
+          "reportId": "3530916",
+          "year": 2025,
+          "submitted": "2025-12-31T00:00:00.000",
+          "turnover": 186589.0,
+          "equity": 1053.0,
+          "profit": -538.0,
+          "employees": 2.0,
+          "margin": -0.2883342533589869,
+          "turnoverPerEmployee": 93294.5
+        },
+        {
+          "reportId": "3130966",
+          "year": 2024,
+          "submitted": "2024-12-31T00:00:00.000",
+          "turnover": 208996.0,
+          "equity": 1591.0,
+          "profit": 1337.0,
+          "employees": 3.0,
+          "margin": 0.6397251622040613,
+          "turnoverPerEmployee": 69665.33333333333
+        },
+        {
+          "reportId": "2879986",
+          "year": 2023,
+          "submitted": "2023-12-31T00:00:00.000",
+          "turnover": 46358.0,
+          "equity": 254.0,
+          "profit": -13788.0,
+          "employees": 2.0,
+          "margin": -29.742439276931705,
+          "turnoverPerEmployee": 23179.0
+        },
+        {
+          "reportId": "2734366",
+          "year": 2022,
+          "submitted": "2022-12-31T00:00:00.000",
+          "turnover": 11841.0,
+          "equity": -7343.0,
+          "profit": -6184.0,
+          "employees": 1.0,
+          "margin": -52.22531880753315,
+          "turnoverPerEmployee": 11841.0
+        },
+        {
+          "reportId": "2416325",
+          "year": 2021,
+          "submitted": "2021-12-31T00:00:00.000",
+          "turnover": 15014.0,
+          "equity": -1158.0,
+          "profit": -1321.0,
+          "employees": 1.0,
+          "margin": -8.798454775542828,
+          "turnoverPerEmployee": 15014.0
+        },
+        {
+          "reportId": "2033688",
+          "year": 2020,
+          "submitted": "2020-12-31T00:00:00.000",
+          "turnover": 15062.0,
+          "equity": 163.0,
+          "profit": -4085.0,
+          "employees": 1.0,
+          "margin": -27.12123224007436,
+          "turnoverPerEmployee": 15062.0
+        },
+        {
+          "reportId": "1796566",
+          "year": 2019,
+          "submitted": "2019-12-31T00:00:00.000",
+          "turnover": 13746.0,
+          "equity": 4248.0,
+          "profit": -499.0,
+          "employees": 1.0,
+          "margin": -3.6301469518405356,
+          "turnoverPerEmployee": 13746.0
+        }
+      ]
+    },
+    {
+      "name": "Võrtsukala OÜ",
+      "registryCode": "11464079",
+      "website": null,
+      "note": "REGISTRY CODE NOT VERIFIED — excluded from matching until corrected",
+      "dataStatus": "ok",
+      "latest": {
+        "reportId": "3514863",
+        "year": 2025,
+        "submitted": "2025-12-31T00:00:00.000",
+        "turnover": 170589.0,
+        "equity": 60698.0,
+        "profit": -250201.0,
+        "employees": 5.0,
+        "margin": -146.66889424288786,
+        "turnoverPerEmployee": 34117.8
+      },
+      "history": [
+        {
+          "reportId": "3514863",
+          "year": 2025,
+          "submitted": "2025-12-31T00:00:00.000",
+          "turnover": 170589.0,
+          "equity": 60698.0,
+          "profit": -250201.0,
+          "employees": 5.0,
+          "margin": -146.66889424288786,
+          "turnoverPerEmployee": 34117.8
+        },
+        {
+          "reportId": "3297145",
+          "year": 2024,
+          "submitted": "2024-12-31T00:00:00.000",
+          "turnover": 227702.0,
+          "equity": 320899.0,
+          "profit": 62485.0,
+          "employees": 7.0,
+          "margin": 27.44156836567092,
+          "turnoverPerEmployee": 32528.85714285714
+        },
+        {
+          "reportId": "3019500",
+          "year": 2023,
+          "submitted": "2023-12-31T00:00:00.000",
+          "turnover": 304516.0,
+          "equity": 361450.0,
+          "profit": 77205.0,
+          "employees": 7.0,
+          "margin": 25.353347607350678,
+          "turnoverPerEmployee": 43502.28571428572
+        },
+        {
+          "reportId": "2656053",
+          "year": 2022,
+          "submitted": "2022-12-31T00:00:00.000",
+          "turnover": 303834.0,
+          "equity": 332005.0,
+          "profit": 46115.0,
+          "employees": 8.0,
+          "margin": 15.177695715423553,
+          "turnoverPerEmployee": 37979.25
+        },
+        {
+          "reportId": "2413372",
+          "year": 2021,
+          "submitted": "2021-12-31T00:00:00.000",
+          "turnover": 144296.0,
+          "equity": 359786.0,
+          "profit": 31964.0,
+          "employees": 7.0,
+          "margin": 22.151688196485004,
+          "turnoverPerEmployee": 20613.714285714286
+        },
+        {
+          "reportId": "2126009",
+          "year": 2020,
+          "submitted": "2020-12-31T00:00:00.000",
+          "turnover": 109247.0,
+          "equity": 276926.0,
+          "profit": 85497.0,
+          "employees": 4.0,
+          "margin": 78.26027259329776,
+          "turnoverPerEmployee": 27311.75
+        },
+        {
+          "reportId": "1736903",
+          "year": 2019,
+          "submitted": "2019-12-31T00:00:00.000",
+          "turnover": 95328.0,
+          "equity": 191429.0,
+          "profit": 47482.0,
+          "employees": 4.0,
+          "margin": 49.80908022826452,
+          "turnoverPerEmployee": 23832.0
+        }
+      ]
+    },
+    {
+      "name": "Osaühing MoJunk",
+      "registryCode": "11335790",
+      "website": null,
+      "note": "registry_code_verified_from_search",
+      "dataStatus": "ok",
+      "latest": {
+        "reportId": "3455078",
+        "year": 2025,
+        "submitted": "2025-12-31T00:00:00.000",
+        "turnover": 158884.0,
+        "equity": 2594.0,
+        "profit": 119.0,
+        "employees": 5.0,
+        "margin": 0.07489740943077969,
+        "turnoverPerEmployee": 31776.8
+      },
+      "history": [
+        {
+          "reportId": "3455078",
+          "year": 2025,
+          "submitted": "2025-12-31T00:00:00.000",
+          "turnover": 158884.0,
+          "equity": 2594.0,
+          "profit": 119.0,
+          "employees": 5.0,
+          "margin": 0.07489740943077969,
+          "turnoverPerEmployee": 31776.8
+        },
+        {
+          "reportId": "3183606",
+          "year": 2024,
+          "submitted": "2024-12-31T00:00:00.000",
+          "turnover": 156639.0,
+          "equity": 2556.0,
+          "profit": -13005.0,
+          "employees": 5.0,
+          "margin": -8.302530021259074,
+          "turnoverPerEmployee": 31327.8
+        },
+        {
+          "reportId": "2823764",
+          "year": 2023,
+          "submitted": "2023-12-31T00:00:00.000",
+          "turnover": 25577.0,
+          "equity": 15480.0,
+          "profit": 12857.0,
+          "employees": 1.0,
+          "margin": 50.26781874340227,
+          "turnoverPerEmployee": 25577.0
+        },
+        {
+          "reportId": "2485739",
+          "year": 2022,
+          "submitted": "2022-12-31T00:00:00.000",
+          "turnover": 18550.0,
+          "equity": 2622.0,
+          "profit": 66.0,
+          "employees": 1.0,
+          "margin": 0.3557951482479784,
+          "turnoverPerEmployee": 18550.0
+        },
+        {
+          "reportId": "2253212",
+          "year": 2021,
+          "submitted": "2021-12-31T00:00:00.000",
+          "turnover": 15733.0,
+          "equity": 2557.0,
+          "profit": -3507.0,
+          "employees": 1.0,
+          "margin": -22.290726498442766,
+          "turnoverPerEmployee": 15733.0
+        },
+        {
+          "reportId": "1891578",
+          "year": 2020,
+          "submitted": "2020-12-31T00:00:00.000",
+          "turnover": 26700.0,
+          "equity": 6064.0,
+          "profit": 3215.0,
+          "employees": 1.0,
+          "margin": 12.041198501872659,
+          "turnoverPerEmployee": 26700.0
+        },
+        {
+          "reportId": "1777079",
+          "year": 2019,
+          "submitted": "2019-12-31T00:00:00.000",
+          "turnover": 10587.0,
+          "equity": 2849.0,
+          "profit": -105.0,
+          "employees": 1.0,
+          "margin": -0.9917823746103713,
+          "turnoverPerEmployee": 10587.0
+        }
+      ]
+    },
+    {
+      "name": "BM Nord OÜ",
+      "registryCode": "12300606",
+      "website": null,
+      "note": "REGISTRY CODE NOT VERIFIED — excluded from matching until corrected",
+      "dataStatus": "ok",
+      "latest": {
+        "reportId": "3557494",
+        "year": 2025,
+        "submitted": "2025-12-31T00:00:00.000",
+        "turnover": 137552.0,
+        "equity": 39489.0,
+        "profit": -28262.0,
+        "employees": 2.0,
+        "margin": -20.54641153890892,
+        "turnoverPerEmployee": 68776.0
+      },
+      "history": [
+        {
+          "reportId": "3557494",
+          "year": 2025,
+          "submitted": "2025-12-31T00:00:00.000",
+          "turnover": 137552.0,
+          "equity": 39489.0,
+          "profit": -28262.0,
+          "employees": 2.0,
+          "margin": -20.54641153890892,
+          "turnoverPerEmployee": 68776.0
+        },
+        {
+          "reportId": "3193863",
+          "year": 2024,
+          "submitted": "2024-12-31T00:00:00.000",
+          "turnover": 115473.0,
+          "equity": 67751.0,
+          "profit": -29860.0,
+          "employees": 2.0,
+          "margin": -25.858858780840542,
+          "turnoverPerEmployee": 57736.5
+        },
+        {
+          "reportId": "2960070",
+          "year": 2023,
+          "submitted": "2023-12-31T00:00:00.000",
+          "turnover": 165333.0,
+          "equity": 98020.0,
+          "profit": -42497.0,
+          "employees": 1.0,
+          "margin": -25.703882467504975,
+          "turnoverPerEmployee": 165333.0
+        },
+        {
+          "reportId": "2605115",
+          "year": 2022,
+          "submitted": "2022-12-31T00:00:00.000",
+          "turnover": 230702.0,
+          "equity": 140517.0,
+          "profit": -16642.0,
+          "employees": 0.0,
+          "margin": -7.213634905635842,
+          "turnoverPerEmployee": null
+        },
+        {
+          "reportId": "2392546",
+          "year": 2021,
+          "submitted": "2021-12-31T00:00:00.000",
+          "turnover": 228012.0,
+          "equity": 157158.0,
+          "profit": 79782.0,
+          "employees": 1.0,
+          "margin": 34.990263670333135,
+          "turnoverPerEmployee": 228012.0
+        },
+        {
+          "reportId": "2093363",
+          "year": 2020,
+          "submitted": "2020-12-31T00:00:00.000",
+          "turnover": 126270.0,
+          "equity": 77376.0,
+          "profit": 71244.0,
+          "employees": 1.0,
+          "margin": 56.421952957947255,
+          "turnoverPerEmployee": 126270.0
+        },
+        {
+          "reportId": "1815155",
+          "year": 2019,
+          "submitted": "2019-12-31T00:00:00.000",
+          "turnover": 50712.0,
+          "equity": 6132.0,
+          "profit": 1915.0,
+          "employees": 0.0,
+          "margin": 3.776226534153652,
+          "turnoverPerEmployee": null
+        }
+      ]
+    },
+    {
+      "name": "Osaühing VÕIDUKAAR",
+      "registryCode": "11291377",
+      "website": null,
+      "note": "registry_code_verified_from_search",
+      "dataStatus": "ok",
+      "latest": {
+        "reportId": "3456200",
+        "year": 2025,
+        "submitted": "2025-12-31T00:00:00.000",
+        "turnover": 136609.0,
+        "equity": 7181.0,
+        "profit": -433.0,
+        "employees": 2.0,
+        "margin": -0.3169630112218082,
+        "turnoverPerEmployee": 68304.5
+      },
+      "history": [
+        {
+          "reportId": "3456200",
+          "year": 2025,
+          "submitted": "2025-12-31T00:00:00.000",
+          "turnover": 136609.0,
+          "equity": 7181.0,
+          "profit": -433.0,
+          "employees": 2.0,
+          "margin": -0.3169630112218082,
+          "turnoverPerEmployee": 68304.5
+        },
+        {
+          "reportId": "3140627",
+          "year": 2024,
+          "submitted": "2024-12-31T00:00:00.000",
+          "turnover": 147193.0,
+          "equity": 7614.0,
+          "profit": 419.0,
+          "employees": 2.0,
+          "margin": 0.28466027596421023,
+          "turnoverPerEmployee": 73596.5
+        },
+        {
+          "reportId": "2834099",
+          "year": 2023,
+          "submitted": "2023-12-31T00:00:00.000",
+          "turnover": 150169.0,
+          "equity": 7195.0,
+          "profit": 2742.0,
+          "employees": 1.0,
+          "margin": 1.8259427711445106,
+          "turnoverPerEmployee": 150169.0
+        },
+        {
+          "reportId": "2522706",
+          "year": 2022,
+          "submitted": "2022-12-31T00:00:00.000",
+          "turnover": 154653.0,
+          "equity": 4453.0,
+          "profit": 1385.0,
+          "employees": 1.0,
+          "margin": 0.8955532708709175,
+          "turnoverPerEmployee": 154653.0
+        },
+        {
+          "reportId": "2210951",
+          "year": 2021,
+          "submitted": "2021-12-31T00:00:00.000",
+          "turnover": 163243.0,
+          "equity": 3068.0,
+          "profit": -658.0,
+          "employees": 1.0,
+          "margin": -0.40308007081467506,
+          "turnoverPerEmployee": 163243.0
+        },
+        {
+          "reportId": "1950751",
+          "year": 2020,
+          "submitted": "2020-12-31T00:00:00.000",
+          "turnover": 151715.0,
+          "equity": 3726.0,
+          "profit": -1451.0,
+          "employees": 1.0,
+          "margin": -0.9563985103648288,
+          "turnoverPerEmployee": 151715.0
+        },
+        {
+          "reportId": "1691025",
+          "year": 2019,
+          "submitted": "2019-12-31T00:00:00.000",
+          "turnover": 143012.0,
+          "equity": 5177.0,
+          "profit": -775.0,
+          "employees": 1.0,
+          "margin": -0.5419125667776131,
+          "turnoverPerEmployee": 143012.0
+        }
+      ]
+    },
+    {
+      "name": "AVIKALA OÜ",
+      "registryCode": "14819376",
+      "website": null,
+      "note": "registry_code_verified_from_search",
+      "dataStatus": "ok",
+      "latest": {
+        "reportId": "3464955",
+        "year": 2025,
+        "submitted": "2025-12-31T00:00:00.000",
+        "turnover": 132172.0,
+        "equity": 15439.0,
+        "profit": 789.0,
+        "employees": 0.0,
+        "margin": 0.596949429531217,
+        "turnoverPerEmployee": null
+      },
+      "history": [
+        {
+          "reportId": "3464955",
+          "year": 2025,
+          "submitted": "2025-12-31T00:00:00.000",
+          "turnover": 132172.0,
+          "equity": 15439.0,
+          "profit": 789.0,
+          "employees": 0.0,
+          "margin": 0.596949429531217,
+          "turnoverPerEmployee": null
+        },
+        {
+          "reportId": "3326424",
+          "year": 2024,
+          "submitted": "2024-12-31T00:00:00.000",
+          "turnover": 125539.0,
+          "equity": 14650.0,
+          "profit": 11490.0,
+          "employees": 0.0,
+          "margin": 9.152534272218196,
+          "turnoverPerEmployee": null
+        },
+        {
+          "reportId": "2836869",
+          "year": 2023,
+          "submitted": "2023-12-31T00:00:00.000",
+          "turnover": 58597.0,
+          "equity": 3160.0,
+          "profit": 91.0,
+          "employees": 0.0,
+          "margin": 0.15529805280133796,
+          "turnoverPerEmployee": null
+        },
+        {
+          "reportId": "2499307",
+          "year": 2022,
+          "submitted": "2022-12-31T00:00:00.000",
+          "turnover": 51140.0,
+          "equity": 3069.0,
+          "profit": -4617.0,
+          "employees": 0.0,
+          "margin": -9.028157997653501,
+          "turnoverPerEmployee": null
+        },
+        {
+          "reportId": "2265069",
+          "year": 2021,
+          "submitted": "2021-12-31T00:00:00.000",
+          "turnover": 56752.0,
+          "equity": 7686.0,
+          "profit": 5101.0,
+          "employees": 0.0,
+          "margin": 8.988229489709614,
+          "turnoverPerEmployee": null
+        },
+        {
+          "reportId": "1903488",
+          "year": 2020,
+          "submitted": "2020-12-31T00:00:00.000",
+          "turnover": 18410.0,
+          "equity": 2585.0,
+          "profit": 32.0,
+          "employees": 0.0,
+          "margin": 0.17381857686040195,
+          "turnoverPerEmployee": null
+        },
+        {
+          "reportId": "1687600",
+          "year": 2019,
+          "submitted": "2019-12-31T00:00:00.000",
+          "turnover": 608.0,
+          "equity": 2553.0,
+          "profit": 3.0,
+          "employees": 0.0,
+          "margin": 0.4934210526315789,
+          "turnoverPerEmployee": null
+        }
+      ]
+    },
+    {
+      "name": "Alfred Gurmee OÜ",
+      "registryCode": "12780243",
+      "website": null,
+      "note": "registry_code_verified_from_search",
+      "dataStatus": "ok",
+      "latest": {
+        "reportId": "3611540",
+        "year": 2025,
+        "submitted": "2025-12-31T00:00:00.000",
+        "turnover": 130226.0,
+        "equity": 8018.0,
+        "profit": 2427.0,
+        "employees": 2.0,
+        "margin": 1.863683135472179,
+        "turnoverPerEmployee": 65113.0
+      },
+      "history": [
+        {
+          "reportId": "3611540",
+          "year": 2025,
+          "submitted": "2025-12-31T00:00:00.000",
+          "turnover": 130226.0,
+          "equity": 8018.0,
+          "profit": 2427.0,
+          "employees": 2.0,
+          "margin": 1.863683135472179,
+          "turnoverPerEmployee": 65113.0
+        },
+        {
+          "reportId": "3181320",
+          "year": 2024,
+          "submitted": "2024-12-31T00:00:00.000",
+          "turnover": 85795.0,
+          "equity": 5591.0,
+          "profit": -1267.0,
+          "employees": 1.0,
+          "margin": -1.4767760358995279,
+          "turnoverPerEmployee": 85795.0
+        },
+        {
+          "reportId": "3016476",
+          "year": 2023,
+          "submitted": "2023-12-31T00:00:00.000",
+          "turnover": 85112.0,
+          "equity": 6858.0,
+          "profit": -2045.0,
+          "employees": 1.0,
+          "margin": -2.4027164207162324,
+          "turnoverPerEmployee": 85112.0
+        },
+        {
+          "reportId": "2724565",
+          "year": 2022,
+          "submitted": "2022-12-31T00:00:00.000",
+          "turnover": 90215.0,
+          "equity": 8903.0,
+          "profit": -9161.0,
+          "employees": 1.0,
+          "margin": -10.15463060466663,
+          "turnoverPerEmployee": 90215.0
+        },
+        {
+          "reportId": "2445127",
+          "year": 2021,
+          "submitted": "2021-12-31T00:00:00.000",
+          "turnover": 89838.0,
+          "equity": 18064.0,
+          "profit": -16781.0,
+          "employees": 2.0,
+          "margin": -18.679178076092523,
+          "turnoverPerEmployee": 44919.0
+        },
+        {
+          "reportId": "2062460",
+          "year": 2020,
+          "submitted": "2020-12-31T00:00:00.000",
+          "turnover": 173227.0,
+          "equity": 34845.0,
+          "profit": -15608.0,
+          "employees": 3.0,
+          "margin": -9.010142760655095,
+          "turnoverPerEmployee": 57742.333333333336
+        },
+        {
+          "reportId": "1764260",
+          "year": 2019,
+          "submitted": "2019-12-31T00:00:00.000",
+          "turnover": 199743.0,
+          "equity": 50453.0,
+          "profit": 9480.0,
+          "employees": 5.0,
+          "margin": 4.7460987368768865,
+          "turnoverPerEmployee": 39948.6
+        }
+      ]
+    },
+    {
+      "name": "Merekalur OÜ",
+      "registryCode": "14970742",
+      "website": null,
+      "note": "REGISTRY CODE NOT VERIFIED — excluded from matching until corrected",
+      "dataStatus": "ok",
+      "latest": {
+        "reportId": "3485552",
+        "year": 2025,
+        "submitted": "2025-12-31T00:00:00.000",
+        "turnover": 117542.0,
+        "equity": 56673.0,
+        "profit": 137.0,
+        "employees": 1.0,
+        "margin": 0.11655408279593678,
+        "turnoverPerEmployee": 117542.0
+      },
+      "history": [
+        {
+          "reportId": "3485552",
+          "year": 2025,
+          "submitted": "2025-12-31T00:00:00.000",
+          "turnover": 117542.0,
+          "equity": 56673.0,
+          "profit": 137.0,
+          "employees": 1.0,
+          "margin": 0.11655408279593678,
+          "turnoverPerEmployee": 117542.0
+        },
+        {
+          "reportId": "3097906",
+          "year": 2024,
+          "submitted": "2024-12-31T00:00:00.000",
+          "turnover": 82326.0,
+          "equity": 56536.0,
+          "profit": 83.0,
+          "employees": 1.0,
+          "margin": 0.10081869640210868,
+          "turnoverPerEmployee": 82326.0
+        },
+        {
+          "reportId": "2982134",
+          "year": 2023,
+          "submitted": "2023-12-31T00:00:00.000",
+          "turnover": 20815.0,
+          "equity": 56590.0,
+          "profit": -26156.0,
+          "employees": 1.0,
+          "margin": -125.65938025462407,
+          "turnoverPerEmployee": 20815.0
+        },
+        {
+          "reportId": "2679729",
+          "year": 2022,
+          "submitted": "2022-12-31T00:00:00.000",
+          "turnover": 41370.0,
+          "equity": 82745.0,
+          "profit": 55678.0,
+          "employees": 1.0,
+          "margin": 134.585448392555,
+          "turnoverPerEmployee": 41370.0
+        },
+        {
+          "reportId": "2408592",
+          "year": 2021,
+          "submitted": "2021-12-31T00:00:00.000",
+          "turnover": 48934.0,
+          "equity": 27068.0,
+          "profit": 24251.0,
+          "employees": 1.0,
+          "margin": 49.55858912003924,
+          "turnoverPerEmployee": 48934.0
+        },
+        {
+          "reportId": "1980791",
+          "year": 2020,
+          "submitted": "2020-12-31T00:00:00.000",
+          "turnover": 5605.0,
+          "equity": 2817.0,
+          "profit": 316.0,
+          "employees": 0.0,
+          "margin": 5.637823371989295,
+          "turnoverPerEmployee": null
+        }
+      ]
+    },
+    {
+      "name": "Rahvakala OÜ",
+      "registryCode": "12399734",
+      "website": null,
+      "note": "registry_code_verified_from_search",
+      "dataStatus": "ok",
+      "latest": {
+        "reportId": "3490960",
+        "year": 2025,
+        "submitted": "2025-12-31T00:00:00.000",
+        "turnover": 113575.0,
+        "equity": 4046.0,
+        "profit": 1268.0,
+        "employees": 2.0,
+        "margin": 1.1164428791547436,
+        "turnoverPerEmployee": 56787.5
+      },
+      "history": [
+        {
+          "reportId": "3490960",
+          "year": 2025,
+          "submitted": "2025-12-31T00:00:00.000",
+          "turnover": 113575.0,
+          "equity": 4046.0,
+          "profit": 1268.0,
+          "employees": 2.0,
+          "margin": 1.1164428791547436,
+          "turnoverPerEmployee": 56787.5
+        },
+        {
+          "reportId": "3098824",
+          "year": 2024,
+          "submitted": "2024-12-31T00:00:00.000",
+          "turnover": 133670.0,
+          "equity": 2778.0,
+          "profit": 524.0,
+          "employees": 3.0,
+          "margin": 0.3920101743098676,
+          "turnoverPerEmployee": 44556.666666666664
+        },
+        {
+          "reportId": "2855231",
+          "year": 2023,
+          "submitted": "2023-12-31T00:00:00.000",
+          "turnover": 133098.0,
+          "equity": 2254.0,
+          "profit": -1791.0,
+          "employees": 3.0,
+          "margin": -1.3456250281747284,
+          "turnoverPerEmployee": 44366.0
+        },
+        {
+          "reportId": "2504961",
+          "year": 2022,
+          "submitted": "2022-12-31T00:00:00.000",
+          "turnover": 116710.0,
+          "equity": 4045.0,
+          "profit": 1176.0,
+          "employees": 2.0,
+          "margin": 1.0076257390112244,
+          "turnoverPerEmployee": 58355.0
+        },
+        {
+          "reportId": "2318547",
+          "year": 2021,
+          "submitted": "2021-12-31T00:00:00.000",
+          "turnover": 104924.0,
+          "equity": 2869.0,
+          "profit": 663.0,
+          "employees": 2.0,
+          "margin": 0.6318859364873624,
+          "turnoverPerEmployee": 52462.0
+        },
+        {
+          "reportId": "2001662",
+          "year": 2020,
+          "submitted": "2020-12-31T00:00:00.000",
+          "turnover": 79832.0,
+          "equity": 2206.0,
+          "profit": -224.0,
+          "employees": 3.0,
+          "margin": -0.2805892373985369,
+          "turnoverPerEmployee": 26610.666666666668
+        },
+        {
+          "reportId": "1733974",
+          "year": 2019,
+          "submitted": "2019-12-31T00:00:00.000",
+          "turnover": 117673.0,
+          "equity": 2430.0,
+          "profit": -2987.0,
+          "employees": 3.0,
+          "margin": -2.5383902849421704,
+          "turnoverPerEmployee": 39224.333333333336
+        }
+      ]
+    },
+    {
+      "name": "Osaühing Forellipüük",
+      "registryCode": "11167173",
+      "website": null,
+      "note": "registry_code_verified_from_search",
+      "dataStatus": "ok",
+      "latest": {
+        "reportId": "3583029",
+        "year": 2025,
+        "submitted": "2025-12-31T00:00:00.000",
+        "turnover": 111174.0,
+        "equity": 44850.0,
+        "profit": -24534.0,
+        "employees": 2.0,
+        "margin": -22.06810945005127,
+        "turnoverPerEmployee": 55587.0
+      },
+      "history": [
+        {
+          "reportId": "3583029",
+          "year": 2025,
+          "submitted": "2025-12-31T00:00:00.000",
+          "turnover": 111174.0,
+          "equity": 44850.0,
+          "profit": -24534.0,
+          "employees": 2.0,
+          "margin": -22.06810945005127,
+          "turnoverPerEmployee": 55587.0
+        },
+        {
+          "reportId": "3254774",
+          "year": 2024,
+          "submitted": "2024-12-31T00:00:00.000",
+          "turnover": 165890.0,
+          "equity": 69383.0,
+          "profit": -57447.0,
+          "employees": 2.0,
+          "margin": -34.62957381397311,
+          "turnoverPerEmployee": 82945.0
+        },
+        {
+          "reportId": "2969517",
+          "year": 2023,
+          "submitted": "2023-12-31T00:00:00.000",
+          "turnover": 209559.0,
+          "equity": 126830.0,
+          "profit": 55080.0,
+          "employees": 2.0,
+          "margin": 26.2837673399854,
+          "turnoverPerEmployee": 104779.5
+        },
+        {
+          "reportId": "2574998",
+          "year": 2022,
+          "submitted": "2022-12-31T00:00:00.000",
+          "turnover": 157642.0,
+          "equity": 71750.0,
+          "profit": 27393.0,
+          "employees": 2.0,
+          "margin": 17.37671432740006,
+          "turnoverPerEmployee": 78821.0
+        },
+        {
+          "reportId": "2352422",
+          "year": 2021,
+          "submitted": "2021-12-31T00:00:00.000",
+          "turnover": 130329.0,
+          "equity": 44357.0,
+          "profit": 3341.0,
+          "employees": 2.0,
+          "margin": 2.5635123418425674,
+          "turnoverPerEmployee": 65164.5
+        },
+        {
+          "reportId": "2075070",
+          "year": 2020,
+          "submitted": "2020-12-31T00:00:00.000",
+          "turnover": 165321.0,
+          "equity": 41016.0,
+          "profit": 36233.0,
+          "employees": 2.0,
+          "margin": 21.916755887031897,
+          "turnoverPerEmployee": 82660.5
+        },
+        {
+          "reportId": "1755176",
+          "year": 2019,
+          "submitted": "2019-12-31T00:00:00.000",
+          "turnover": 141566.0,
+          "equity": 4783.0,
+          "profit": 1315.0,
+          "employees": 2.0,
+          "margin": 0.9288953562296032,
+          "turnoverPerEmployee": 70783.0
+        }
+      ]
+    },
+    {
+      "name": "OÜ UNODOR",
+      "registryCode": "11127092",
+      "website": null,
+      "note": "registry_code_verified_from_search",
+      "dataStatus": "ok",
+      "latest": {
+        "reportId": "3441291",
+        "year": 2025,
+        "submitted": "2025-12-31T00:00:00.000",
+        "turnover": 110891.0,
+        "equity": 30856.0,
+        "profit": 1314.0,
+        "employees": 3.0,
+        "margin": 1.184947380761288,
+        "turnoverPerEmployee": 36963.666666666664
+      },
+      "history": [
+        {
+          "reportId": "3441291",
+          "year": 2025,
+          "submitted": "2025-12-31T00:00:00.000",
+          "turnover": 110891.0,
+          "equity": 30856.0,
+          "profit": 1314.0,
+          "employees": 3.0,
+          "margin": 1.184947380761288,
+          "turnoverPerEmployee": 36963.666666666664
+        },
+        {
+          "reportId": "3101710",
+          "year": 2024,
+          "submitted": "2024-12-31T00:00:00.000",
+          "turnover": 114588.0,
+          "equity": 29542.0,
+          "profit": 845.0,
+          "employees": 3.0,
+          "margin": 0.7374245121653227,
+          "turnoverPerEmployee": 38196.0
+        },
+        {
+          "reportId": "2834151",
+          "year": 2023,
+          "submitted": "2023-12-31T00:00:00.000",
+          "turnover": 115395.0,
+          "equity": 35697.0,
+          "profit": 1330.0,
+          "employees": 3.0,
+          "margin": 1.1525629360024265,
+          "turnoverPerEmployee": 38465.0
+        },
+        {
+          "reportId": "2483212",
+          "year": 2022,
+          "submitted": "2022-12-31T00:00:00.000",
+          "turnover": 84444.0,
+          "equity": 34367.0,
+          "profit": 1703.0,
+          "employees": 3.0,
+          "margin": 2.0167211406375825,
+          "turnoverPerEmployee": 28148.0
+        },
+        {
+          "reportId": "2195633",
+          "year": 2021,
+          "submitted": "2021-12-31T00:00:00.000",
+          "turnover": 89250.0,
+          "equity": 32664.0,
+          "profit": 2896.0,
+          "employees": 3.0,
+          "margin": 3.2448179271708684,
+          "turnoverPerEmployee": 29750.0
+        },
+        {
+          "reportId": "1911918",
+          "year": 2020,
+          "submitted": "2020-12-31T00:00:00.000",
+          "turnover": 77071.0,
+          "equity": 29769.0,
+          "profit": 1440.0,
+          "employees": 3.0,
+          "margin": 1.868407053236626,
+          "turnoverPerEmployee": 25690.333333333332
+        },
+        {
+          "reportId": "1688130",
+          "year": 2019,
+          "submitted": "2019-12-31T00:00:00.000",
+          "turnover": 97169.0,
+          "equity": 28329.0,
+          "profit": 1846.0,
+          "employees": 4.0,
+          "margin": 1.8997828525558562,
+          "turnoverPerEmployee": 24292.25
+        }
+      ]
+    },
+    {
+      "name": "OÜ Luigelahe Kaubandus",
+      "registryCode": "11945175",
+      "website": null,
+      "note": "registry_code_verified_from_search",
+      "dataStatus": "ok",
+      "latest": {
+        "reportId": "3497184",
+        "year": 2025,
+        "submitted": "2025-12-31T00:00:00.000",
+        "turnover": 102743.0,
+        "equity": 20794.0,
+        "profit": -1054.0,
+        "employees": 2.0,
+        "margin": -1.02586064257419,
+        "turnoverPerEmployee": 51371.5
+      },
+      "history": [
+        {
+          "reportId": "3497184",
+          "year": 2025,
+          "submitted": "2025-12-31T00:00:00.000",
+          "turnover": 102743.0,
+          "equity": 20794.0,
+          "profit": -1054.0,
+          "employees": 2.0,
+          "margin": -1.02586064257419,
+          "turnoverPerEmployee": 51371.5
+        },
+        {
+          "reportId": "3154326",
+          "year": 2024,
+          "submitted": "2024-12-31T00:00:00.000",
+          "turnover": 115007.0,
+          "equity": 21848.0,
+          "profit": -2935.0,
+          "employees": 2.0,
+          "margin": -2.552018572782526,
+          "turnoverPerEmployee": 57503.5
+        },
+        {
+          "reportId": "2814998",
+          "year": 2023,
+          "submitted": "2023-12-31T00:00:00.000",
+          "turnover": 113669.0,
+          "equity": 24783.0,
+          "profit": -1948.0,
+          "employees": 2.0,
+          "margin": -1.7137478116285003,
+          "turnoverPerEmployee": 56834.5
+        },
+        {
+          "reportId": "2495280",
+          "year": 2022,
+          "submitted": "2022-12-31T00:00:00.000",
+          "turnover": 130617.0,
+          "equity": 26731.0,
+          "profit": 18.0,
+          "employees": 2.0,
+          "margin": 0.013780748294632397,
+          "turnoverPerEmployee": 65308.5
+        },
+        {
+          "reportId": "2229869",
+          "year": 2021,
+          "submitted": "2021-12-31T00:00:00.000",
+          "turnover": 134104.0,
+          "equity": 26714.0,
+          "profit": 5970.0,
+          "employees": 2.0,
+          "margin": 4.451768776471992,
+          "turnoverPerEmployee": 67052.0
+        },
+        {
+          "reportId": "1901263",
+          "year": 2020,
+          "submitted": "2020-12-31T00:00:00.000",
+          "turnover": 133040.0,
+          "equity": 20744.0,
+          "profit": 6715.0,
+          "employees": 2.0,
+          "margin": 5.047354179194227,
+          "turnoverPerEmployee": 66520.0
+        },
+        {
+          "reportId": "1774609",
+          "year": 2019,
+          "submitted": "2019-12-31T00:00:00.000",
+          "turnover": 115940.0,
+          "equity": 14028.0,
+          "profit": 3951.0,
+          "employees": 3.0,
+          "margin": 3.4077971364498882,
+          "turnoverPerEmployee": 38646.666666666664
+        }
+      ]
+    },
+    {
+      "name": "VALKET OÜ",
+      "registryCode": "10756733",
+      "website": null,
+      "note": "REGISTRY CODE NOT VERIFIED — excluded from matching until corrected",
+      "dataStatus": "ok",
+      "latest": {
+        "reportId": "3592815",
+        "year": 2025,
+        "submitted": "2025-12-31T00:00:00.000",
+        "turnover": 102189.0,
+        "equity": 2641.0,
+        "profit": -219.0,
+        "employees": 1.0,
+        "margin": -0.21430878078853888,
+        "turnoverPerEmployee": 102189.0
+      },
+      "history": [
+        {
+          "reportId": "3592815",
+          "year": 2025,
+          "submitted": "2025-12-31T00:00:00.000",
+          "turnover": 102189.0,
+          "equity": 2641.0,
+          "profit": -219.0,
+          "employees": 1.0,
+          "margin": -0.21430878078853888,
+          "turnoverPerEmployee": 102189.0
+        },
+        {
+          "reportId": "3202802",
+          "year": 2024,
+          "submitted": "2024-12-31T00:00:00.000",
+          "turnover": 90905.0,
+          "equity": 2860.0,
+          "profit": -9047.0,
+          "employees": 1.0,
+          "margin": -9.9521478466531,
+          "turnoverPerEmployee": 90905.0
+        },
+        {
+          "reportId": "2938971",
+          "year": 2023,
+          "submitted": "2023-12-31T00:00:00.000",
+          "turnover": 100816.0,
+          "equity": 11907.0,
+          "profit": -7926.0,
+          "employees": 2.0,
+          "margin": -7.861847325821299,
+          "turnoverPerEmployee": 50408.0
+        },
+        {
+          "reportId": "2556935",
+          "year": 2022,
+          "submitted": "2022-12-31T00:00:00.000",
+          "turnover": 90979.0,
+          "equity": 19833.0,
+          "profit": 16154.0,
+          "employees": 1.0,
+          "margin": 17.75574583145561,
+          "turnoverPerEmployee": 90979.0
+        },
+        {
+          "reportId": "2291018",
+          "year": 2021,
+          "submitted": "2021-12-31T00:00:00.000",
+          "turnover": 97053.0,
+          "equity": 3679.0,
+          "profit": 282.0,
+          "employees": 1.0,
+          "margin": 0.29056288831875365,
+          "turnoverPerEmployee": 97053.0
+        },
+        {
+          "reportId": "2024133",
+          "year": 2020,
+          "submitted": "2020-12-31T00:00:00.000",
+          "turnover": 101725.0,
+          "equity": 3397.0,
+          "profit": 8.0,
+          "employees": 1.0,
+          "margin": 0.00786434013271074,
+          "turnoverPerEmployee": 101725.0
+        },
+        {
+          "reportId": "1749319",
+          "year": 2019,
+          "submitted": "2019-12-31T00:00:00.000",
+          "turnover": 88575.0,
+          "equity": 3389.0,
+          "profit": 710.0,
+          "employees": 1.0,
+          "margin": 0.8015805814281682,
+          "turnoverPerEmployee": 88575.0
+        }
+      ]
+    },
+    {
+      "name": "HilFish OÜ",
+      "registryCode": "16503074",
+      "website": null,
+      "note": "registry_code_verified_from_search",
+      "dataStatus": "ok",
+      "latest": {
+        "reportId": "3493073",
+        "year": 2025,
+        "submitted": "2025-12-31T00:00:00.000",
+        "turnover": 97727.0,
+        "equity": 58941.0,
+        "profit": 20853.0,
+        "employees": 1.0,
+        "margin": 21.338013036315452,
+        "turnoverPerEmployee": 97727.0
+      },
+      "history": [
+        {
+          "reportId": "3493073",
+          "year": 2025,
+          "submitted": "2025-12-31T00:00:00.000",
+          "turnover": 97727.0,
+          "equity": 58941.0,
+          "profit": 20853.0,
+          "employees": 1.0,
+          "margin": 21.338013036315452,
+          "turnoverPerEmployee": 97727.0
+        },
+        {
+          "reportId": "3171194",
+          "year": 2024,
+          "submitted": "2024-12-31T00:00:00.000",
+          "turnover": 101511.0,
+          "equity": 38087.0,
+          "profit": 19557.0,
+          "employees": 2.0,
+          "margin": 19.265892366344534,
+          "turnoverPerEmployee": 50755.5
+        },
+        {
+          "reportId": "2855070",
+          "year": 2023,
+          "submitted": "2023-12-31T00:00:00.000",
+          "turnover": 42359.0,
+          "equity": 18530.0,
+          "profit": 13187.0,
+          "employees": 1.0,
+          "margin": 31.131518685521375,
+          "turnoverPerEmployee": 42359.0
+        },
+        {
+          "reportId": "2511870",
+          "year": 2022,
+          "submitted": "2022-12-31T00:00:00.000",
+          "turnover": 18286.0,
+          "equity": 5343.0,
+          "profit": 5343.0,
+          "employees": 1.0,
+          "margin": 29.21907470195778,
+          "turnoverPerEmployee": 18286.0
+        }
+      ]
+    },
+    {
+      "name": "Isabella Capital OÜ",
+      "registryCode": "14791595",
+      "website": null,
+      "note": "registry_code_verified_from_search",
+      "dataStatus": "ok",
+      "latest": {
+        "reportId": "3444428",
+        "year": 2025,
+        "submitted": "2025-12-31T00:00:00.000",
+        "turnover": 85839.0,
+        "equity": 367094.0,
+        "profit": 96619.0,
+        "employees": 2.0,
+        "margin": 112.55839420310116,
+        "turnoverPerEmployee": 42919.5
+      },
+      "history": [
+        {
+          "reportId": "3444428",
+          "year": 2025,
+          "submitted": "2025-12-31T00:00:00.000",
+          "turnover": 85839.0,
+          "equity": 367094.0,
+          "profit": 96619.0,
+          "employees": 2.0,
+          "margin": 112.55839420310116,
+          "turnoverPerEmployee": 42919.5
+        },
+        {
+          "reportId": "3189868",
+          "year": 2024,
+          "submitted": "2024-12-31T00:00:00.000",
+          "turnover": 34790.0,
+          "equity": 244162.0,
+          "profit": 12332.0,
+          "employees": 1.0,
+          "margin": 35.44696751940213,
+          "turnoverPerEmployee": 34790.0
+        },
+        {
+          "reportId": "2959353",
+          "year": 2023,
+          "submitted": "2023-12-31T00:00:00.000",
+          "turnover": 9367.0,
+          "equity": 143535.0,
+          "profit": 6649.0,
+          "employees": 0.0,
+          "margin": 70.98323903063948,
+          "turnoverPerEmployee": null
+        },
+        {
+          "reportId": "2557470",
+          "year": 2022,
+          "submitted": "2022-12-31T00:00:00.000",
+          "turnover": null,
+          "equity": 5776.0,
+          "profit": 1930.0,
+          "employees": 0.0,
+          "margin": null,
+          "turnoverPerEmployee": null
+        },
+        {
+          "reportId": "2364886",
+          "year": 2021,
+          "submitted": "2021-12-31T00:00:00.000",
+          "turnover": null,
+          "equity": 3846.0,
+          "profit": 934.0,
+          "employees": 0.0,
+          "margin": null,
+          "turnoverPerEmployee": null
+        },
+        {
+          "reportId": "2127486",
+          "year": 2020,
+          "submitted": "2020-12-31T00:00:00.000",
+          "turnover": null,
+          "equity": 2912.0,
+          "profit": 412.0,
+          "employees": 0.0,
+          "margin": null,
+          "turnoverPerEmployee": null
+        }
+      ]
+    },
+    {
+      "name": "Fornax OÜ",
+      "registryCode": "12531837",
+      "website": null,
+      "note": "REGISTRY CODE NOT VERIFIED — excluded from matching until corrected",
+      "dataStatus": "ok",
+      "latest": {
+        "reportId": "3573440",
+        "year": 2025,
+        "submitted": "2025-12-31T00:00:00.000",
+        "turnover": 82154.0,
+        "equity": 2914.0,
+        "profit": -3512.0,
+        "employees": 2.0,
+        "margin": -4.274898361613555,
+        "turnoverPerEmployee": 41077.0
+      },
+      "history": [
+        {
+          "reportId": "3573440",
+          "year": 2025,
+          "submitted": "2025-12-31T00:00:00.000",
+          "turnover": 82154.0,
+          "equity": 2914.0,
+          "profit": -3512.0,
+          "employees": 2.0,
+          "margin": -4.274898361613555,
+          "turnoverPerEmployee": 41077.0
+        },
+        {
+          "reportId": "3292197",
+          "year": 2024,
+          "submitted": "2024-12-31T00:00:00.000",
+          "turnover": 103418.0,
+          "equity": 6426.0,
+          "profit": -21637.0,
+          "employees": 3.0,
+          "margin": -20.921889806416676,
+          "turnoverPerEmployee": 34472.666666666664
+        },
+        {
+          "reportId": "2786672",
+          "year": 2023,
+          "submitted": "2023-12-31T00:00:00.000",
+          "turnover": 147566.0,
+          "equity": 28198.0,
+          "profit": -6983.0,
+          "employees": 3.0,
+          "margin": -4.732119865009555,
+          "turnoverPerEmployee": 49188.666666666664
+        },
+        {
+          "reportId": "2632500",
+          "year": 2022,
+          "submitted": "2022-12-31T00:00:00.000",
+          "turnover": 213800.0,
+          "equity": 35182.0,
+          "profit": 12139.0,
+          "employees": 3.0,
+          "margin": 5.677736202057998,
+          "turnoverPerEmployee": 71266.66666666667
+        },
+        {
+          "reportId": "2380605",
+          "year": 2021,
+          "submitted": "2021-12-31T00:00:00.000",
+          "turnover": 238305.0,
+          "equity": 23042.0,
+          "profit": -7385.0,
+          "employees": 3.0,
+          "margin": -3.098969807599505,
+          "turnoverPerEmployee": 79435.0
+        },
+        {
+          "reportId": "2032891",
+          "year": 2020,
+          "submitted": "2020-12-31T00:00:00.000",
+          "turnover": 92423.0,
+          "equity": 26943.0,
+          "profit": -26154.0,
+          "employees": 3.0,
+          "margin": -28.29815089317594,
+          "turnoverPerEmployee": 30807.666666666668
+        },
+        {
+          "reportId": "1815860",
+          "year": 2019,
+          "submitted": "2019-12-31T00:00:00.000",
+          "turnover": 130909.0,
+          "equity": 53096.0,
+          "profit": 13739.0,
+          "employees": 2.0,
+          "margin": 10.495076732692175,
+          "turnoverPerEmployee": 65454.5
+        }
+      ]
+    },
+    {
+      "name": "Leokitalu OÜ",
+      "registryCode": "12085237",
+      "website": null,
+      "note": "registry_code_verified_from_search",
+      "dataStatus": "ok",
+      "latest": {
+        "reportId": "3412473",
+        "year": 2025,
+        "submitted": "2025-12-31T00:00:00.000",
+        "turnover": 81598.0,
+        "equity": 147641.0,
+        "profit": 7956.0,
+        "employees": 1.0,
+        "margin": 9.7502389764455,
+        "turnoverPerEmployee": 81598.0
+      },
+      "history": [
+        {
+          "reportId": "3412473",
+          "year": 2025,
+          "submitted": "2025-12-31T00:00:00.000",
+          "turnover": 81598.0,
+          "equity": 147641.0,
+          "profit": 7956.0,
+          "employees": 1.0,
+          "margin": 9.7502389764455,
+          "turnoverPerEmployee": 81598.0
+        },
+        {
+          "reportId": "3132697",
+          "year": 2024,
+          "submitted": "2024-12-31T00:00:00.000",
+          "turnover": 114744.0,
+          "equity": 139685.0,
+          "profit": -18917.0,
+          "employees": 1.0,
+          "margin": -16.486265077041065,
+          "turnoverPerEmployee": 114744.0
+        },
+        {
+          "reportId": "2796158",
+          "year": 2023,
+          "submitted": "2023-12-31T00:00:00.000",
+          "turnover": 110224.0,
+          "equity": 158602.0,
+          "profit": -17425.0,
+          "employees": 2.0,
+          "margin": -15.808716794890405,
+          "turnoverPerEmployee": 55112.0
+        },
+        {
+          "reportId": "2502526",
+          "year": 2022,
+          "submitted": "2022-12-31T00:00:00.000",
+          "turnover": 240636.0,
+          "equity": 176027.0,
+          "profit": 2531.0,
+          "employees": 3.0,
+          "margin": 1.051796073737928,
+          "turnoverPerEmployee": 80212.0
+        },
+        {
+          "reportId": "2180111",
+          "year": 2021,
+          "submitted": "2021-12-31T00:00:00.000",
+          "turnover": 177911.0,
+          "equity": 173496.0,
+          "profit": 4255.0,
+          "employees": 4.0,
+          "margin": 2.3916452608326635,
+          "turnoverPerEmployee": 44477.75
+        },
+        {
+          "reportId": "1900963",
+          "year": 2020,
+          "submitted": "2020-12-31T00:00:00.000",
+          "turnover": 206070.0,
+          "equity": 169241.0,
+          "profit": 10386.0,
+          "employees": 5.0,
+          "margin": 5.040034939583637,
+          "turnoverPerEmployee": 41214.0
+        },
+        {
+          "reportId": "1649850",
+          "year": 2019,
+          "submitted": "2019-12-31T00:00:00.000",
+          "turnover": 316657.0,
+          "equity": 158855.0,
+          "profit": 12859.0,
+          "employees": 10.0,
+          "margin": 4.06086080522458,
+          "turnoverPerEmployee": 31665.7
+        }
+      ]
+    },
+    {
+      "name": "OÜ AUSPEX GRUPP",
+      "registryCode": "10943257",
+      "website": null,
+      "note": "registry_code_verified_from_search",
+      "dataStatus": "ok",
+      "latest": {
+        "reportId": "3493712",
+        "year": 2025,
+        "submitted": "2025-12-31T00:00:00.000",
+        "turnover": 69291.0,
+        "equity": 36999.0,
+        "profit": 740.0,
+        "employees": 3.0,
+        "margin": 1.0679597638943008,
+        "turnoverPerEmployee": 23097.0
+      },
+      "history": [
+        {
+          "reportId": "3493712",
+          "year": 2025,
+          "submitted": "2025-12-31T00:00:00.000",
+          "turnover": 69291.0,
+          "equity": 36999.0,
+          "profit": 740.0,
+          "employees": 3.0,
+          "margin": 1.0679597638943008,
+          "turnoverPerEmployee": 23097.0
+        },
+        {
+          "reportId": "3181620",
+          "year": 2024,
+          "submitted": "2024-12-31T00:00:00.000",
+          "turnover": 67318.0,
+          "equity": 36542.0,
+          "profit": 3154.0,
+          "employees": 3.0,
+          "margin": 4.685225348346654,
+          "turnoverPerEmployee": 22439.333333333332
+        },
+        {
+          "reportId": "2943743",
+          "year": 2023,
+          "submitted": "2023-12-31T00:00:00.000",
+          "turnover": 88886.0,
+          "equity": 33388.0,
+          "profit": 5150.0,
+          "employees": 3.0,
+          "margin": 5.793938302994847,
+          "turnoverPerEmployee": 29628.666666666668
+        },
+        {
+          "reportId": "2484999",
+          "year": 2022,
+          "submitted": "2022-12-31T00:00:00.000",
+          "turnover": 72616.0,
+          "equity": 28240.0,
+          "profit": 763.0,
+          "employees": 3.0,
+          "margin": 1.0507326209099923,
+          "turnoverPerEmployee": 24205.333333333332
+        },
+        {
+          "reportId": "2293570",
+          "year": 2021,
+          "submitted": "2021-12-31T00:00:00.000",
+          "turnover": 79535.0,
+          "equity": 27477.0,
+          "profit": 1600.0,
+          "employees": 3.0,
+          "margin": 2.0116929653611617,
+          "turnoverPerEmployee": 26511.666666666668
+        },
+        {
+          "reportId": "2038630",
+          "year": 2020,
+          "submitted": "2020-12-31T00:00:00.000",
+          "turnover": 79066.0,
+          "equity": 25877.0,
+          "profit": 11709.0,
+          "employees": 3.0,
+          "margin": 14.80914678875876,
+          "turnoverPerEmployee": 26355.333333333332
+        },
+        {
+          "reportId": "1775274",
+          "year": 2019,
+          "submitted": "2019-12-31T00:00:00.000",
+          "turnover": 48595.0,
+          "equity": 14169.0,
+          "profit": 7559.0,
+          "employees": 2.0,
+          "margin": 15.555098261137978,
+          "turnoverPerEmployee": 24297.5
+        }
+      ]
+    },
+    {
+      "name": "Kalamehe Rõõm OÜ",
+      "registryCode": "12695059",
+      "website": null,
+      "note": "registry_code_verified_from_search",
+      "dataStatus": "ok",
+      "latest": {
+        "reportId": "3533521",
+        "year": 2025,
+        "submitted": "2025-12-31T00:00:00.000",
+        "turnover": 62113.0,
+        "equity": 24909.0,
+        "profit": -6143.0,
+        "employees": 2.0,
+        "margin": -9.890039122244941,
+        "turnoverPerEmployee": 31056.5
+      },
+      "history": [
+        {
+          "reportId": "3533521",
+          "year": 2025,
+          "submitted": "2025-12-31T00:00:00.000",
+          "turnover": 62113.0,
+          "equity": 24909.0,
+          "profit": -6143.0,
+          "employees": 2.0,
+          "margin": -9.890039122244941,
+          "turnoverPerEmployee": 31056.5
+        },
+        {
+          "reportId": "3187625",
+          "year": 2024,
+          "submitted": "2024-12-31T00:00:00.000",
+          "turnover": 67109.0,
+          "equity": 31250.0,
+          "profit": 9353.0,
+          "employees": 2.0,
+          "margin": 13.937027820411569,
+          "turnoverPerEmployee": 33554.5
+        },
+        {
+          "reportId": "2878113",
+          "year": 2023,
+          "submitted": "2023-12-31T00:00:00.000",
+          "turnover": 74041.0,
+          "equity": 21897.0,
+          "profit": 1752.0,
+          "employees": 2.0,
+          "margin": 2.3662565335422268,
+          "turnoverPerEmployee": 37020.5
+        },
+        {
+          "reportId": "2581295",
+          "year": 2022,
+          "submitted": "2022-12-31T00:00:00.000",
+          "turnover": 59831.0,
+          "equity": 20144.0,
+          "profit": 1399.0,
+          "employees": 2.0,
+          "margin": 2.3382527452324045,
+          "turnoverPerEmployee": 29915.5
+        },
+        {
+          "reportId": "2298450",
+          "year": 2021,
+          "submitted": "2021-12-31T00:00:00.000",
+          "turnover": 62969.0,
+          "equity": 18745.0,
+          "profit": 1153.0,
+          "employees": 2.0,
+          "margin": 1.8310597278025693,
+          "turnoverPerEmployee": 31484.5
+        },
+        {
+          "reportId": "2035250",
+          "year": 2020,
+          "submitted": "2020-12-31T00:00:00.000",
+          "turnover": 59145.0,
+          "equity": 20093.0,
+          "profit": 8081.0,
+          "employees": 2.0,
+          "margin": 13.663031532673935,
+          "turnoverPerEmployee": 29572.5
+        },
+        {
+          "reportId": "1690736",
+          "year": 2019,
+          "submitted": "2019-12-31T00:00:00.000",
+          "turnover": 40803.0,
+          "equity": 12011.0,
+          "profit": 2261.0,
+          "employees": 2.0,
+          "margin": 5.5412592211357,
+          "turnoverPerEmployee": 20401.5
+        }
+      ]
+    },
+    {
+      "name": "Fumus Trade OÜ",
+      "registryCode": "16052447",
+      "website": null,
+      "note": "registry_code_verified_from_search",
+      "dataStatus": "ok",
+      "latest": {
+        "reportId": "3493576",
+        "year": 2025,
+        "submitted": "2025-12-31T00:00:00.000",
+        "turnover": 58228.0,
+        "equity": 198397.0,
+        "profit": 17317.0,
+        "employees": 0.0,
+        "margin": 29.739987634814867,
+        "turnoverPerEmployee": null
+      },
+      "history": [
+        {
+          "reportId": "3493576",
+          "year": 2025,
+          "submitted": "2025-12-31T00:00:00.000",
+          "turnover": 58228.0,
+          "equity": 198397.0,
+          "profit": 17317.0,
+          "employees": 0.0,
+          "margin": 29.739987634814867,
+          "turnoverPerEmployee": null
+        },
+        {
+          "reportId": "3212684",
+          "year": 2024,
+          "submitted": "2024-12-31T00:00:00.000",
+          "turnover": 73418.0,
+          "equity": 181080.0,
+          "profit": 10199.0,
+          "employees": 0.0,
+          "margin": 13.891688686698084,
+          "turnoverPerEmployee": null
+        },
+        {
+          "reportId": "2919849",
+          "year": 2023,
+          "submitted": "2023-12-31T00:00:00.000",
+          "turnover": 61867.0,
+          "equity": 170881.0,
+          "profit": 18326.0,
+          "employees": 0.0,
+          "margin": 29.621607642200203,
+          "turnoverPerEmployee": null
+        },
+        {
+          "reportId": "2556170",
+          "year": 2022,
+          "submitted": "2022-12-31T00:00:00.000",
+          "turnover": 61820.0,
+          "equity": 152555.0,
+          "profit": -1980.0,
+          "employees": 0.0,
+          "margin": -3.202846975088968,
+          "turnoverPerEmployee": null
+        },
+        {
+          "reportId": "2436319",
+          "year": 2021,
+          "submitted": "2021-12-31T00:00:00.000",
+          "turnover": 178830.0,
+          "equity": 154917.0,
+          "profit": 154917.0,
+          "employees": 0.0,
+          "margin": 86.62808253648717,
+          "turnoverPerEmployee": null
+        }
+      ]
+    },
+    {
+      "name": "Sargus OÜ",
+      "registryCode": "14555888",
+      "website": null,
+      "note": "registry_code_verified_from_search",
+      "dataStatus": "ok",
+      "latest": {
+        "reportId": "3632643",
+        "year": 2025,
+        "submitted": "2025-12-31T00:00:00.000",
+        "turnover": 57410.0,
+        "equity": 24526.0,
+        "profit": 8072.0,
+        "employees": 2.0,
+        "margin": 14.060268245950184,
+        "turnoverPerEmployee": 28705.0
+      },
+      "history": [
+        {
+          "reportId": "3632643",
+          "year": 2025,
+          "submitted": "2025-12-31T00:00:00.000",
+          "turnover": 57410.0,
+          "equity": 24526.0,
+          "profit": 8072.0,
+          "employees": 2.0,
+          "margin": 14.060268245950184,
+          "turnoverPerEmployee": 28705.0
+        },
+        {
+          "reportId": "3342217",
+          "year": 2024,
+          "submitted": "2024-12-31T00:00:00.000",
+          "turnover": 51332.0,
+          "equity": 16454.0,
+          "profit": -497.0,
+          "employees": 2.0,
+          "margin": -0.968206966414712,
+          "turnoverPerEmployee": 25666.0
+        },
+        {
+          "reportId": "3025484",
+          "year": 2023,
+          "submitted": "2023-12-31T00:00:00.000",
+          "turnover": 53860.0,
+          "equity": 14450.0,
+          "profit": -871.0,
+          "employees": 3.0,
+          "margin": -1.6171555885629412,
+          "turnoverPerEmployee": 17953.333333333332
+        },
+        {
+          "reportId": "2699965",
+          "year": 2022,
+          "submitted": "2022-12-31T00:00:00.000",
+          "turnover": 32474.0,
+          "equity": 15321.0,
+          "profit": 1837.0,
+          "employees": 3.0,
+          "margin": 5.65683315883476,
+          "turnoverPerEmployee": 10824.666666666666
+        },
+        {
+          "reportId": "2401559",
+          "year": 2021,
+          "submitted": "2021-12-31T00:00:00.000",
+          "turnover": 37434.0,
+          "equity": 13485.0,
+          "profit": 9057.0,
+          "employees": 3.0,
+          "margin": 24.194582465138645,
+          "turnoverPerEmployee": 12478.0
+        },
+        {
+          "reportId": "2116229",
+          "year": 2020,
+          "submitted": "2020-12-31T00:00:00.000",
+          "turnover": 48281.0,
+          "equity": 4428.0,
+          "profit": -294.0,
+          "employees": 3.0,
+          "margin": -0.6089351918974337,
+          "turnoverPerEmployee": 16093.666666666666
+        },
+        {
+          "reportId": "1859908",
+          "year": 2019,
+          "submitted": "2019-12-31T00:00:00.000",
+          "turnover": 47729.0,
+          "equity": 4722.0,
+          "profit": -1347.0,
+          "employees": 3.0,
+          "margin": -2.8221835781181253,
+          "turnoverPerEmployee": 15909.666666666666
+        }
+      ]
+    },
+    {
+      "name": "Alpha Multitrade OÜ",
+      "registryCode": "11726361",
+      "website": null,
+      "note": "REGISTRY CODE NOT VERIFIED — excluded from matching until corrected",
+      "dataStatus": "ok",
+      "latest": {
+        "reportId": "3639076",
+        "year": 2025,
+        "submitted": "2025-12-31T00:00:00.000",
+        "turnover": 57244.0,
+        "equity": 735580.0,
+        "profit": -2602.0,
+        "employees": 4.0,
+        "margin": -4.545454545454546,
+        "turnoverPerEmployee": 14311.0
+      },
+      "history": [
+        {
+          "reportId": "3639076",
+          "year": 2025,
+          "submitted": "2025-12-31T00:00:00.000",
+          "turnover": 57244.0,
+          "equity": 735580.0,
+          "profit": -2602.0,
+          "employees": 4.0,
+          "margin": -4.545454545454546,
+          "turnoverPerEmployee": 14311.0
+        },
+        {
+          "reportId": "3330604",
+          "year": 2024,
+          "submitted": "2024-12-31T00:00:00.000",
+          "turnover": 385565.0,
+          "equity": 760752.0,
+          "profit": 193429.0,
+          "employees": 4.0,
+          "margin": 50.1676760079364,
+          "turnoverPerEmployee": 96391.25
+        },
+        {
+          "reportId": "3062986",
+          "year": 2023,
+          "submitted": "2023-12-31T00:00:00.000",
+          "turnover": 1092663.0,
+          "equity": 686324.0,
+          "profit": 370358.0,
+          "employees": 3.0,
+          "margin": 33.894988665306684,
+          "turnoverPerEmployee": 364221.0
+        },
+        {
+          "reportId": "2519305",
+          "year": 2022,
+          "submitted": "2022-12-31T00:00:00.000",
+          "turnover": 2576682.0,
+          "equity": 467366.0,
+          "profit": 27015.0,
+          "employees": 3.0,
+          "margin": 1.048441367619287,
+          "turnoverPerEmployee": 858894.0
+        },
+        {
+          "reportId": "2296679",
+          "year": 2021,
+          "submitted": "2021-12-31T00:00:00.000",
+          "turnover": 4614157.0,
+          "equity": 527951.0,
+          "profit": 337822.0,
+          "employees": 4.0,
+          "margin": 7.321424043438488,
+          "turnoverPerEmployee": 1153539.25
+        },
+        {
+          "reportId": "1948722",
+          "year": 2020,
+          "submitted": "2020-12-31T00:00:00.000",
+          "turnover": 3965599.0,
+          "equity": 307229.0,
+          "profit": 73049.0,
+          "employees": 4.0,
+          "margin": 1.8420672387702337,
+          "turnoverPerEmployee": 991399.75
+        },
+        {
+          "reportId": "1829270",
+          "year": 2019,
+          "submitted": "2019-12-31T00:00:00.000",
+          "turnover": 2881.0,
+          "equity": 271209.0,
+          "profit": -176232.0,
+          "employees": 4.0,
+          "margin": -6117.042693509198,
+          "turnoverPerEmployee": 720.25
+        }
+      ]
+    },
+    {
+      "name": "Osaühing Bullmann Balti",
+      "registryCode": "11187680",
+      "website": null,
+      "note": "registry_code_verified_from_search",
+      "dataStatus": "ok",
+      "latest": {
+        "reportId": "3390245",
+        "year": 2025,
+        "submitted": "2025-12-31T00:00:00.000",
+        "turnover": 55418.0,
+        "equity": 121704.0,
+        "profit": -10249.0,
+        "employees": 1.0,
+        "margin": -18.493991122018116,
+        "turnoverPerEmployee": 55418.0
+      },
+      "history": [
+        {
+          "reportId": "3390245",
+          "year": 2025,
+          "submitted": "2025-12-31T00:00:00.000",
+          "turnover": 55418.0,
+          "equity": 121704.0,
+          "profit": -10249.0,
+          "employees": 1.0,
+          "margin": -18.493991122018116,
+          "turnoverPerEmployee": 55418.0
+        },
+        {
+          "reportId": "3094408",
+          "year": 2024,
+          "submitted": "2024-12-31T00:00:00.000",
+          "turnover": 73934.0,
+          "equity": 131962.0,
+          "profit": -5795.0,
+          "employees": 1.0,
+          "margin": -7.838071793762004,
+          "turnoverPerEmployee": 73934.0
+        },
+        {
+          "reportId": "2846635",
+          "year": 2023,
+          "submitted": "2023-12-31T00:00:00.000",
+          "turnover": 115022.0,
+          "equity": 137757.0,
+          "profit": 92882.0,
+          "employees": 1.0,
+          "margin": 80.75150840708733,
+          "turnoverPerEmployee": 115022.0
+        },
+        {
+          "reportId": "2462631",
+          "year": 2022,
+          "submitted": "2022-12-31T00:00:00.000",
+          "turnover": 85702.0,
+          "equity": 44892.0,
+          "profit": 12647.0,
+          "employees": 1.0,
+          "margin": 14.756948495951086,
+          "turnoverPerEmployee": 85702.0
+        },
+        {
+          "reportId": "2167366",
+          "year": 2021,
+          "submitted": "2021-12-31T00:00:00.000",
+          "turnover": 65725.0,
+          "equity": 32245.0,
+          "profit": 10338.0,
+          "employees": 1.0,
+          "margin": 15.729174591099277,
+          "turnoverPerEmployee": 65725.0
+        },
+        {
+          "reportId": "1893787",
+          "year": 2020,
+          "submitted": "2020-12-31T00:00:00.000",
+          "turnover": 63813.0,
+          "equity": 21908.0,
+          "profit": -500.0,
+          "employees": 1.0,
+          "margin": -0.783539404196637,
+          "turnoverPerEmployee": 63813.0
+        },
+        {
+          "reportId": "1694894",
+          "year": 2019,
+          "submitted": "2019-12-31T00:00:00.000",
+          "turnover": 71963.0,
+          "equity": 22991.0,
+          "profit": -7367.0,
+          "employees": 1.0,
+          "margin": -10.237205230465655,
+          "turnoverPerEmployee": 71963.0
+        }
+      ]
+    },
+    {
+      "name": "Hõrnas OÜ",
+      "registryCode": "16156833",
+      "website": null,
+      "note": "REGISTRY CODE NOT VERIFIED — excluded from matching until corrected",
+      "dataStatus": "ok",
+      "latest": {
+        "reportId": "3658599",
+        "year": 2025,
+        "submitted": "2025-12-31T00:00:00.000",
+        "turnover": 46314.0,
+        "equity": 2685.0,
+        "profit": -5066.0,
+        "employees": 1.0,
+        "margin": -10.938377164572268,
+        "turnoverPerEmployee": 46314.0
+      },
+      "history": [
+        {
+          "reportId": "3658599",
+          "year": 2025,
+          "submitted": "2025-12-31T00:00:00.000",
+          "turnover": 46314.0,
+          "equity": 2685.0,
+          "profit": -5066.0,
+          "employees": 1.0,
+          "margin": -10.938377164572268,
+          "turnoverPerEmployee": 46314.0
+        },
+        {
+          "reportId": "3233468",
+          "year": 2024,
+          "submitted": "2024-12-31T00:00:00.000",
+          "turnover": 35799.0,
+          "equity": 7751.0,
+          "profit": 5060.0,
+          "employees": 0.0,
+          "margin": 14.134473029972906,
+          "turnoverPerEmployee": null
+        },
+        {
+          "reportId": "3016524",
+          "year": 2023,
+          "submitted": "2023-12-31T00:00:00.000",
+          "turnover": 50867.0,
+          "equity": 2691.0,
+          "profit": 98.0,
+          "employees": 0.0,
+          "margin": 0.19265928794699902,
+          "turnoverPerEmployee": null
+        },
+        {
+          "reportId": "2577781",
+          "year": 2022,
+          "submitted": "2022-12-31T00:00:00.000",
+          "turnover": 77642.0,
+          "equity": 2593.0,
+          "profit": -51.0,
+          "employees": 0.0,
+          "margin": -0.06568609773060972,
+          "turnoverPerEmployee": null
+        },
+        {
+          "reportId": "2391990",
+          "year": 2021,
+          "submitted": "2021-12-31T00:00:00.000",
+          "turnover": 45929.0,
+          "equity": 2644.0,
+          "profit": 2644.0,
+          "employees": 1.0,
+          "margin": 5.75671144592741,
+          "turnoverPerEmployee": 45929.0
+        }
+      ]
+    },
+    {
+      "name": "Teepuu OÜ",
+      "registryCode": "12159869",
+      "website": null,
+      "note": "REGISTRY CODE NOT VERIFIED — excluded from matching until corrected",
+      "dataStatus": "ok",
+      "latest": {
+        "reportId": "3495195",
+        "year": 2025,
+        "submitted": "2025-12-31T00:00:00.000",
+        "turnover": 39284.0,
+        "equity": 30207.0,
+        "profit": 1682.0,
+        "employees": 0.0,
+        "margin": 4.281641380714795,
+        "turnoverPerEmployee": null
+      },
+      "history": [
+        {
+          "reportId": "3495195",
+          "year": 2025,
+          "submitted": "2025-12-31T00:00:00.000",
+          "turnover": 39284.0,
+          "equity": 30207.0,
+          "profit": 1682.0,
+          "employees": 0.0,
+          "margin": 4.281641380714795,
+          "turnoverPerEmployee": null
+        },
+        {
+          "reportId": "3203186",
+          "year": 2024,
+          "submitted": "2024-12-31T00:00:00.000",
+          "turnover": 51759.0,
+          "equity": 28525.0,
+          "profit": 2488.0,
+          "employees": 0.0,
+          "margin": 4.806893487123013,
+          "turnoverPerEmployee": null
+        },
+        {
+          "reportId": "2865810",
+          "year": 2023,
+          "submitted": "2023-12-31T00:00:00.000",
+          "turnover": 73512.0,
+          "equity": 26037.0,
+          "profit": 2457.0,
+          "employees": 0.0,
+          "margin": 3.342311459353575,
+          "turnoverPerEmployee": null
+        },
+        {
+          "reportId": "2574829",
+          "year": 2022,
+          "submitted": "2022-12-31T00:00:00.000",
+          "turnover": 83230.0,
+          "equity": 23580.0,
+          "profit": 13013.0,
+          "employees": 0.0,
+          "margin": 15.634987384356602,
+          "turnoverPerEmployee": null
+        },
+        {
+          "reportId": "2246330",
+          "year": 2021,
+          "submitted": "2021-12-31T00:00:00.000",
+          "turnover": 39818.0,
+          "equity": 10567.0,
+          "profit": 1576.0,
+          "employees": 1.0,
+          "margin": 3.9580089406800947,
+          "turnoverPerEmployee": 39818.0
+        },
+        {
+          "reportId": "2097784",
+          "year": 2020,
+          "submitted": "2020-12-31T00:00:00.000",
+          "turnover": 39994.0,
+          "equity": 8991.0,
+          "profit": 3476.0,
+          "employees": 0.0,
+          "margin": 8.691303695554334,
+          "turnoverPerEmployee": null
+        },
+        {
+          "reportId": "1786947",
+          "year": 2019,
+          "submitted": "2019-12-31T00:00:00.000",
+          "turnover": 39998.0,
+          "equity": 5515.0,
+          "profit": 1088.0,
+          "employees": 1.0,
+          "margin": 2.72013600680034,
+          "turnoverPerEmployee": 39998.0
+        }
+      ]
+    },
+    {
+      "name": "NURMEOTSA OÜ",
+      "registryCode": "16699963",
+      "website": null,
+      "note": "registry_code_verified_from_search",
+      "dataStatus": "ok",
+      "latest": {
+        "reportId": "3434562",
+        "year": 2025,
+        "submitted": "2025-12-31T00:00:00.000",
+        "turnover": 38949.0,
+        "equity": 14272.0,
+        "profit": 2622.0,
+        "employees": 0.0,
+        "margin": 6.731880150966648,
+        "turnoverPerEmployee": null
+      },
+      "history": [
+        {
+          "reportId": "3434562",
+          "year": 2025,
+          "submitted": "2025-12-31T00:00:00.000",
+          "turnover": 38949.0,
+          "equity": 14272.0,
+          "profit": 2622.0,
+          "employees": 0.0,
+          "margin": 6.731880150966648,
+          "turnoverPerEmployee": null
+        },
+        {
+          "reportId": "3261160",
+          "year": 2024,
+          "submitted": "2024-12-31T00:00:00.000",
+          "turnover": 35987.0,
+          "equity": 11650.0,
+          "profit": 9909.0,
+          "employees": 0.0,
+          "margin": 27.534943173923914,
+          "turnoverPerEmployee": null
+        },
+        {
+          "reportId": "2973754",
+          "year": 2023,
+          "submitted": "2023-12-31T00:00:00.000",
+          "turnover": 3877.0,
+          "equity": 1741.0,
+          "profit": -759.0,
+          "employees": 0.0,
+          "margin": -19.576992519989684,
+          "turnoverPerEmployee": null
+        }
+      ]
+    },
+    {
+      "name": "Unveiltouch Massage OÜ",
+      "registryCode": "17261503",
+      "website": null,
+      "note": "REGISTRY CODE NOT VERIFIED — excluded from matching until corrected",
+      "dataStatus": "ok",
+      "latest": {
+        "reportId": "3508532",
+        "year": 2025,
+        "submitted": "2025-12-31T00:00:00.000",
+        "turnover": 38244.0,
+        "equity": 8830.0,
+        "profit": 8830.0,
+        "employees": 0.0,
+        "margin": 23.088589059721787,
+        "turnoverPerEmployee": null
+      },
+      "history": [
+        {
+          "reportId": "3508532",
+          "year": 2025,
+          "submitted": "2025-12-31T00:00:00.000",
+          "turnover": 38244.0,
+          "equity": 8830.0,
+          "profit": 8830.0,
+          "employees": 0.0,
+          "margin": 23.088589059721787,
+          "turnoverPerEmployee": null
+        }
+      ]
+    },
+    {
+      "name": "Kipperi Kala OÜ",
+      "registryCode": "11883505",
+      "website": null,
+      "note": "registry_code_verified_from_search",
+      "dataStatus": "ok",
+      "latest": {
+        "reportId": "3478505",
+        "year": 2025,
+        "submitted": "2025-12-31T00:00:00.000",
+        "turnover": 38070.0,
+        "equity": 1494.0,
+        "profit": -4496.0,
+        "employees": 2.0,
+        "margin": -11.809824008405569,
+        "turnoverPerEmployee": 19035.0
+      },
+      "history": [
+        {
+          "reportId": "3478505",
+          "year": 2025,
+          "submitted": "2025-12-31T00:00:00.000",
+          "turnover": 38070.0,
+          "equity": 1494.0,
+          "profit": -4496.0,
+          "employees": 2.0,
+          "margin": -11.809824008405569,
+          "turnoverPerEmployee": 19035.0
+        },
+        {
+          "reportId": "3217956",
+          "year": 2024,
+          "submitted": "2024-12-31T00:00:00.000",
+          "turnover": 47551.0,
+          "equity": 5990.0,
+          "profit": -1522.0,
+          "employees": 2.0,
+          "margin": -3.200773905911548,
+          "turnoverPerEmployee": 23775.5
+        },
+        {
+          "reportId": "2859070",
+          "year": 2023,
+          "submitted": "2023-12-31T00:00:00.000",
+          "turnover": 48881.0,
+          "equity": 7512.0,
+          "profit": -3784.0,
+          "employees": 2.0,
+          "margin": -7.7412491561138275,
+          "turnoverPerEmployee": 24440.5
+        },
+        {
+          "reportId": "2619112",
+          "year": 2022,
+          "submitted": "2022-12-31T00:00:00.000",
+          "turnover": 44727.0,
+          "equity": 11296.0,
+          "profit": -7054.0,
+          "employees": 2.0,
+          "margin": -15.771234377445392,
+          "turnoverPerEmployee": 22363.5
+        },
+        {
+          "reportId": "2330058",
+          "year": 2021,
+          "submitted": "2021-12-31T00:00:00.000",
+          "turnover": 24314.0,
+          "equity": 18340.0,
+          "profit": 3633.0,
+          "employees": 2.0,
+          "margin": 14.942008719256394,
+          "turnoverPerEmployee": 12157.0
+        },
+        {
+          "reportId": "2075693",
+          "year": 2020,
+          "submitted": "2020-12-31T00:00:00.000",
+          "turnover": 22867.0,
+          "equity": 14707.0,
+          "profit": -17592.0,
+          "employees": 2.0,
+          "margin": -76.93182315126602,
+          "turnoverPerEmployee": 11433.5
+        },
+        {
+          "reportId": "1832102",
+          "year": 2019,
+          "submitted": "2019-12-31T00:00:00.000",
+          "turnover": 39614.0,
+          "equity": 32157.0,
+          "profit": 3371.0,
+          "employees": 3.0,
+          "margin": 8.509617811884688,
+          "turnoverPerEmployee": 13204.666666666666
+        }
+      ]
+    },
+    {
+      "name": "Osaühing PEIPSI PLUSS",
+      "registryCode": "11236220",
+      "website": null,
+      "note": "REGISTRY CODE NOT VERIFIED — excluded from matching until corrected",
+      "dataStatus": "ok",
+      "latest": {
+        "reportId": "3496008",
+        "year": 2025,
+        "submitted": "2025-12-31T00:00:00.000",
+        "turnover": 37910.0,
+        "equity": 21610.0,
+        "profit": 18966.0,
+        "employees": 0.0,
+        "margin": 50.02901609074123,
+        "turnoverPerEmployee": null
+      },
+      "history": [
+        {
+          "reportId": "3496008",
+          "year": 2025,
+          "submitted": "2025-12-31T00:00:00.000",
+          "turnover": 37910.0,
+          "equity": 21610.0,
+          "profit": 18966.0,
+          "employees": 0.0,
+          "margin": 50.02901609074123,
+          "turnoverPerEmployee": null
+        },
+        {
+          "reportId": "3170015",
+          "year": 2024,
+          "submitted": "2024-12-31T00:00:00.000",
+          "turnover": 85381.0,
+          "equity": 2643.0,
+          "profit": -5725.0,
+          "employees": 2.0,
+          "margin": -6.705238870474696,
+          "turnoverPerEmployee": 42690.5
+        },
+        {
+          "reportId": "2855454",
+          "year": 2023,
+          "submitted": "2023-12-31T00:00:00.000",
+          "turnover": 194788.0,
+          "equity": 8368.0,
+          "profit": -13286.0,
+          "employees": 4.0,
+          "margin": -6.820748711419594,
+          "turnoverPerEmployee": 48697.0
+        },
+        {
+          "reportId": "2550616",
+          "year": 2022,
+          "submitted": "2022-12-31T00:00:00.000",
+          "turnover": 148694.0,
+          "equity": 21654.0,
+          "profit": -852.0,
+          "employees": 4.0,
+          "margin": -0.5729888226828251,
+          "turnoverPerEmployee": 37173.5
+        },
+        {
+          "reportId": "2199041",
+          "year": 2021,
+          "submitted": "2021-12-31T00:00:00.000",
+          "turnover": 164326.0,
+          "equity": 22506.0,
+          "profit": 7573.0,
+          "employees": 4.0,
+          "margin": 4.6085220841498,
+          "turnoverPerEmployee": 41081.5
+        },
+        {
+          "reportId": "1989999",
+          "year": 2020,
+          "submitted": "2020-12-31T00:00:00.000",
+          "turnover": 166572.0,
+          "equity": 14933.0,
+          "profit": -601.0,
+          "employees": 4.0,
+          "margin": -0.36080493720433204,
+          "turnoverPerEmployee": 41643.0
+        },
+        {
+          "reportId": "1663363",
+          "year": 2019,
+          "submitted": "2019-12-31T00:00:00.000",
+          "turnover": 67671.0,
+          "equity": 15534.0,
+          "profit": -29188.0,
+          "employees": 2.0,
+          "margin": -43.132213208021156,
+          "turnoverPerEmployee": 33835.5
+        }
+      ]
+    },
+    {
+      "name": "Miroslada OÜ",
+      "registryCode": "16126588",
+      "website": null,
+      "note": "REGISTRY CODE NOT VERIFIED — excluded from matching until corrected",
+      "dataStatus": "ok",
+      "latest": {
+        "reportId": "3524508",
+        "year": 2025,
+        "submitted": "2025-12-31T00:00:00.000",
+        "turnover": 31150.0,
+        "equity": 5606.0,
+        "profit": 2916.0,
+        "employees": 1.0,
+        "margin": 9.36115569823435,
+        "turnoverPerEmployee": 31150.0
+      },
+      "history": [
+        {
+          "reportId": "3524508",
+          "year": 2025,
+          "submitted": "2025-12-31T00:00:00.000",
+          "turnover": 31150.0,
+          "equity": 5606.0,
+          "profit": 2916.0,
+          "employees": 1.0,
+          "margin": 9.36115569823435,
+          "turnoverPerEmployee": 31150.0
+        },
+        {
+          "reportId": "3344401",
+          "year": 2024,
+          "submitted": "2024-12-31T00:00:00.000",
+          "turnover": 0.0,
+          "equity": 2690.0,
+          "profit": 0.0,
+          "employees": 0.0,
+          "margin": null,
+          "turnoverPerEmployee": null
+        },
+        {
+          "reportId": "3043335",
+          "year": 2023,
+          "submitted": "2023-12-31T00:00:00.000",
+          "turnover": 26965.0,
+          "equity": 2690.0,
+          "profit": -3172.0,
+          "employees": 1.0,
+          "margin": -11.763396996106064,
+          "turnoverPerEmployee": 26965.0
+        },
+        {
+          "reportId": "2621888",
+          "year": 2022,
+          "submitted": "2022-12-31T00:00:00.000",
+          "turnover": 53504.0,
+          "equity": 5862.0,
+          "profit": 3108.0,
+          "employees": 2.0,
+          "margin": 5.808911483253588,
+          "turnoverPerEmployee": 26752.0
+        },
+        {
+          "reportId": "2274876",
+          "year": 2021,
+          "submitted": "2021-12-31T00:00:00.000",
+          "turnover": 87880.0,
+          "equity": 2754.0,
+          "profit": 2754.0,
+          "employees": 3.0,
+          "margin": 3.1338188438780152,
+          "turnoverPerEmployee": 29293.333333333332
+        }
+      ]
+    },
+    {
+      "name": "Osaühing FORKALA",
+      "registryCode": "10346188",
+      "website": null,
+      "note": "registry_code_verified_from_search",
+      "dataStatus": "ok",
+      "latest": {
+        "reportId": "3628312",
+        "year": 2025,
+        "submitted": "2025-12-31T00:00:00.000",
+        "turnover": 27166.0,
+        "equity": 398402.0,
+        "profit": 1611.0,
+        "employees": 0.0,
+        "margin": 5.930206876242361,
+        "turnoverPerEmployee": null
+      },
+      "history": [
+        {
+          "reportId": "3628312",
+          "year": 2025,
+          "submitted": "2025-12-31T00:00:00.000",
+          "turnover": 27166.0,
+          "equity": 398402.0,
+          "profit": 1611.0,
+          "employees": 0.0,
+          "margin": 5.930206876242361,
+          "turnoverPerEmployee": null
+        },
+        {
+          "reportId": "3339456",
+          "year": 2024,
+          "submitted": "2024-12-31T00:00:00.000",
+          "turnover": 34951.0,
+          "equity": 396791.0,
+          "profit": 1555.0,
+          "employees": 0.0,
+          "margin": 4.449085863065434,
+          "turnoverPerEmployee": null
+        },
+        {
+          "reportId": "3016533",
+          "year": 2023,
+          "submitted": "2023-12-31T00:00:00.000",
+          "turnover": 43041.0,
+          "equity": 372229.0,
+          "profit": 9445.0,
+          "employees": 0.0,
+          "margin": 21.94419274645106,
+          "turnoverPerEmployee": null
+        },
+        {
+          "reportId": "2627435",
+          "year": 2022,
+          "submitted": "2022-12-31T00:00:00.000",
+          "turnover": 11605.0,
+          "equity": 362784.0,
+          "profit": -6877.0,
+          "employees": 1.0,
+          "margin": -59.25894011202069,
+          "turnoverPerEmployee": 11605.0
+        },
+        {
+          "reportId": "2392844",
+          "year": 2021,
+          "submitted": "2021-12-31T00:00:00.000",
+          "turnover": 135854.0,
+          "equity": 369660.0,
+          "profit": 8838.0,
+          "employees": 1.0,
+          "margin": 6.505513271600395,
+          "turnoverPerEmployee": 135854.0
+        },
+        {
+          "reportId": "2045120",
+          "year": 2020,
+          "submitted": "2020-12-31T00:00:00.000",
+          "turnover": 116576.0,
+          "equity": 360822.0,
+          "profit": 1621.0,
+          "employees": 1.0,
+          "margin": 1.390509195717815,
+          "turnoverPerEmployee": 116576.0
+        },
+        {
+          "reportId": "1778010",
+          "year": 2019,
+          "submitted": "2019-12-31T00:00:00.000",
+          "turnover": 130201.0,
+          "equity": 359201.0,
+          "profit": 4648.0,
+          "employees": 1.0,
+          "margin": 3.569865054799886,
+          "turnoverPerEmployee": 130201.0
+        }
+      ]
+    },
+    {
+      "name": "OÜ Peipsi Kalatoode",
+      "registryCode": "14613232",
+      "website": null,
+      "note": "registry_code_verified_from_search",
+      "dataStatus": "ok",
+      "latest": {
+        "reportId": "3614421",
+        "year": 2025,
+        "submitted": "2025-12-31T00:00:00.000",
+        "turnover": 25994.0,
+        "equity": 11946.0,
+        "profit": 132.0,
+        "employees": 2.0,
+        "margin": 0.5078094944987305,
+        "turnoverPerEmployee": 12997.0
+      },
+      "history": [
+        {
+          "reportId": "3614421",
+          "year": 2025,
+          "submitted": "2025-12-31T00:00:00.000",
+          "turnover": 25994.0,
+          "equity": 11946.0,
+          "profit": 132.0,
+          "employees": 2.0,
+          "margin": 0.5078094944987305,
+          "turnoverPerEmployee": 12997.0
+        },
+        {
+          "reportId": "3318691",
+          "year": 2024,
+          "submitted": "2024-12-31T00:00:00.000",
+          "turnover": 24860.0,
+          "equity": 11814.0,
+          "profit": 285.0,
+          "employees": 2.0,
+          "margin": 1.1464199517296862,
+          "turnoverPerEmployee": 12430.0
+        },
+        {
+          "reportId": "3004094",
+          "year": 2023,
+          "submitted": "2023-12-31T00:00:00.000",
+          "turnover": 24483.0,
+          "equity": 11615.0,
+          "profit": 202.0,
+          "employees": 2.0,
+          "margin": 0.8250622881182862,
+          "turnoverPerEmployee": 12241.5
+        },
+        {
+          "reportId": "2674746",
+          "year": 2022,
+          "submitted": "2022-12-31T00:00:00.000",
+          "turnover": 17866.0,
+          "equity": 11413.0,
+          "profit": 244.0,
+          "employees": 2.0,
+          "margin": 1.3657226015896116,
+          "turnoverPerEmployee": 8933.0
+        },
+        {
+          "reportId": "2383865",
+          "year": 2021,
+          "submitted": "2021-12-31T00:00:00.000",
+          "turnover": 26797.0,
+          "equity": 11169.0,
+          "profit": 562.0,
+          "employees": 2.0,
+          "margin": 2.097249692129716,
+          "turnoverPerEmployee": 13398.5
+        },
+        {
+          "reportId": "2104702",
+          "year": 2020,
+          "submitted": "2020-12-31T00:00:00.000",
+          "turnover": 15080.0,
+          "equity": 10606.0,
+          "profit": 2117.0,
+          "employees": 2.0,
+          "margin": 14.038461538461538,
+          "turnoverPerEmployee": 7540.0
+        },
+        {
+          "reportId": "1807502",
+          "year": 2019,
+          "submitted": "2019-12-31T00:00:00.000",
+          "turnover": 15794.0,
+          "equity": 8489.0,
+          "profit": 5989.0,
+          "employees": 1.0,
+          "margin": 37.919463087248324,
+          "turnoverPerEmployee": 15794.0
+        }
+      ]
+    },
+    {
+      "name": "Suitsumaja OÜ",
+      "registryCode": "16949516",
+      "website": null,
+      "note": "registry_code_verified_from_search",
+      "dataStatus": "ok",
+      "latest": {
+        "reportId": "3637951",
+        "year": 2025,
+        "submitted": "2025-12-31T00:00:00.000",
+        "turnover": 15840.0,
+        "equity": 3764.0,
+        "profit": 1264.0,
+        "employees": 1.0,
+        "margin": 7.97979797979798,
+        "turnoverPerEmployee": 15840.0
+      },
+      "history": [
+        {
+          "reportId": "3637951",
+          "year": 2025,
+          "submitted": "2025-12-31T00:00:00.000",
+          "turnover": 15840.0,
+          "equity": 3764.0,
+          "profit": 1264.0,
+          "employees": 1.0,
+          "margin": 7.97979797979798,
+          "turnoverPerEmployee": 15840.0
+        },
+        {
+          "reportId": "3119288",
+          "year": 2024,
+          "submitted": "2024-12-31T00:00:00.000",
+          "turnover": 0.0,
+          "equity": 2500.0,
+          "profit": 0.0,
+          "employees": 0.0,
+          "margin": null,
+          "turnoverPerEmployee": null
+        }
+      ]
+    },
+    {
+      "name": "Pühajõe kala OÜ",
+      "registryCode": "16061564",
+      "website": null,
+      "note": "registry_code_verified_from_search",
+      "dataStatus": "ok",
+      "latest": {
+        "reportId": "3472184",
+        "year": 2025,
+        "submitted": "2025-12-31T00:00:00.000",
+        "turnover": 15615.0,
+        "equity": 113388.0,
+        "profit": 10635.0,
+        "employees": 0.0,
+        "margin": 68.10758885686839,
+        "turnoverPerEmployee": null
+      },
+      "history": [
+        {
+          "reportId": "3472184",
+          "year": 2025,
+          "submitted": "2025-12-31T00:00:00.000",
+          "turnover": 15615.0,
+          "equity": 113388.0,
+          "profit": 10635.0,
+          "employees": 0.0,
+          "margin": 68.10758885686839,
+          "turnoverPerEmployee": null
+        },
+        {
+          "reportId": "3139845",
+          "year": 2024,
+          "submitted": "2024-12-31T00:00:00.000",
+          "turnover": 9353.0,
+          "equity": 102753.0,
+          "profit": 3374.0,
+          "employees": 0.0,
+          "margin": 36.07398695605688,
+          "turnoverPerEmployee": null
+        },
+        {
+          "reportId": "2850356",
+          "year": 2023,
+          "submitted": "2023-12-31T00:00:00.000",
+          "turnover": 18493.0,
+          "equity": 99379.0,
+          "profit": 17634.0,
+          "employees": 0.0,
+          "margin": 95.35499918888229,
+          "turnoverPerEmployee": null
+        },
+        {
+          "reportId": "2584650",
+          "year": 2022,
+          "submitted": "2022-12-31T00:00:00.000",
+          "turnover": 33705.0,
+          "equity": 81744.0,
+          "profit": 32743.0,
+          "employees": 0.0,
+          "margin": 97.14582406171192,
+          "turnoverPerEmployee": null
+        },
+        {
+          "reportId": "2331324",
+          "year": 2021,
+          "submitted": "2021-12-31T00:00:00.000",
+          "turnover": 49888.0,
+          "equity": 49002.0,
+          "profit": 49002.0,
+          "employees": 0.0,
+          "margin": 98.22402180885183,
+          "turnoverPerEmployee": null
+        }
+      ]
+    },
+    {
+      "name": "Peipsilane OÜ",
+      "registryCode": "14719261",
+      "website": null,
+      "note": "REGISTRY CODE NOT VERIFIED — excluded from matching until corrected",
+      "dataStatus": "ok",
+      "latest": {
+        "reportId": "3492258",
+        "year": 2025,
+        "submitted": "2025-12-31T00:00:00.000",
+        "turnover": 15084.0,
+        "equity": 27110.0,
+        "profit": 2058.0,
+        "employees": 1.0,
+        "margin": 13.643595863166269,
+        "turnoverPerEmployee": 15084.0
+      },
+      "history": [
+        {
+          "reportId": "3492258",
+          "year": 2025,
+          "submitted": "2025-12-31T00:00:00.000",
+          "turnover": 15084.0,
+          "equity": 27110.0,
+          "profit": 2058.0,
+          "employees": 1.0,
+          "margin": 13.643595863166269,
+          "turnoverPerEmployee": 15084.0
+        },
+        {
+          "reportId": "3189606",
+          "year": 2024,
+          "submitted": "2024-12-31T00:00:00.000",
+          "turnover": 11337.0,
+          "equity": 25052.0,
+          "profit": -784.0,
+          "employees": 1.0,
+          "margin": -6.915409720384582,
+          "turnoverPerEmployee": 11337.0
+        },
+        {
+          "reportId": "3231375",
+          "year": 2023,
+          "submitted": "2023-12-31T00:00:00.000",
+          "turnover": 10240.0,
+          "equity": 25836.0,
+          "profit": 847.0,
+          "employees": 1.0,
+          "margin": 8.271484375,
+          "turnoverPerEmployee": 10240.0
+        },
+        {
+          "reportId": "3233041",
+          "year": 2022,
+          "submitted": "2022-12-31T00:00:00.000",
+          "turnover": 10261.0,
+          "equity": 24805.0,
+          "profit": 184.0,
+          "employees": 1.0,
+          "margin": 1.7931975440990158,
+          "turnoverPerEmployee": 10261.0
+        },
+        {
+          "reportId": "2364584",
+          "year": 2021,
+          "submitted": "2021-12-31T00:00:00.000",
+          "turnover": 19651.0,
+          "equity": 20876.0,
+          "profit": 8430.0,
+          "employees": 0.0,
+          "margin": 42.89858022492494,
+          "turnoverPerEmployee": null
+        },
+        {
+          "reportId": "2028553",
+          "year": 2020,
+          "submitted": "2020-12-31T00:00:00.000",
+          "turnover": 21091.0,
+          "equity": 13020.0,
+          "profit": 12597.0,
+          "employees": 0.0,
+          "margin": 59.72689772888909,
+          "turnoverPerEmployee": null
+        },
+        {
+          "reportId": "1731480",
+          "year": 2019,
+          "submitted": "2019-12-31T00:00:00.000",
+          "turnover": 2205.0,
+          "equity": 3807.0,
+          "profit": 1278.0,
+          "employees": 0.0,
+          "margin": 57.95918367346938,
+          "turnoverPerEmployee": null
+        }
+      ]
+    },
+    {
+      "name": "OÜ Fellinfish",
+      "registryCode": "14623093",
+      "website": null,
+      "note": "registry_code_verified_from_search",
+      "dataStatus": "ok",
+      "latest": {
+        "reportId": "3404407",
+        "year": 2025,
+        "submitted": "2025-12-31T00:00:00.000",
+        "turnover": 13666.0,
+        "equity": 4470.0,
+        "profit": -1117.0,
+        "employees": 1.0,
+        "margin": -8.173569442411825,
+        "turnoverPerEmployee": 13666.0
+      },
+      "history": [
+        {
+          "reportId": "3404407",
+          "year": 2025,
+          "submitted": "2025-12-31T00:00:00.000",
+          "turnover": 13666.0,
+          "equity": 4470.0,
+          "profit": -1117.0,
+          "employees": 1.0,
+          "margin": -8.173569442411825,
+          "turnoverPerEmployee": 13666.0
+        },
+        {
+          "reportId": "3171183",
+          "year": 2024,
+          "submitted": "2024-12-31T00:00:00.000",
+          "turnover": 20590.0,
+          "equity": 5587.0,
+          "profit": -272.0,
+          "employees": 1.0,
+          "margin": -1.3210296260320544,
+          "turnoverPerEmployee": 20590.0
+        },
+        {
+          "reportId": "2885457",
+          "year": 2023,
+          "submitted": "2023-12-31T00:00:00.000",
+          "turnover": 25189.0,
+          "equity": 5859.0,
+          "profit": 665.0,
+          "employees": 1.0,
+          "margin": 2.6400412878637503,
+          "turnoverPerEmployee": 25189.0
+        },
+        {
+          "reportId": "2598723",
+          "year": 2022,
+          "submitted": "2022-12-31T00:00:00.000",
+          "turnover": 20672.0,
+          "equity": 5194.0,
+          "profit": -1444.0,
+          "employees": 1.0,
+          "margin": -6.985294117647059,
+          "turnoverPerEmployee": 20672.0
+        },
+        {
+          "reportId": "2283202",
+          "year": 2021,
+          "submitted": "2021-12-31T00:00:00.000",
+          "turnover": 29608.0,
+          "equity": 6638.0,
+          "profit": -1689.0,
+          "employees": 1.0,
+          "margin": -5.704539313699001,
+          "turnoverPerEmployee": 29608.0
+        },
+        {
+          "reportId": "2037520",
+          "year": 2020,
+          "submitted": "2020-12-31T00:00:00.000",
+          "turnover": 32136.0,
+          "equity": 8328.0,
+          "profit": -1505.0,
+          "employees": 1.0,
+          "margin": -4.683221309434902,
+          "turnoverPerEmployee": 32136.0
+        },
+        {
+          "reportId": "1803165",
+          "year": 2019,
+          "submitted": "2019-12-31T00:00:00.000",
+          "turnover": 29586.0,
+          "equity": 7333.0,
+          "profit": 7333.0,
+          "employees": 1.0,
+          "margin": 24.785371459474074,
+          "turnoverPerEmployee": 29586.0
+        }
+      ]
+    },
+    {
+      "name": "AY Kuldkala OÜ",
+      "registryCode": "16681640",
+      "website": null,
+      "note": "registry_code_verified_from_search",
+      "dataStatus": "ok",
+      "latest": {
+        "reportId": "3345050",
+        "year": 2024,
+        "submitted": "2024-12-31T00:00:00.000",
+        "turnover": 12247.0,
+        "equity": 821.0,
+        "profit": 761.0,
+        "employees": 1.0,
+        "margin": 6.213766636727361,
+        "turnoverPerEmployee": 12247.0
+      },
+      "history": [
+        {
+          "reportId": "3345050",
+          "year": 2024,
+          "submitted": "2024-12-31T00:00:00.000",
+          "turnover": 12247.0,
+          "equity": 821.0,
+          "profit": 761.0,
+          "employees": 1.0,
+          "margin": 6.213766636727361,
+          "turnoverPerEmployee": 12247.0
+        },
+        {
+          "reportId": "3034063",
+          "year": 2023,
+          "submitted": "2023-12-31T00:00:00.000",
+          "turnover": 9543.0,
+          "equity": 60.0,
+          "profit": 59.0,
+          "employees": 1.0,
+          "margin": 0.6182542177512313,
+          "turnoverPerEmployee": 9543.0
+        }
+      ]
+    },
+    {
+      "name": "Osaühing SK kauplus",
+      "registryCode": "16332738",
+      "website": null,
+      "note": "registry_code_verified_from_search",
+      "dataStatus": "ok",
+      "latest": {
+        "reportId": "3588873",
+        "year": 2025,
+        "submitted": "2025-12-31T00:00:00.000",
+        "turnover": 0.0,
+        "equity": 744.0,
+        "profit": -2426.0,
+        "employees": 0.0,
+        "margin": null,
+        "turnoverPerEmployee": null
+      },
+      "history": [
+        {
+          "reportId": "3588873",
+          "year": 2025,
+          "submitted": "2025-12-31T00:00:00.000",
+          "turnover": 0.0,
+          "equity": 744.0,
+          "profit": -2426.0,
+          "employees": 0.0,
+          "margin": null,
+          "turnoverPerEmployee": null
+        },
+        {
+          "reportId": "3166148",
+          "year": 2024,
+          "submitted": "2024-12-31T00:00:00.000",
+          "turnover": 10693.0,
+          "equity": 3171.0,
+          "profit": 2044.0,
+          "employees": 1.0,
+          "margin": 19.115309080707004,
+          "turnoverPerEmployee": 10693.0
+        },
+        {
+          "reportId": "2888385",
+          "year": 2023,
+          "submitted": "2023-12-31T00:00:00.000",
+          "turnover": 19066.0,
+          "equity": 1127.0,
+          "profit": 6256.0,
+          "employees": 1.0,
+          "margin": 32.81233609566768,
+          "turnoverPerEmployee": 19066.0
+        },
+        {
+          "reportId": "2537702",
+          "year": 2022,
+          "submitted": "2022-12-31T00:00:00.000",
+          "turnover": 11901.0,
+          "equity": -5130.0,
+          "profit": -4156.0,
+          "employees": 1.0,
+          "margin": -34.92143517351483,
+          "turnoverPerEmployee": 11901.0
+        },
+        {
+          "reportId": "2251297",
+          "year": 2021,
+          "submitted": "2021-12-31T00:00:00.000",
+          "turnover": 1570.0,
+          "equity": -974.0,
+          "profit": -974.0,
+          "employees": 1.0,
+          "margin": -62.038216560509554,
+          "turnoverPerEmployee": 1570.0
+        }
+      ]
+    },
+    {
+      "name": "Paadivennad OÜ",
+      "registryCode": "17180348",
+      "website": null,
+      "note": "registry_code_verified_from_search",
+      "dataStatus": "ok",
+      "latest": {
+        "reportId": "3604581",
+        "year": 2025,
+        "submitted": "2025-12-31T00:00:00.000",
+        "turnover": 9182.0,
+        "equity": 6.0,
+        "profit": 5.0,
+        "employees": 0.0,
+        "margin": 0.05445436724025267,
+        "turnoverPerEmployee": null
+      },
+      "history": [
+        {
+          "reportId": "3604581",
+          "year": 2025,
+          "submitted": "2025-12-31T00:00:00.000",
+          "turnover": 9182.0,
+          "equity": 6.0,
+          "profit": 5.0,
+          "employees": 0.0,
+          "margin": 0.05445436724025267,
+          "turnoverPerEmployee": null
+        }
+      ]
+    },
+    {
+      "name": "Pärlilugu OÜ",
+      "registryCode": "14903869",
+      "website": null,
+      "note": "registry_code_verified_from_search",
+      "dataStatus": "ok",
+      "latest": {
+        "reportId": "3401843",
+        "year": 2025,
+        "submitted": "2025-12-31T00:00:00.000",
+        "turnover": 4723.0,
+        "equity": 5533.0,
+        "profit": 3033.0,
+        "employees": 0.0,
+        "margin": 64.21765826804997,
+        "turnoverPerEmployee": null
+      },
+      "history": [
+        {
+          "reportId": "3401843",
+          "year": 2025,
+          "submitted": "2025-12-31T00:00:00.000",
+          "turnover": 4723.0,
+          "equity": 5533.0,
+          "profit": 3033.0,
+          "employees": 0.0,
+          "margin": 64.21765826804997,
+          "turnoverPerEmployee": null
+        },
+        {
+          "reportId": "3113422",
+          "year": 2024,
+          "submitted": "2024-12-31T00:00:00.000",
+          "turnover": 7827.0,
+          "equity": 6279.0,
+          "profit": 3779.0,
+          "employees": 0.0,
+          "margin": 48.28158937012904,
+          "turnoverPerEmployee": null
+        },
+        {
+          "reportId": "2771747",
+          "year": 2023,
+          "submitted": "2023-12-31T00:00:00.000",
+          "turnover": 17653.0,
+          "equity": 10383.0,
+          "profit": 7821.0,
+          "employees": 0.0,
+          "margin": 44.30408429162182,
+          "turnoverPerEmployee": null
+        },
+        {
+          "reportId": "2456993",
+          "year": 2022,
+          "submitted": "2022-12-31T00:00:00.000",
+          "turnover": 12736.0,
+          "equity": 11362.0,
+          "profit": 8725.0,
+          "employees": 0.0,
+          "margin": 68.50659547738694,
+          "turnoverPerEmployee": null
+        },
+        {
+          "reportId": "2168813",
+          "year": 2021,
+          "submitted": "2021-12-31T00:00:00.000",
+          "turnover": 11340.0,
+          "equity": 11037.0,
+          "profit": 8438.0,
+          "employees": 0.0,
+          "margin": 74.40917107583775,
+          "turnoverPerEmployee": null
+        },
+        {
+          "reportId": "1889063",
+          "year": 2020,
+          "submitted": "2020-12-31T00:00:00.000",
+          "turnover": 5485.0,
+          "equity": 7099.0,
+          "profit": 4599.0,
+          "employees": 0.0,
+          "margin": 83.8468550592525,
+          "turnoverPerEmployee": null
+        }
+      ]
+    },
+    {
+      "name": "Iris Partners OÜ",
+      "registryCode": "12034033",
+      "website": null,
+      "note": "REGISTRY CODE NOT VERIFIED — excluded from matching until corrected",
+      "dataStatus": "ok",
+      "latest": {
+        "reportId": "3638290",
+        "year": 2025,
+        "submitted": "2025-12-31T00:00:00.000",
+        "turnover": 0.0,
+        "equity": 2702.0,
+        "profit": 0.0,
+        "employees": 0.0,
+        "margin": null,
+        "turnoverPerEmployee": null
+      },
+      "history": [
+        {
+          "reportId": "3638290",
+          "year": 2025,
+          "submitted": "2025-12-31T00:00:00.000",
+          "turnover": 0.0,
+          "equity": 2702.0,
+          "profit": 0.0,
+          "employees": 0.0,
+          "margin": null,
+          "turnoverPerEmployee": null
+        },
+        {
+          "reportId": "3319339",
+          "year": 2024,
+          "submitted": "2024-12-31T00:00:00.000",
+          "turnover": 0.0,
+          "equity": 2702.0,
+          "profit": 0.0,
+          "employees": 0.0,
+          "margin": null,
+          "turnoverPerEmployee": null
+        },
+        {
+          "reportId": "3030971",
+          "year": 2023,
+          "submitted": "2023-12-31T00:00:00.000",
+          "turnover": 0.0,
+          "equity": 2702.0,
+          "profit": 0.0,
+          "employees": 0.0,
+          "margin": null,
+          "turnoverPerEmployee": null
+        },
+        {
+          "reportId": "2701561",
+          "year": 2022,
+          "submitted": "2022-12-31T00:00:00.000",
+          "turnover": 0.0,
+          "equity": 2702.0,
+          "profit": -38.0,
+          "employees": 0.0,
+          "margin": null,
+          "turnoverPerEmployee": null
+        },
+        {
+          "reportId": "2333265",
+          "year": 2021,
+          "submitted": "2021-12-31T00:00:00.000",
+          "turnover": 3499.0,
+          "equity": 2740.0,
+          "profit": 1.0,
+          "employees": 0.0,
+          "margin": 0.02857959416976279,
+          "turnoverPerEmployee": null
+        },
+        {
+          "reportId": "2111603",
+          "year": 2020,
+          "submitted": "2020-12-31T00:00:00.000",
+          "turnover": 7616.0,
+          "equity": 2739.0,
+          "profit": 0.0,
+          "employees": 0.0,
+          "margin": 0.0,
+          "turnoverPerEmployee": null
+        },
+        {
+          "reportId": "1769377",
+          "year": 2019,
+          "submitted": "2019-12-31T00:00:00.000",
+          "turnover": 11248.0,
+          "equity": 2739.0,
+          "profit": 0.0,
+          "employees": 0.0,
+          "margin": 0.0,
+          "turnoverPerEmployee": null
+        }
+      ]
+    },
+    {
+      "name": "JANK GRUPP OÜ",
+      "registryCode": "12592323",
+      "website": null,
+      "note": "REGISTRY CODE NOT VERIFIED — excluded from matching until corrected",
+      "dataStatus": "ok",
+      "latest": {
+        "reportId": "3454022",
+        "year": 2025,
+        "submitted": "2025-12-31T00:00:00.000",
+        "turnover": 3425.0,
+        "equity": 241.0,
+        "profit": -2260.0,
+        "employees": 0.0,
+        "margin": -65.985401459854,
+        "turnoverPerEmployee": null
+      },
+      "history": [
+        {
+          "reportId": "3454022",
+          "year": 2025,
+          "submitted": "2025-12-31T00:00:00.000",
+          "turnover": 3425.0,
+          "equity": 241.0,
+          "profit": -2260.0,
+          "employees": 0.0,
+          "margin": -65.985401459854,
+          "turnoverPerEmployee": null
+        },
+        {
+          "reportId": "3154337",
+          "year": 2024,
+          "submitted": "2024-12-31T00:00:00.000",
+          "turnover": 3548.0,
+          "equity": 2501.0,
+          "profit": -2.0,
+          "employees": 0.0,
+          "margin": -0.05636978579481398,
+          "turnoverPerEmployee": null
+        },
+        {
+          "reportId": "2864527",
+          "year": 2023,
+          "submitted": "2023-12-31T00:00:00.000",
+          "turnover": 3874.0,
+          "equity": 2503.0,
+          "profit": 2.0,
+          "employees": 0.0,
+          "margin": 0.05162622612287042,
+          "turnoverPerEmployee": null
+        },
+        {
+          "reportId": "2524587",
+          "year": 2022,
+          "submitted": "2022-12-31T00:00:00.000",
+          "turnover": 3770.0,
+          "equity": 2501.0,
+          "profit": -52.0,
+          "employees": 0.0,
+          "margin": -1.3793103448275863,
+          "turnoverPerEmployee": null
+        },
+        {
+          "reportId": "2243881",
+          "year": 2021,
+          "submitted": "2021-12-31T00:00:00.000",
+          "turnover": 5249.0,
+          "equity": 2553.0,
+          "profit": 4.0,
+          "employees": 0.0,
+          "margin": 0.07620499142693847,
+          "turnoverPerEmployee": null
+        },
+        {
+          "reportId": "1929209",
+          "year": 2020,
+          "submitted": "2020-12-31T00:00:00.000",
+          "turnover": 6140.0,
+          "equity": 2549.0,
+          "profit": 3.0,
+          "employees": 0.0,
+          "margin": 0.048859934853420196,
+          "turnoverPerEmployee": null
+        },
+        {
+          "reportId": "1687186",
+          "year": 2019,
+          "submitted": "2019-12-31T00:00:00.000",
+          "turnover": 5800.0,
+          "equity": 2546.0,
+          "profit": 6.0,
+          "employees": 0.0,
+          "margin": 0.10344827586206896,
+          "turnoverPerEmployee": null
+        }
+      ]
+    },
+    {
+      "name": "Annlorii OÜ",
+      "registryCode": "17213562",
+      "website": null,
+      "note": "REGISTRY CODE NOT VERIFIED — excluded from matching until corrected",
+      "dataStatus": "ok",
+      "latest": {
+        "reportId": "3662419",
+        "year": 2025,
+        "submitted": "2025-12-31T00:00:00.000",
+        "turnover": 2674.0,
+        "equity": -447.0,
+        "profit": -472.0,
+        "employees": 0.0,
+        "margin": -17.651458489154827,
+        "turnoverPerEmployee": null
+      },
+      "history": [
+        {
+          "reportId": "3662419",
+          "year": 2025,
+          "submitted": "2025-12-31T00:00:00.000",
+          "turnover": 2674.0,
+          "equity": -447.0,
+          "profit": -472.0,
+          "employees": 0.0,
+          "margin": -17.651458489154827,
+          "turnoverPerEmployee": null
+        }
+      ]
+    },
+    {
+      "name": "Fishy OÜ",
+      "registryCode": "12981078",
+      "website": null,
+      "note": "registry_code_verified_from_search",
+      "dataStatus": "ok",
+      "latest": {
+        "reportId": "3418784",
+        "year": 2025,
+        "submitted": "2025-12-31T00:00:00.000",
+        "turnover": 2371.0,
+        "equity": 1572.0,
+        "profit": 1189.0,
+        "employees": 0.0,
+        "margin": 50.14761703922396,
+        "turnoverPerEmployee": null
+      },
+      "history": [
+        {
+          "reportId": "3418784",
+          "year": 2025,
+          "submitted": "2025-12-31T00:00:00.000",
+          "turnover": 2371.0,
+          "equity": 1572.0,
+          "profit": 1189.0,
+          "employees": 0.0,
+          "margin": 50.14761703922396,
+          "turnoverPerEmployee": null
+        },
+        {
+          "reportId": "3366929",
+          "year": 2024,
+          "submitted": "2024-12-31T00:00:00.000",
+          "turnover": 1914.0,
+          "equity": 383.0,
+          "profit": 383.0,
+          "employees": 1.0,
+          "margin": 20.010449320794148,
+          "turnoverPerEmployee": 1914.0
+        },
+        {
+          "reportId": "2794196",
+          "year": 2023,
+          "submitted": "2023-12-31T00:00:00.000",
+          "turnover": 508.0,
+          "equity": 1332.0,
+          "profit": -2196.0,
+          "employees": 0.0,
+          "margin": -432.2834645669292,
+          "turnoverPerEmployee": null
+        },
+        {
+          "reportId": "2518903",
+          "year": 2022,
+          "submitted": "2022-12-31T00:00:00.000",
+          "turnover": 2935.0,
+          "equity": 3589.0,
+          "profit": 1834.0,
+          "employees": 0.0,
+          "margin": 62.48722316865417,
+          "turnoverPerEmployee": null
+        },
+        {
+          "reportId": "2344035",
+          "year": 2021,
+          "submitted": "2021-12-31T00:00:00.000",
+          "turnover": 7282.0,
+          "equity": 1755.0,
+          "profit": 1755.0,
+          "employees": 0.0,
+          "margin": 24.100521834660807,
+          "turnoverPerEmployee": null
+        },
+        {
+          "reportId": "2017267",
+          "year": 2020,
+          "submitted": "2020-12-31T00:00:00.000",
+          "turnover": 2295.0,
+          "equity": 4771.0,
+          "profit": 2271.0,
+          "employees": 0.0,
+          "margin": 98.95424836601308,
+          "turnoverPerEmployee": null
+        },
+        {
+          "reportId": "2017260",
+          "year": 2019,
+          "submitted": "2019-12-31T00:00:00.000",
+          "turnover": 0.0,
+          "equity": 0.0,
+          "profit": 0.0,
+          "employees": 0.0,
+          "margin": null,
+          "turnoverPerEmployee": null
+        }
+      ]
+    },
+    {
+      "name": "Aile Arula FIE",
+      "registryCode": "11562959",
+      "website": null,
+      "note": "REGISTRY CODE NOT VERIFIED — excluded from matching until corrected",
+      "dataStatus": "no_report",
+      "latest": null,
+      "history": []
+    },
+    {
+      "name": "Alar Aas FIE",
+      "registryCode": "10207564",
+      "website": null,
+      "note": "REGISTRY CODE NOT VERIFIED — excluded from matching until corrected",
+      "dataStatus": "no_report",
+      "latest": null,
+      "history": []
+    },
+    {
+      "name": "Anatoli Malõš FIE",
+      "registryCode": "11553723",
+      "website": null,
+      "note": "REGISTRY CODE NOT VERIFIED — excluded from matching until corrected",
+      "dataStatus": "no_report",
+      "latest": null,
+      "history": []
+    },
+    {
+      "name": "Ärni Juhansoo FIE",
+      "registryCode": "14316847",
+      "website": null,
+      "note": "REGISTRY CODE NOT VERIFIED — excluded from matching until corrected",
+      "dataStatus": "no_report",
+      "latest": null,
+      "history": []
+    },
+    {
+      "name": "ArtFish OÜ",
+      "registryCode": "12954851",
+      "website": null,
+      "note": "REGISTRY CODE NOT VERIFIED — excluded from matching until corrected",
+      "dataStatus": "no_report",
+      "latest": null,
+      "history": []
+    },
+    {
+      "name": "Dmitri Kuznetsov FIE",
+      "registryCode": "11572923",
+      "website": null,
+      "note": "REGISTRY CODE NOT VERIFIED — excluded from matching until corrected",
+      "dataStatus": "no_report",
+      "latest": null,
+      "history": []
+    },
+    {
+      "name": "EelFish OÜ",
+      "registryCode": "17559616",
+      "website": null,
+      "note": "REGISTRY CODE NOT VERIFIED — excluded from matching until corrected",
+      "dataStatus": "no_report",
+      "latest": null,
+      "history": []
+    },
+    {
+      "name": "EstMeriva OÜ",
+      "registryCode": "17511561",
+      "website": null,
+      "note": "REGISTRY CODE NOT VERIFIED — excluded from matching until corrected",
+      "dataStatus": "no_report",
+      "latest": null,
+      "history": []
+    },
+    {
+      "name": "Estonian Fish Lovers OÜ",
+      "registryCode": "12759374",
+      "website": null,
+      "note": "registry_code_verified_from_search",
+      "dataStatus": "no_report",
+      "latest": null,
+      "history": []
+    },
+    {
+      "name": "Fish Service Eesti OÜ",
+      "registryCode": "14552698",
+      "website": null,
+      "note": "REGISTRY CODE NOT VERIFIED — excluded from matching until corrected",
+      "dataStatus": "ok",
+      "latest": {
+        "reportId": "3065146",
+        "year": 2023,
+        "submitted": "2023-12-31T00:00:00.000",
+        "turnover": 0.0,
+        "equity": 2500.0,
+        "profit": 0.0,
+        "employees": 0.0,
+        "margin": null,
+        "turnoverPerEmployee": null
+      },
+      "history": [
+        {
+          "reportId": "3065146",
+          "year": 2023,
+          "submitted": "2023-12-31T00:00:00.000",
+          "turnover": 0.0,
+          "equity": 2500.0,
+          "profit": 0.0,
+          "employees": 0.0,
+          "margin": null,
+          "turnoverPerEmployee": null
+        },
+        {
+          "reportId": "2713107",
+          "year": 2022,
+          "submitted": "2022-12-31T00:00:00.000",
+          "turnover": 0.0,
+          "equity": 2500.0,
+          "profit": 0.0,
+          "employees": 0.0,
+          "margin": null,
+          "turnoverPerEmployee": null
+        },
+        {
+          "reportId": "2449965",
+          "year": 2021,
+          "submitted": "2021-12-31T00:00:00.000",
+          "turnover": 0.0,
+          "equity": 2500.0,
+          "profit": 0.0,
+          "employees": 0.0,
+          "margin": null,
+          "turnoverPerEmployee": null
+        },
+        {
+          "reportId": "2449962",
+          "year": 2020,
+          "submitted": "2020-12-31T00:00:00.000",
+          "turnover": 0.0,
+          "equity": 2500.0,
+          "profit": 0.0,
+          "employees": 0.0,
+          "margin": null,
+          "turnoverPerEmployee": null
+        },
+        {
+          "reportId": "2449959",
+          "year": 2019,
+          "submitted": "2019-12-31T00:00:00.000",
+          "turnover": 0.0,
+          "equity": 2500.0,
+          "profit": 0.0,
+          "employees": 0.0,
+          "margin": null,
+          "turnoverPerEmployee": null
+        }
+      ]
+    },
+    {
+      "name": "Ivan Kozlovski FIE",
+      "registryCode": "11973958",
+      "website": null,
+      "note": "REGISTRY CODE NOT VERIFIED — excluded from matching until corrected",
+      "dataStatus": "no_report",
+      "latest": null,
+      "history": []
+    },
+    {
+      "name": "Kalle Kreis FIE",
+      "registryCode": "11322824",
+      "website": null,
+      "note": "REGISTRY CODE NOT VERIFIED — excluded from matching until corrected",
+      "dataStatus": "no_report",
+      "latest": null,
+      "history": []
+    },
+    {
+      "name": "KUUM ANDRES KALABUSS FIE",
+      "registryCode": "16556633",
+      "website": null,
+      "note": "REGISTRY CODE NOT VERIFIED — excluded from matching until corrected",
+      "dataStatus": "no_report",
+      "latest": null,
+      "history": []
+    },
+    {
+      "name": "Merela Kala OÜ",
+      "registryCode": "17433200",
+      "website": null,
+      "note": "registry_code_verified_from_search",
+      "dataStatus": "no_report",
+      "latest": null,
+      "history": []
+    },
+    {
+      "name": "MereMaitse OÜ",
+      "registryCode": "17470193",
+      "website": null,
+      "note": "REGISTRY CODE NOT VERIFIED — excluded from matching until corrected",
+      "dataStatus": "no_report",
+      "latest": null,
+      "history": []
+    },
+    {
+      "name": "Novafish OÜ",
+      "registryCode": "14980901",
+      "website": null,
+      "note": "registry_code_verified_from_search",
+      "dataStatus": "ok",
+      "latest": {
+        "reportId": "3370880",
+        "year": 2024,
+        "submitted": "2024-12-31T00:00:00.000",
+        "turnover": 0.0,
+        "equity": 2500.0,
+        "profit": 0.0,
+        "employees": 0.0,
+        "margin": null,
+        "turnoverPerEmployee": null
+      },
+      "history": [
+        {
+          "reportId": "3370880",
+          "year": 2024,
+          "submitted": "2024-12-31T00:00:00.000",
+          "turnover": 0.0,
+          "equity": 2500.0,
+          "profit": 0.0,
+          "employees": 0.0,
+          "margin": null,
+          "turnoverPerEmployee": null
+        },
+        {
+          "reportId": "3303951",
+          "year": 2023,
+          "submitted": "2023-12-31T00:00:00.000",
+          "turnover": 0.0,
+          "equity": 2500.0,
+          "profit": 0.0,
+          "employees": 0.0,
+          "margin": null,
+          "turnoverPerEmployee": null
+        },
+        {
+          "reportId": "2780451",
+          "year": 2022,
+          "submitted": "2022-12-31T00:00:00.000",
+          "turnover": 0.0,
+          "equity": null,
+          "profit": 0.0,
+          "employees": 0.0,
+          "margin": null,
+          "turnoverPerEmployee": null
+        },
+        {
+          "reportId": "2780446",
+          "year": 2021,
+          "submitted": "2021-12-31T00:00:00.000",
+          "turnover": 0.0,
+          "equity": 2500.0,
+          "profit": 0.0,
+          "employees": 0.0,
+          "margin": null,
+          "turnoverPerEmployee": null
+        },
+        {
+          "reportId": "2077083",
+          "year": 2020,
+          "submitted": "2020-12-31T00:00:00.000",
+          "turnover": 0.0,
+          "equity": 2500.0,
+          "profit": 0.0,
+          "employees": 0.0,
+          "margin": null,
+          "turnoverPerEmployee": null
+        }
+      ]
+    },
+    {
+      "name": "Õnne Kasvo FIE",
+      "registryCode": "11669657",
+      "website": null,
+      "note": "REGISTRY CODE NOT VERIFIED — excluded from matching until corrected",
+      "dataStatus": "no_report",
+      "latest": null,
+      "history": []
+    },
+    {
+      "name": "Osaühing LAVANIT",
+      "registryCode": "11718870",
+      "website": null,
+      "note": "REGISTRY CODE NOT VERIFIED — excluded from matching until corrected",
+      "dataStatus": "ok",
+      "latest": {
+        "reportId": "3569552",
+        "year": 2025,
+        "submitted": "2025-12-31T00:00:00.000",
+        "turnover": 0.0,
+        "equity": 2556.0,
+        "profit": 0.0,
+        "employees": 0.0,
+        "margin": null,
+        "turnoverPerEmployee": null
+      },
+      "history": [
+        {
+          "reportId": "3569552",
+          "year": 2025,
+          "submitted": "2025-12-31T00:00:00.000",
+          "turnover": 0.0,
+          "equity": 2556.0,
+          "profit": 0.0,
+          "employees": 0.0,
+          "margin": null,
+          "turnoverPerEmployee": null
+        },
+        {
+          "reportId": "3129931",
+          "year": 2024,
+          "submitted": "2024-12-31T00:00:00.000",
+          "turnover": 0.0,
+          "equity": 2556.0,
+          "profit": 0.0,
+          "employees": 0.0,
+          "margin": null,
+          "turnoverPerEmployee": null
+        },
+        {
+          "reportId": "3129948",
+          "year": 2023,
+          "submitted": "2023-12-31T00:00:00.000",
+          "turnover": 0.0,
+          "equity": 2556.0,
+          "profit": 0.0,
+          "employees": 0.0,
+          "margin": null,
+          "turnoverPerEmployee": null
+        },
+        {
+          "reportId": "2508595",
+          "year": 2022,
+          "submitted": "2022-12-31T00:00:00.000",
+          "turnover": 0.0,
+          "equity": 2556.0,
+          "profit": 0.0,
+          "employees": 0.0,
+          "margin": null,
+          "turnoverPerEmployee": null
+        },
+        {
+          "reportId": "2219492",
+          "year": 2021,
+          "submitted": "2021-12-31T00:00:00.000",
+          "turnover": 0.0,
+          "equity": 2556.0,
+          "profit": 0.0,
+          "employees": 0.0,
+          "margin": null,
+          "turnoverPerEmployee": null
+        },
+        {
+          "reportId": "2219607",
+          "year": 2020,
+          "submitted": "2020-12-31T00:00:00.000",
+          "turnover": 0.0,
+          "equity": 2556.0,
+          "profit": 0.0,
+          "employees": 0.0,
+          "margin": null,
+          "turnoverPerEmployee": null
+        },
+        {
+          "reportId": "1870331",
+          "year": 2019,
+          "submitted": "2019-12-31T00:00:00.000",
+          "turnover": 0.0,
+          "equity": 2556.0,
+          "profit": 0.0,
+          "employees": 0.0,
+          "margin": null,
+          "turnoverPerEmployee": null
+        }
+      ]
+    },
+    {
+      "name": "OSAÜHING TEK ELEKTROTRANS",
+      "registryCode": "10871569",
+      "website": null,
+      "note": "REGISTRY CODE NOT VERIFIED — excluded from matching until corrected",
+      "dataStatus": "ok",
+      "latest": {
+        "reportId": "3489047",
+        "year": 2025,
+        "submitted": "2025-12-31T00:00:00.000",
+        "turnover": 0.0,
+        "equity": 3769.0,
+        "profit": 0.0,
+        "employees": 0.0,
+        "margin": null,
+        "turnoverPerEmployee": null
+      },
+      "history": [
+        {
+          "reportId": "3489047",
+          "year": 2025,
+          "submitted": "2025-12-31T00:00:00.000",
+          "turnover": 0.0,
+          "equity": 3769.0,
+          "profit": 0.0,
+          "employees": 0.0,
+          "margin": null,
+          "turnoverPerEmployee": null
+        },
+        {
+          "reportId": "3220575",
+          "year": 2024,
+          "submitted": "2024-12-31T00:00:00.000",
+          "turnover": 0.0,
+          "equity": 3769.0,
+          "profit": 0.0,
+          "employees": 0.0,
+          "margin": null,
+          "turnoverPerEmployee": null
+        },
+        {
+          "reportId": "2910691",
+          "year": 2023,
+          "submitted": "2023-12-31T00:00:00.000",
+          "turnover": 0.0,
+          "equity": 3769.0,
+          "profit": 0.0,
+          "employees": 0.0,
+          "margin": null,
+          "turnoverPerEmployee": null
+        },
+        {
+          "reportId": "2601573",
+          "year": 2022,
+          "submitted": "2022-12-31T00:00:00.000",
+          "turnover": 0.0,
+          "equity": 3769.0,
+          "profit": 0.0,
+          "employees": 0.0,
+          "margin": null,
+          "turnoverPerEmployee": null
+        },
+        {
+          "reportId": "2361069",
+          "year": 2021,
+          "submitted": "2021-12-31T00:00:00.000",
+          "turnover": 0.0,
+          "equity": 3769.0,
+          "profit": 0.0,
+          "employees": 0.0,
+          "margin": null,
+          "turnoverPerEmployee": null
+        },
+        {
+          "reportId": "2058341",
+          "year": 2020,
+          "submitted": "2020-12-31T00:00:00.000",
+          "turnover": 0.0,
+          "equity": 3769.0,
+          "profit": 0.0,
+          "employees": 0.0,
+          "margin": null,
+          "turnoverPerEmployee": null
+        },
+        {
+          "reportId": "1795163",
+          "year": 2019,
+          "submitted": "2019-12-31T00:00:00.000",
+          "turnover": 0.0,
+          "equity": 3769.0,
+          "profit": -760.0,
+          "employees": 0.0,
+          "margin": null,
+          "turnoverPerEmployee": null
+        }
+      ]
+    },
+    {
+      "name": "OÜ FishWave",
+      "registryCode": "17320453",
+      "website": null,
+      "note": "registry_code_verified_from_search",
+      "dataStatus": "no_report",
+      "latest": null,
+      "history": []
+    },
+    {
+      "name": "OÜ GUSNAR EST",
+      "registryCode": "11257676",
+      "website": null,
+      "note": "registry_code_verified_from_search",
+      "dataStatus": "ok",
+      "latest": {
+        "reportId": "3562943",
+        "year": 2025,
+        "submitted": "2025-12-31T00:00:00.000",
+        "turnover": 0.0,
+        "equity": 2500.0,
+        "profit": 0.0,
+        "employees": 0.0,
+        "margin": null,
+        "turnoverPerEmployee": null
+      },
+      "history": [
+        {
+          "reportId": "3562943",
+          "year": 2025,
+          "submitted": "2025-12-31T00:00:00.000",
+          "turnover": 0.0,
+          "equity": 2500.0,
+          "profit": 0.0,
+          "employees": 0.0,
+          "margin": null,
+          "turnoverPerEmployee": null
+        },
+        {
+          "reportId": "3189470",
+          "year": 2024,
+          "submitted": "2024-12-31T00:00:00.000",
+          "turnover": 0.0,
+          "equity": 2500.0,
+          "profit": 0.0,
+          "employees": 0.0,
+          "margin": null,
+          "turnoverPerEmployee": null
+        },
+        {
+          "reportId": "2961190",
+          "year": 2023,
+          "submitted": "2023-12-31T00:00:00.000",
+          "turnover": 0.0,
+          "equity": 2500.0,
+          "profit": 0.0,
+          "employees": 0.0,
+          "margin": null,
+          "turnoverPerEmployee": null
+        },
+        {
+          "reportId": "2630325",
+          "year": 2022,
+          "submitted": "2022-12-31T00:00:00.000",
+          "turnover": 0.0,
+          "equity": 2500.0,
+          "profit": 0.0,
+          "employees": 0.0,
+          "margin": null,
+          "turnoverPerEmployee": null
+        },
+        {
+          "reportId": "2236935",
+          "year": 2021,
+          "submitted": "2021-12-31T00:00:00.000",
+          "turnover": 0.0,
+          "equity": 2500.0,
+          "profit": 0.0,
+          "employees": 0.0,
+          "margin": null,
+          "turnoverPerEmployee": null
+        },
+        {
+          "reportId": "1997452",
+          "year": 2020,
+          "submitted": "2020-12-31T00:00:00.000",
+          "turnover": null,
+          "equity": 2500.0,
+          "profit": null,
+          "employees": 0.0,
+          "margin": null,
+          "turnoverPerEmployee": null
+        },
+        {
+          "reportId": "2149452",
+          "year": 2019,
+          "submitted": "2019-12-31T00:00:00.000",
+          "turnover": 0.0,
+          "equity": 2500.0,
+          "profit": 0.0,
+          "employees": 0.0,
+          "margin": null,
+          "turnoverPerEmployee": null
+        }
+      ]
+    },
+    {
+      "name": "RAIV Fish OÜ",
+      "registryCode": "17380946",
+      "website": null,
+      "note": "registry_code_verified_from_search",
+      "dataStatus": "no_report",
+      "latest": null,
+      "history": []
+    },
+    {
+      "name": "Red & Black OÜ",
+      "registryCode": "17427851",
+      "website": null,
+      "note": "REGISTRY CODE NOT VERIFIED — excluded from matching until corrected",
+      "dataStatus": "no_report",
+      "latest": null,
+      "history": []
+    },
+    {
+      "name": "Reet Säinas FIE",
+      "registryCode": "12743433",
+      "website": null,
+      "note": "REGISTRY CODE NOT VERIFIED — excluded from matching until corrected",
+      "dataStatus": "no_report",
+      "latest": null,
+      "history": []
+    },
+    {
+      "name": "Reimo Saarkoppel FIE",
+      "registryCode": "10374173",
+      "website": null,
+      "note": "REGISTRY CODE NOT VERIFIED — excluded from matching until corrected",
+      "dataStatus": "no_report",
+      "latest": null,
+      "history": []
+    },
+    {
+      "name": "Sergei Kosov FIE",
+      "registryCode": "11895922",
+      "website": null,
+      "note": "REGISTRY CODE NOT VERIFIED — excluded from matching until corrected",
+      "dataStatus": "no_report",
+      "latest": null,
+      "history": []
+    },
+    {
+      "name": "Tõnis Malla FIE",
+      "registryCode": "11541495",
+      "website": null,
+      "note": "REGISTRY CODE NOT VERIFIED — excluded from matching until corrected",
+      "dataStatus": "no_report",
+      "latest": null,
+      "history": []
+    },
+    {
+      "name": "Valdur Saarkoppel FIE",
+      "registryCode": "10187608",
+      "website": null,
+      "note": "REGISTRY CODE NOT VERIFIED — excluded from matching until corrected",
+      "dataStatus": "no_report",
+      "latest": null,
+      "history": []
+    },
+    {
+      "name": "MaarduKala OÜ",
+      "registryCode": "14783230",
+      "website": null,
+      "note": "registry_code_verified_from_search",
+      "dataStatus": "ok",
+      "latest": {
+        "reportId": "3617613",
+        "year": 2025,
+        "submitted": "2025-12-31T00:00:00.000",
+        "turnover": 518051.0,
+        "equity": 68058.0,
+        "profit": 31381.0,
+        "employees": 4.0,
+        "margin": 6.057511712167335,
+        "turnoverPerEmployee": 129512.75
+      },
+      "history": [
+        {
+          "reportId": "3617613",
+          "year": 2025,
+          "submitted": "2025-12-31T00:00:00.000",
+          "turnover": 518051.0,
+          "equity": 68058.0,
+          "profit": 31381.0,
+          "employees": 4.0,
+          "margin": 6.057511712167335,
+          "turnoverPerEmployee": 129512.75
+        },
+        {
+          "reportId": "3328450",
+          "year": 2024,
+          "submitted": "2024-12-31T00:00:00.000",
+          "turnover": 420021.0,
+          "equity": 36677.0,
+          "profit": 6846.0,
+          "employees": 2.0,
+          "margin": 1.629918504074796,
+          "turnoverPerEmployee": 210010.5
+        },
+        {
+          "reportId": "2974663",
+          "year": 2023,
+          "submitted": "2023-12-31T00:00:00.000",
+          "turnover": 377834.0,
+          "equity": 29831.0,
+          "profit": 666.0,
+          "employees": 1.0,
+          "margin": 0.17626788483831524,
+          "turnoverPerEmployee": 377834.0
+        },
+        {
+          "reportId": "2676027",
+          "year": 2022,
+          "submitted": "2022-12-31T00:00:00.000",
+          "turnover": 289887.0,
+          "equity": 29165.0,
+          "profit": 2163.0,
+          "employees": 1.0,
+          "margin": 0.7461528112678388,
+          "turnoverPerEmployee": 289887.0
+        },
+        {
+          "reportId": "2393370",
+          "year": 2021,
+          "submitted": "2021-12-31T00:00:00.000",
+          "turnover": 259611.0,
+          "equity": 27002.0,
+          "profit": 557.0,
+          "employees": 2.0,
+          "margin": 0.2145517716891811,
+          "turnoverPerEmployee": 129805.5
+        },
+        {
+          "reportId": "2117404",
+          "year": 2020,
+          "submitted": "2020-12-31T00:00:00.000",
+          "turnover": 165662.0,
+          "equity": 26445.0,
+          "profit": 23945.0,
+          "employees": 2.0,
+          "margin": 14.45412949258128,
+          "turnoverPerEmployee": 82831.0
+        }
+      ]
+    },
+    {
+      "name": "Betreston OÜ",
+      "registryCode": "10219129",
+      "website": null,
+      "note": "registry_code_verified_from_search",
+      "dataStatus": "ok",
+      "latest": {
+        "reportId": "3448100",
+        "year": 2025,
+        "submitted": "2025-12-31T00:00:00.000",
+        "turnover": 33460.0,
+        "equity": 67392.0,
+        "profit": 814.0,
+        "employees": 0.0,
+        "margin": 2.432755528989839,
+        "turnoverPerEmployee": null
+      },
+      "history": [
+        {
+          "reportId": "3448100",
+          "year": 2025,
+          "submitted": "2025-12-31T00:00:00.000",
+          "turnover": 33460.0,
+          "equity": 67392.0,
+          "profit": 814.0,
+          "employees": 0.0,
+          "margin": 2.432755528989839,
+          "turnoverPerEmployee": null
+        },
+        {
+          "reportId": "3145481",
+          "year": 2024,
+          "submitted": "2024-12-31T00:00:00.000",
+          "turnover": 30559.0,
+          "equity": 66578.0,
+          "profit": 68.0,
+          "employees": 0.0,
+          "margin": 0.2225203704309696,
+          "turnoverPerEmployee": null
+        },
+        {
+          "reportId": "2854087",
+          "year": 2023,
+          "submitted": "2023-12-31T00:00:00.000",
+          "turnover": 46802.0,
+          "equity": 66510.0,
+          "profit": -3285.0,
+          "employees": 0.0,
+          "margin": -7.018930814922439,
+          "turnoverPerEmployee": null
+        },
+        {
+          "reportId": "2564218",
+          "year": 2022,
+          "submitted": "2022-12-31T00:00:00.000",
+          "turnover": 37964.0,
+          "equity": 69795.0,
+          "profit": 942.0,
+          "employees": 0.0,
+          "margin": 2.4812980718575495,
+          "turnoverPerEmployee": null
+        },
+        {
+          "reportId": "2325163",
+          "year": 2021,
+          "submitted": "2021-12-31T00:00:00.000",
+          "turnover": 20903.0,
+          "equity": 68853.0,
+          "profit": -12090.0,
+          "employees": 1.0,
+          "margin": -57.83858776252213,
+          "turnoverPerEmployee": 20903.0
+        },
+        {
+          "reportId": "2055414",
+          "year": 2020,
+          "submitted": "2020-12-31T00:00:00.000",
+          "turnover": 35699.0,
+          "equity": 80943.0,
+          "profit": 762.0,
+          "employees": 0.0,
+          "margin": 2.1345135718087342,
+          "turnoverPerEmployee": null
+        },
+        {
+          "reportId": "1731705",
+          "year": 2019,
+          "submitted": "2019-12-31T00:00:00.000",
+          "turnover": 26573.0,
+          "equity": 80181.0,
+          "profit": 4337.0,
+          "employees": 0.0,
+          "margin": 16.32107778572235,
+          "turnoverPerEmployee": null
+        }
+      ]
+    }
+  ]
+}

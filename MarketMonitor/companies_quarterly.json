@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-11T13:20:46.278623",
+  "updated": "2026-10-12T08:47:31.851755",
   "source": {
     "emtaOpenDataPage": "https://www.emta.ee/en/private-client/board-news-and-contacts/news-press-information-statistics/statistics-and-open-data",
     "files": [
@@ -8522,10 +8522,10 @@
           "labourTaxes": 3477.0,
           "employees": 2.0,
           "taxableTurnoverPerEmployee": 25570.0,
-          "projectedTurnover": 51657.0,
-          "projectedLabourProductivity": 25829.0,
+          "projectedTurnover": 51728.0,
+          "projectedLabourProductivity": 25864.0,
           "labourProductivity": 25570.0,
-          "profitPerEmployee": 3633.0,
+          "profitPerEmployee": 3638.0,
           "averageGrossWage": 1240.0,
           "sourceName": "HK KODESTE, OÜ"
         },
@@ -8538,10 +8538,10 @@
           "labourTaxes": 2938.0,
           "employees": 2.0,
           "taxableTurnoverPerEmployee": 49637.5,
-          "projectedTurnover": 100278.0,
-          "projectedLabourProductivity": 50139.0,
+          "projectedTurnover": 100417.0,
+          "projectedLabourProductivity": 50209.0,
           "labourProductivity": 49638.0,
-          "profitPerEmployee": 7053.0,
+          "profitPerEmployee": 7063.0,
           "averageGrossWage": 1100.0,
           "sourceName": "HK KODESTE, OÜ"
         },
