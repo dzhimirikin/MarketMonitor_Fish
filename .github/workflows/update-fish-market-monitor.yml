@@ -39,17 +39,28 @@ jobs:
         continue-on-error: true
         run: dart run market_monitor_quarterly.dart
 
-      - name: Commit generated JSON files
+      - name: Commit generated JSON files and archive
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          if [ -f MarketMonitor/companies.json ]; then git add MarketMonitor/companies.json; fi
-          if [ -f MarketMonitor/companies_quarterly.json ]; then git add MarketMonitor/companies_quarterly.json; fi
+
+          if [ -f MarketMonitor/companies.json ]; then
+            git add MarketMonitor/companies.json
+          fi
+
+          if [ -f MarketMonitor/companies_quarterly.json ]; then
+            git add MarketMonitor/companies_quarterly.json
+          fi
+
+          if [ -d MarketMonitor/archive ]; then
+            git add MarketMonitor/archive/
+          fi
+
           if ! git diff --cached --quiet; then
             git commit -m "Update Fish Market Monitor data"
             git push
           else
-            echo "No generated data changes to commit."
+            echo "No generated data or archive changes to commit."
           fi
 
       - name: Report parser failures
