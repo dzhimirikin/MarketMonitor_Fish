@@ -156,7 +156,7 @@
     if (!selectionContainer || !selectAllCheckbox) return;
 
     selectAllCheckbox.addEventListener("change", () => {
-      selectAllCheckbox.blur();
+      clearActivePreset();
       const ids = companies.map(companyId).filter(Boolean);
       selectedCompanies = selectAllCheckbox.checked
         ? new Set(ids)
@@ -169,7 +169,7 @@
       const checkbox = event.target.closest(".market-company-checkbox");
       if (!checkbox) return;
 
-      checkbox.blur();
+      clearActivePreset();
       const id = checkbox.dataset.companyId || "";
       if (checkbox.checked) selectedCompanies.add(id);
       else selectedCompanies.delete(id);
@@ -182,6 +182,14 @@
   }
 
 
+
+  function clearActivePreset() {
+    sessionStorage.removeItem("marketMonitorSelectionPreset");
+    updatePresetButtons("");
+    window.dispatchEvent(new CustomEvent("market-monitor-preset-change", {
+      detail: { preset: "" }
+    }));
+  }
 
   function updatePresetButtons(preset) {
     const buttons = selectionContainer?.querySelectorAll("[data-selection-preset]");
@@ -197,6 +205,13 @@
     if (!selectionContainer) return;
     const buttons = selectionContainer.querySelectorAll("[data-selection-preset]");
     if (!buttons.length) return;
+
+    // Al and Fe preset buttons are intentionally hidden in the selection header.
+    buttons.forEach(button => {
+      if (["Al", "Fe"].includes(button.dataset.selectionPreset)) {
+        button.hidden = true;
+      }
+    });
 
     updatePresetButtons(sessionStorage.getItem("marketMonitorSelectionPreset") || "");
 
@@ -733,11 +748,11 @@
         : `<span class="company-name">${escapeHtml(company.name)}</span>`;
 
       const register = registerUrl
-        ? `<a href="${registerUrl}" target="_blank" rel="noopener noreferrer" class="teatmik-link register-link" style="display:inline-flex;flex:0 0 26px;width:26px;height:22px;align-items:center;justify-content:center;vertical-align:middle;box-sizing:border-box" title="Commercial Register (RIK)" aria-label="Commercial Register (RIK)"><span class="teatmik-icon register-icon" style="color:#0080BA">R</span></a>`
+        ? `<a href="${registerUrl}" target="_blank" rel="noopener noreferrer" class="teatmik-link register-link" title="Commercial Register (RIK)" aria-label="Commercial Register (RIK)"><span class="teatmik-icon" style="color: #0080BA;">R</span></a>`
         : "";
 
       const teatmik = teatmikUrl
-        ? `<a href="${teatmikUrl}" target="_blank" rel="noopener noreferrer" class="quarterly-teatmik" style="display:inline-flex;flex:0 0 26px;width:26px;height:22px;align-items:center;justify-content:center;vertical-align:middle;box-sizing:border-box" title="TEATMIK" aria-label="TEATMIK">t</a>`
+        ? `<a href="${teatmikUrl}" target="_blank" rel="noopener noreferrer" class="teatmik-link" title="TEATMIK" aria-label="TEATMIK"><span class="teatmik-icon">t</span></a>`
         : "";
 
       const profitClass = record?.profit == null
@@ -762,7 +777,7 @@
                 aria-label="${escapeHtml(company.name || "Company")}">
               <span class="company-rank">${index + 1}/${total}</span>
             </span>
-            <span class="company-name-slot" style="display:inline-block;flex:0 0 110px;width:110px;min-width:0;vertical-align:middle">${companyName}</span>
+            ${companyName}
             ${register}
             ${teatmik}
         </span>
