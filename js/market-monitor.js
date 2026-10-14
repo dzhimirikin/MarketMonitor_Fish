@@ -733,11 +733,11 @@
         : `<span class="company-name">${escapeHtml(company.name)}</span>`;
 
       const register = registerUrl
-        ? `<a href="${registerUrl}" target="_blank" rel="noopener noreferrer" class="teatmik-link register-link" title="Commercial Register (RIK)" aria-label="Commercial Register (RIK)"><span class="teatmik-icon register-icon" style="color:#0080BA">R</span></a>`
+        ? `<a href="${registerUrl}" target="_blank" rel="noopener noreferrer" class="teatmik-link register-link" title="Commercial Register (RIK)" aria-label="Commercial Register (RIK)" style="display:inline-flex;align-items:center;justify-content:center;vertical-align:middle"><span class="teatmik-icon register-icon" style="color:#0080BA">R</span></a>`
         : "";
 
       const teatmik = teatmikUrl
-        ? `<a href="${teatmikUrl}" target="_blank" rel="noopener noreferrer" class="teatmik-link" title="TEATMIK" aria-label="TEATMIK"><span class="teatmik-icon">t</span></a>`
+        ? `<a href="${teatmikUrl}" target="_blank" rel="noopener noreferrer" class="teatmik-link" title="TEATMIK" aria-label="TEATMIK" style="display:inline-flex;align-items:center;justify-content:center;vertical-align:middle"><span class="teatmik-icon">t</span></a>`
         : "";
 
       const profitClass = record?.profit == null

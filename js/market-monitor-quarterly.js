@@ -885,7 +885,8 @@
               rel="noopener noreferrer"
               class="teatmik-link register-link"
               title="Commercial Register (RIK)"
-              aria-label="Commercial Register (RIK)"><span class="teatmik-icon register-icon" style="color:#0080BA">R</span></a>`
+              aria-label="Commercial Register (RIK)"
+              style="display:inline-flex;align-items:center;justify-content:center;vertical-align:middle"><span class="teatmik-icon register-icon" style="color:#0080BA">R</span></a>`
         : "";
 
       const teatmik = teatmikUrl
@@ -894,7 +895,8 @@
               rel="noopener noreferrer"
               class="quarterly-teatmik"
               title="TEATMIK"
-              aria-label="TEATMIK">t</a>`
+              aria-label="TEATMIK"
+              style="display:inline-flex;align-items:center;justify-content:center;vertical-align:middle">t</a>`
         : "";
 
       const label = index => escapeHtml(mobileLabels[index] || "");
