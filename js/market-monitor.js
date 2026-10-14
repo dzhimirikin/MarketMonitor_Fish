@@ -733,11 +733,11 @@
         : `<span class="company-name">${escapeHtml(company.name)}</span>`;
 
       const register = registerUrl
-        ? `<a href="${registerUrl}" target="_blank" rel="noopener noreferrer" class="teatmik-link register-link" title="Commercial Register (RIK)" aria-label="Commercial Register (RIK)"><span class="teatmik-icon register-icon" style="color:#0080BA">R</span></a>`
+        ? `<a href="${registerUrl}" target="_blank" rel="noopener noreferrer" class="teatmik-link register-link" style="display:inline-flex;flex:0 0 26px;width:26px;height:22px;align-items:center;justify-content:center;vertical-align:middle;box-sizing:border-box" title="Commercial Register (RIK)" aria-label="Commercial Register (RIK)"><span class="teatmik-icon register-icon" style="color:#0080BA">R</span></a>`
         : "";
 
       const teatmik = teatmikUrl
-        ? `<a href="${teatmikUrl}" target="_blank" rel="noopener noreferrer" class="quarterly-teatmik" title="TEATMIK" aria-label="TEATMIK">t</a>`
+        ? `<a href="${teatmikUrl}" target="_blank" rel="noopener noreferrer" class="quarterly-teatmik" style="display:inline-flex;flex:0 0 26px;width:26px;height:22px;align-items:center;justify-content:center;vertical-align:middle;box-sizing:border-box" title="TEATMIK" aria-label="TEATMIK">t</a>`
         : "";
 
       const profitClass = record?.profit == null
@@ -762,7 +762,7 @@
                 aria-label="${escapeHtml(company.name || "Company")}">
               <span class="company-rank">${index + 1}/${total}</span>
             </span>
-            ${companyName}
+            <span class="company-name-slot" style="display:inline-block;flex:0 0 110px;width:110px;min-width:0;vertical-align:middle">${companyName}</span>
             ${register}
             ${teatmik}
         </span>
