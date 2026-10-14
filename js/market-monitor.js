@@ -54,6 +54,58 @@
     return [...years].sort((a, b) => b - a);
   }
 
+  // Match the first three annual columns to the quarterly report while
+  // preserving the annual table's total width. Remaining columns share the
+  // width left over, in proportion to their previous widths.
+  function syncAnnualColumnWidths() {
+    const annualTable = document.getElementById("marketMonitorAnnual");
+    const quarterlyTable = document.querySelector("#market-monitor .quarterly-table");
+    if (!annualTable || !quarterlyTable) return;
+
+    const annualHeaders = [...annualTable.querySelectorAll("thead th")];
+    const quarterlyHeaders = [...quarterlyTable.querySelectorAll("thead th")];
+    if (annualHeaders.length < 3 || quarterlyHeaders.length < 3) return;
+
+    const widthOf = cell => {
+      const rectWidth = cell.getBoundingClientRect().width;
+      if (rectWidth > 0) return rectWidth;
+      const cssWidth = parseFloat(getComputedStyle(cell).width);
+      return Number.isFinite(cssWidth) ? cssWidth : 0;
+    };
+
+    const quarterlyWidths = quarterlyHeaders.slice(0, 3).map(widthOf);
+    if (quarterlyWidths.some(width => width <= 0)) return;
+
+    let colgroup = annualTable.querySelector(":scope > colgroup");
+    if (!colgroup) {
+      colgroup = document.createElement("colgroup");
+      annualTable.insertBefore(colgroup, annualTable.firstChild);
+    }
+    while (colgroup.children.length < annualHeaders.length) {
+      colgroup.appendChild(document.createElement("col"));
+    }
+    while (colgroup.children.length > annualHeaders.length) {
+      colgroup.lastElementChild.remove();
+    }
+
+    const oldWidths = annualHeaders.map(widthOf);
+    const totalWidth = oldWidths.reduce((sum, width) => sum + width, 0);
+    if (totalWidth <= 0) return;
+
+    const fixedWidth = quarterlyWidths.reduce((sum, width) => sum + width, 0);
+    const remainingWidth = Math.max(0, totalWidth - fixedWidth);
+    const oldRemaining = oldWidths.slice(3).reduce((sum, width) => sum + width, 0);
+    const widths = [...quarterlyWidths];
+    oldWidths.slice(3).forEach(width => {
+      widths.push(oldRemaining > 0 ? remainingWidth * width / oldRemaining : remainingWidth / (oldWidths.length - 3));
+    });
+
+    annualTable.style.tableLayout = "fixed";
+    widths.forEach((width, index) => {
+      colgroup.children[index].style.width = `${width}px`;
+    });
+  }
+
   function getMobileLabels() {
     const headerCells = document.querySelectorAll("#marketMonitorAnnual thead th");
     return [...headerCells].map(th => th.textContent.trim().replace(/,\s*€$/u, ""));
@@ -693,6 +745,7 @@
   }
 
   function render() {
+    syncAnnualColumnWidths();
     const year = yearSelect.value;
     const query = searchInput.value.trim().toLowerCase();
     const mobileLabels = getMobileLabels();
@@ -864,4 +917,6 @@
   setupSelectionPresetButtons();
   setupSelectionFileActions();
   loadData();
+  window.addEventListener("resize", syncAnnualColumnWidths);
+  window.addEventListener("load", syncAnnualColumnWidths);
 })();
