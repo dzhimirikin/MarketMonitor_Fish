@@ -740,16 +740,17 @@
         ? `<a href="${escapeHtml(company.website)}" target="_blank" rel="noopener noreferrer" class="company-name">${escapeHtml(company.name)}</a>`
         : `<span class="company-name">${escapeHtml(company.name)}</span>`;
 
-      // Fixed-width name and link columns keep R and t vertically aligned across rows.
-      const companyNameColumn = `<span style="display:inline-block; width:110px; vertical-align:middle; white-space:normal;">${companyName}</span>`;
+      // Keep the company name, RIK and TEATMIK in fixed flex columns,
+      // matching the reliable quarterly report layout.
+      const companyNameColumn = `<span class="annual-company-name-column" style="display:block; box-sizing:border-box; width:110px; min-width:110px; max-width:110px; flex:0 0 110px; white-space:normal; overflow-wrap:anywhere;">${companyName}</span>`;
 
       const register = registerUrl
-        ? `<a href="${registerUrl}" target="_blank" rel="noopener noreferrer" class="teatmik-link register-link" style="display:inline-flex; box-sizing:border-box; width:26px; height:24px; align-items:center; justify-content:center; vertical-align:middle; flex:0 0 26px;" title="Commercial Register (RIK)" aria-label="Commercial Register (RIK)"><span class="teatmik-icon" style="color:#0080BA;">R</span></a>`
-        : `<span style="display:inline-block; width:26px;"></span>`;
+        ? `<a href="${registerUrl}" target="_blank" rel="noopener noreferrer" class="teatmik-link register-link annual-company-icon" style="display:inline-flex; box-sizing:border-box; width:26px; min-width:26px; max-width:26px; height:24px; flex:0 0 26px; align-items:center; justify-content:center; align-self:center; margin:0; padding:0;" title="Commercial Register (RIK)" aria-label="Commercial Register (RIK)"><span class="teatmik-icon" style="color:#0080BA;">R</span></a>`
+        : `<span class="annual-company-icon-placeholder" aria-hidden="true" style="display:inline-block; box-sizing:border-box; width:26px; min-width:26px; max-width:26px; height:24px; flex:0 0 26px;"></span>`;
 
       const teatmik = teatmikUrl
-        ? `<a href="${teatmikUrl}" target="_blank" rel="noopener noreferrer" class="teatmik-link" style="display:inline-flex; box-sizing:border-box; width:26px; height:24px; align-items:center; justify-content:center; vertical-align:middle; flex:0 0 26px;" title="TEATMIK" aria-label="TEATMIK"><span class="teatmik-icon">t</span></a>`
-        : `<span style="display:inline-block; width:26px;"></span>`;
+        ? `<a href="${teatmikUrl}" target="_blank" rel="noopener noreferrer" class="teatmik-link annual-company-icon" style="display:inline-flex; box-sizing:border-box; width:26px; min-width:26px; max-width:26px; height:24px; flex:0 0 26px; align-items:center; justify-content:center; align-self:center; margin:0; padding:0;" title="TEATMIK" aria-label="TEATMIK"><span class="teatmik-icon">t</span></a>`
+        : `<span class="annual-company-icon-placeholder" aria-hidden="true" style="display:inline-block; box-sizing:border-box; width:26px; min-width:26px; max-width:26px; height:24px; flex:0 0 26px;"></span>`;
 
       const profitClass = record?.profit == null
         ? "muted"
@@ -763,7 +764,7 @@
 
       return `<tr>
         <td class="company">
-        <span class="company-cell">
+        <span class="company-cell" style="display:inline-flex; align-items:center; vertical-align:middle; gap:0;">
             <span class="company-selection">
               <input
                 type="checkbox"
