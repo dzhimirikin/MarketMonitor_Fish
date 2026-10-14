@@ -54,17 +54,15 @@
     return [...years].sort((a, b) => b - a);
   }
 
-  // Match the first three annual columns to the quarterly report while
-  // preserving the annual table's total width. Remaining columns share the
-  // width left over, in proportion to their previous widths.
+  // Match the Company, Year and Turnover columns to the quarterly report.
+  // If the quarterly table is hidden, use the desktop widths measured from its layout.
   function syncAnnualColumnWidths() {
     const annualTable = document.getElementById("marketMonitorAnnual");
     const quarterlyTable = document.querySelector("#market-monitor .quarterly-table");
-    if (!annualTable || !quarterlyTable) return;
+    if (!annualTable) return;
 
     const annualHeaders = [...annualTable.querySelectorAll("thead th")];
-    const quarterlyHeaders = [...quarterlyTable.querySelectorAll("thead th")];
-    if (annualHeaders.length < 3 || quarterlyHeaders.length < 3) return;
+    if (annualHeaders.length < 3) return;
 
     const widthOf = cell => {
       const rectWidth = cell.getBoundingClientRect().width;
@@ -73,8 +71,14 @@
       return Number.isFinite(cssWidth) ? cssWidth : 0;
     };
 
-    const quarterlyWidths = quarterlyHeaders.slice(0, 3).map(widthOf);
-    if (quarterlyWidths.some(width => width <= 0)) return;
+    let targetWidths = [254, 78, 97];
+    if (quarterlyTable) {
+      const quarterlyHeaders = [...quarterlyTable.querySelectorAll("thead th")];
+      if (quarterlyHeaders.length >= 3) {
+        const measured = quarterlyHeaders.slice(0, 3).map(widthOf);
+        if (measured.every(width => width > 0)) targetWidths = measured;
+      }
+    }
 
     let colgroup = annualTable.querySelector(":scope > colgroup");
     if (!colgroup) {
@@ -88,16 +92,17 @@
       colgroup.lastElementChild.remove();
     }
 
-    const oldWidths = annualHeaders.map(widthOf);
-    const totalWidth = oldWidths.reduce((sum, width) => sum + width, 0);
-    if (totalWidth <= 0) return;
+    const tableWidth = annualTable.getBoundingClientRect().width;
+    if (tableWidth <= 0) return;
 
-    const fixedWidth = quarterlyWidths.reduce((sum, width) => sum + width, 0);
-    const remainingWidth = Math.max(0, totalWidth - fixedWidth);
-    const oldRemaining = oldWidths.slice(3).reduce((sum, width) => sum + width, 0);
-    const widths = [...quarterlyWidths];
+    const oldWidths = annualHeaders.map(widthOf);
+    const oldRemainingTotal = oldWidths.slice(3).reduce((sum, width) => sum + width, 0);
+    const remainingTotal = Math.max(0, tableWidth - targetWidths.reduce((sum, width) => sum + width, 0));
+    const widths = [...targetWidths];
     oldWidths.slice(3).forEach(width => {
-      widths.push(oldRemaining > 0 ? remainingWidth * width / oldRemaining : remainingWidth / (oldWidths.length - 3));
+      widths.push(oldRemainingTotal > 0
+        ? remainingTotal * width / oldRemainingTotal
+        : remainingTotal / Math.max(1, oldWidths.length - 3));
     });
 
     annualTable.style.tableLayout = "fixed";
