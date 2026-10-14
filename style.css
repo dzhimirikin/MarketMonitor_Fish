@@ -3124,56 +3124,59 @@ right:30px;
 
 /* Ширины колонок */
 
-
-/* ---------- Ширины колонок годового отчёта ---------- */
-/* Сумма ширин = 100%. Квартальный отчёт не затрагивается. */
-
-#market-monitor .annual-table th:nth-child(1),
-#market-monitor .annual-table td:nth-child(1) {
-    width: 14%; /* Company */
+#market-monitor th:nth-child(1),
+#market-monitor td:nth-child(1) {
+    width: 20%;
     text-align: left;
 }
 
-#market-monitor .annual-table th:nth-child(2),
-#market-monitor .annual-table td:nth-child(2) {
-    width: 6%; /* Year */
+#market-monitor th:nth-child(2),
+#market-monitor td:nth-child(2) {
+    width: 6%;
 }
 
-#market-monitor .annual-table th:nth-child(3),
-#market-monitor .annual-table td:nth-child(3) {
-    width: 9%; /* Turnover */
+#market-monitor th:nth-child(3),
+#market-monitor td:nth-child(3) {
+    width: 11%;
 }
 
-#market-monitor .annual-table th:nth-child(4),
-#market-monitor .annual-table td:nth-child(4) {
-    width: 20%; /* Equity */
+#market-monitor th:nth-child(4),
+#market-monitor td:nth-child(4) {
+    width: 18%;
 }
 
-#market-monitor .annual-table th:nth-child(5),
-#market-monitor .annual-table td:nth-child(5) {
-    width: 12%; /* Profit */
+#market-monitor th:nth-child(5),
+#market-monitor td:nth-child(5) {
+    width: 11%;
 }
 
-#market-monitor .annual-table th:nth-child(6),
-#market-monitor .annual-table td:nth-child(6) {
-    width: 14%; /* Profit margin */
+#market-monitor th:nth-child(6),
+#market-monitor td:nth-child(6) {
+    width: 12%;
 }
 
-#market-monitor .annual-table th:nth-child(7),
-#market-monitor .annual-table td:nth-child(7) {
-    width: 9%; /* Employees */
+#market-monitor th:nth-child(7),
+#market-monitor td:nth-child(7) {
+    width: 8%;
 }
 
-#market-monitor .annual-table th:nth-child(8),
-#market-monitor .annual-table td:nth-child(8) {
-    width: 16%; /* Turnover per employee */
+#market-monitor th:nth-child(8),
+#market-monitor td:nth-child(8) {
+    width: 14%;
 }
 
-#market-monitor .annual-table th:first-child,
-#market-monitor .annual-table td:first-child {
+#market-monitor th:first-child,
+#market-monitor td:first-child {
     text-align: left;
 }
 
+#market-monitor td.company {
+    white-space: normal;
+}
+
+#market-monitor td.company .company-cell {
+    max-width: none;
+}
 
 
 /* ---------- Компания ---------- */
