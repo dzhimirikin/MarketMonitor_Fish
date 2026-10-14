@@ -206,13 +206,6 @@
     const buttons = selectionContainer.querySelectorAll("[data-selection-preset]");
     if (!buttons.length) return;
 
-    // Al and Fe preset buttons are intentionally hidden in the selection header.
-    buttons.forEach(button => {
-      if (["Al", "Fe"].includes(button.dataset.selectionPreset)) {
-        button.hidden = true;
-      }
-    });
-
     updatePresetButtons(sessionStorage.getItem("marketMonitorSelectionPreset") || "");
 
     buttons.forEach(button => {
@@ -747,13 +740,16 @@
         ? `<a href="${escapeHtml(company.website)}" target="_blank" rel="noopener noreferrer" class="company-name">${escapeHtml(company.name)}</a>`
         : `<span class="company-name">${escapeHtml(company.name)}</span>`;
 
+      // Fixed-width name and link columns keep R and t vertically aligned across rows.
+      const companyNameColumn = `<span style="display:inline-block; width:110px; vertical-align:middle; white-space:normal;">${companyName}</span>`;
+
       const register = registerUrl
-        ? `<a href="${registerUrl}" target="_blank" rel="noopener noreferrer" class="teatmik-link register-link" title="Commercial Register (RIK)" aria-label="Commercial Register (RIK)"><span class="teatmik-icon" style="color: #0080BA;">R</span></a>`
-        : "";
+        ? `<a href="${registerUrl}" target="_blank" rel="noopener noreferrer" class="teatmik-link register-link" style="display:inline-flex; box-sizing:border-box; width:26px; height:24px; align-items:center; justify-content:center; vertical-align:middle; flex:0 0 26px;" title="Commercial Register (RIK)" aria-label="Commercial Register (RIK)"><span class="teatmik-icon" style="color:#0080BA;">R</span></a>`
+        : `<span style="display:inline-block; width:26px;"></span>`;
 
       const teatmik = teatmikUrl
-        ? `<a href="${teatmikUrl}" target="_blank" rel="noopener noreferrer" class="teatmik-link" title="TEATMIK" aria-label="TEATMIK"><span class="teatmik-icon">t</span></a>`
-        : "";
+        ? `<a href="${teatmikUrl}" target="_blank" rel="noopener noreferrer" class="teatmik-link" style="display:inline-flex; box-sizing:border-box; width:26px; height:24px; align-items:center; justify-content:center; vertical-align:middle; flex:0 0 26px;" title="TEATMIK" aria-label="TEATMIK"><span class="teatmik-icon">t</span></a>`
+        : `<span style="display:inline-block; width:26px;"></span>`;
 
       const profitClass = record?.profit == null
         ? "muted"
@@ -777,7 +773,7 @@
                 aria-label="${escapeHtml(company.name || "Company")}">
               <span class="company-rank">${index + 1}/${total}</span>
             </span>
-            ${companyName}
+            ${companyNameColumn}
             ${register}
             ${teatmik}
         </span>
