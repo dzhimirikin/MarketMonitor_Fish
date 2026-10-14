@@ -733,11 +733,11 @@
         : `<span class="company-name">${escapeHtml(company.name)}</span>`;
 
       const register = registerUrl
-        ? `<a href="${registerUrl}" target="_blank" rel="noopener noreferrer" class="teatmik-link register-link" title="Commercial Register (RIK)" aria-label="Commercial Register (RIK)" style="display:inline-flex;align-items:center;justify-content:center;vertical-align:middle"><span class="teatmik-icon register-icon" style="color:#0080BA">R</span></a>`
+        ? `<a href="${registerUrl}" target="_blank" rel="noopener noreferrer" class="teatmik-link register-link" title="Commercial Register (RIK)" aria-label="Commercial Register (RIK)" style="display:inline-flex;align-items:center;justify-content:center;vertical-align:middle;height:20px;line-height:20px"><span class="teatmik-icon register-icon" style="display:inline-block;line-height:20px;vertical-align:middle;color:#0080BA">R</span></a>`
         : "";
 
       const teatmik = teatmikUrl
-        ? `<a href="${teatmikUrl}" target="_blank" rel="noopener noreferrer" class="teatmik-link" title="TEATMIK" aria-label="TEATMIK" style="display:inline-flex;align-items:center;justify-content:center;vertical-align:middle"><span class="teatmik-icon">t</span></a>`
+        ? `<a href="${teatmikUrl}" target="_blank" rel="noopener noreferrer" class="teatmik-link" title="TEATMIK" aria-label="TEATMIK" style="display:inline-flex;align-items:center;justify-content:center;vertical-align:middle;height:20px;line-height:20px"><span class="teatmik-icon" style="display:inline-block;line-height:20px;vertical-align:middle">t</span></a>`
         : "";
 
       const profitClass = record?.profit == null
