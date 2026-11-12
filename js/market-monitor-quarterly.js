@@ -6,35 +6,28 @@
 
   const t = key => monitor.dataset[key] || "";
 
-  const DATA_URL = monitor.dataset.dataFile || (
-    window.location.pathname.includes("/MarketMonitor/")
-      ? "companies_quarterly.json"
-      : "MarketMonitor/companies_quarterly.json"
-  );
+  const DATA_URL = window.location.pathname.includes("/MarketMonitor/")
+    ? "companies.json"
+    : "MarketMonitor/companies.json";
 
-  const yearSelect = document.getElementById("quarterlyYear");
-  const quarterSelect = document.getElementById("quarterlyQuarter");
-  const sortSelect = document.getElementById("quarterlySort");
-  const directionSelect = document.getElementById("quarterlyDirection");
-  const searchInput = document.getElementById("quarterlySearch");
-  const body = document.getElementById("quarterlyBody");
-  const status = document.getElementById("quarterlyStatus");
-  const summaryButton = document.getElementById("marketQuarterlySummaryButton");
-  let selectionContainer = document.getElementById("marketQuarterlySelection");
-  let selectAllCheckbox = document.getElementById("marketQuarterlySelectAll");
-  let selectAllLabel = document.getElementById("marketQuarterlySelectAllLabel");
+  const yearSelect = document.getElementById("year");
+  const sortSelect = document.getElementById("sort");
+  const sortDirection = document.getElementById("sortDirection");
+  const searchInput = document.getElementById("search");
+  const body = document.getElementById("companiesBody");
+  const status = document.getElementById("status");
+  const summaryButton = document.getElementById("marketAnnualSummaryButton");
+  let selectionContainer = document.getElementById("marketAnnualSelection");
+  let selectAllCheckbox = document.getElementById("marketAnnualSelectAll");
+  let selectAllLabel = document.getElementById("marketAnnualSelectAllLabel");
 
   const SELECTION_KEY = "marketMonitorSelectedCompanies";
   let selectedCompanies = new Set();
   let hasSavedSelection = false;
 
-  if (!yearSelect || !quarterSelect || !sortSelect || !directionSelect || !searchInput || !body || !status) return;
+  if (!yearSelect || !sortSelect || !sortDirection || !searchInput || !body || !status) return;
 
   let companies = [];
-
-  const lang = ["en", "et", "ru"].includes(document.documentElement.lang)
-    ? document.documentElement.lang
-    : "en";
 
   const euro = value => value == null
     ? "—"
@@ -42,30 +35,13 @@
 
   const number = value => value == null
     ? "—"
-    : new Intl.NumberFormat("ru-RU", { maximumFractionDigits: 0 }).format(Number(value));
+    : new Intl.NumberFormat("ru-RU", { maximumFractionDigits: 1 }).format(Number(value));
 
-  function escapeHtml(value) {
-    return String(value ?? "")
-      .replaceAll("&", "&amp;")
-      .replaceAll("<", "&lt;")
-      .replaceAll(">", "&gt;")
-      .replaceAll('"', "&quot;")
-      .replaceAll("'", "&#039;");
-  }
+  const percent = value => value == null ? "—" : `${Number(value).toFixed(1)}%`;
 
-  function getMobileLabels() {
-    const headerCells = document.querySelectorAll("#market-monitor .quarterly-table thead th");
-    return [...headerCells].map(th =>
-      th.textContent.trim().replace(/,\s*€/u, "")
-    );
-  }
-
-  function getRecord(company, year, quarter) {
-    const history = Array.isArray(company.history) ? company.history : [];
-    return history.find(record =>
-      Number(record.year) === Number(year) &&
-      Number(record.quarter) === Number(quarter)
-    ) || null;
+  function getRecord(company, year) {
+    if (year === "latest") return company.latest || null;
+    return (company.history || []).find(record => String(record.year) === String(year)) || null;
   }
 
   function availableYears() {
@@ -78,53 +54,24 @@
     return [...years].sort((a, b) => b - a);
   }
 
-  function availableQuarters(year) {
-    const quarters = new Set();
-    companies.forEach(company => {
-      (company.history || []).forEach(record => {
-        if (Number(record.year) === Number(year) && record.quarter != null) {
-          quarters.add(Number(record.quarter));
-        }
-      });
-    });
-    return [...quarters].sort((a, b) => b - a);
+  function getMobileLabels() {
+    const headerCells = document.querySelectorAll("#marketMonitorAnnual thead th");
+    return [...headerCells].map(th => th.textContent.trim().replace(/,\s*€$/u, ""));
   }
 
   function fillYears() {
     yearSelect.innerHTML = "";
-    const years = availableYears();
+    const latest = document.createElement("option");
+    latest.value = "latest";
+    latest.textContent = t("statusLatest") || "Latest available";
+    yearSelect.appendChild(latest);
 
-    years.forEach(year => {
+    availableYears().forEach(year => {
       const option = document.createElement("option");
       option.value = String(year);
       option.textContent = String(year);
       yearSelect.appendChild(option);
     });
-
-    if (years.length > 0) yearSelect.value = String(years[0]);
-    fillQuarters();
-  }
-
-  function fillQuarters() {
-    const previousQuarter = quarterSelect.value;
-    const year = Number(yearSelect.value);
-    const quarters = availableQuarters(year);
-    const prefix = t("quarterPrefix") || "Q";
-
-    quarterSelect.innerHTML = "";
-
-    quarters.forEach(quarter => {
-      const option = document.createElement("option");
-      option.value = String(quarter);
-      option.textContent = `${prefix}${quarter}`;
-      quarterSelect.appendChild(option);
-    });
-
-    if (previousQuarter && quarters.includes(Number(previousQuarter))) {
-      quarterSelect.value = previousQuarter;
-    } else if (quarters.length > 0) {
-      quarterSelect.value = String(quarters[0]);
-    }
   }
 
 
@@ -192,24 +139,27 @@
   function setupSelection() {
     if (!selectionContainer && summaryButton) {
       selectionContainer = document.createElement("div");
-      selectionContainer.id = "marketQuarterlySelection";
+      selectionContainer.id = "marketAnnualSelection";
       selectionContainer.className = "market-selection-action";
       selectionContainer.innerHTML = `
         <label class="market-selection-label">
-          <input id="marketQuarterlySelectAll" type="checkbox" checked>
-          <span id="marketQuarterlySelectAllLabel"></span>
+          <input id="marketAnnualSelectAll" type="checkbox" checked>
+          <span id="marketAnnualSelectAllLabel"></span>
         </label>
       `;
       summaryButton.parentElement.insertAdjacentElement("afterend", selectionContainer);
     }
 
-    selectAllCheckbox = selectionContainer?.querySelector("#marketQuarterlySelectAll") || selectAllCheckbox;
-    selectAllLabel = selectionContainer?.querySelector("#marketQuarterlySelectAllLabel") || selectAllLabel;
+    selectAllCheckbox = selectionContainer?.querySelector("#marketAnnualSelectAll") || selectAllCheckbox;
+    selectAllLabel = selectionContainer?.querySelector("#marketAnnualSelectAllLabel") || selectAllLabel;
 
     if (!selectionContainer || !selectAllCheckbox) return;
 
+    // Рыбная версия: убрать предустановленные выборки алюминия и железа.
+    selectionContainer.querySelectorAll("[data-selection-preset]").forEach(button => button.remove());
+
     selectAllCheckbox.addEventListener("change", () => {
-      selectAllCheckbox.blur();
+      clearActivePreset();
       const ids = companies.map(companyId).filter(Boolean);
       selectedCompanies = selectAllCheckbox.checked
         ? new Set(ids)
@@ -222,7 +172,7 @@
       const checkbox = event.target.closest(".market-company-checkbox");
       if (!checkbox) return;
 
-      checkbox.blur();
+      clearActivePreset();
       const id = checkbox.dataset.companyId || "";
       if (checkbox.checked) selectedCompanies.add(id);
       else selectedCompanies.delete(id);
@@ -235,6 +185,14 @@
   }
 
 
+
+  function clearActivePreset() {
+    sessionStorage.removeItem("marketMonitorSelectionPreset");
+    updatePresetButtons("");
+    window.dispatchEvent(new CustomEvent("market-monitor-preset-change", {
+      detail: { preset: "" }
+    }));
+  }
 
   function updatePresetButtons(preset) {
     const buttons = selectionContainer?.querySelectorAll("[data-selection-preset]");
@@ -313,9 +271,9 @@
 
 
   function setupSelectionFileActions() {
-    const exportButton = document.getElementById("marketQuarterlyExportSelection");
-    const importButton = document.getElementById("marketQuarterlyImportSelection");
-    const fileInput = document.getElementById("marketQuarterlyImportSelectionFile");
+    const exportButton = document.getElementById("marketAnnualExportSelection");
+    const importButton = document.getElementById("marketAnnualImportSelection");
+    const fileInput = document.getElementById("marketAnnualImportSelectionFile");
     if (!exportButton || !importButton || !fileInput) return;
 
     const messages = {
@@ -360,7 +318,7 @@
       const url = URL.createObjectURL(blob);
       const link = document.createElement("a");
       link.href = url;
-      link.download = "market-monitor-quarterly-selection.json";
+      link.download = "market-monitor-annual-selection.json";
       document.body.appendChild(link);
       link.click();
       link.remove();
@@ -448,9 +406,9 @@
 
     const lang = document.documentElement.lang || "en";
     const labels = {
-      en: ["Save to CSV", "Choose the period to export", "Save current period", "Choose a year range", "From", "To", "Download CSV", "Cancel"],
-      et: ["Salvesta CSV-na", "Vali ekspordi periood", "Salvesta praegune periood", "Vali aastate vahemik", "Alates", "Kuni", "Laadi CSV alla", "Tühista"],
-      ru: ["Сохранить в CSV", "Выберите период для экспорта", "Сохранить текущий период", "Выбрать интервал лет", "С года", "По год", "Скачать CSV", "Отмена"]
+    en: ["OK", "Choose the period to export", "Save current period", "Choose a year range", "From", "To", "Save to CSV", "Cancel"],
+    et: ["OK", "Vali ekspordi periood", "Salvesta praegune periood", "Vali aastate vahemik", "Alates", "Kuni", "Salvesta CSV-na", "Tühista"],
+    ru: ["OK", "Выберите период для экспорта", "Сохранить текущий период", "Выбрать интервал лет", "С года", "По год", "Сохранить в CSV", "Отмена"]
     }[lang] || ["Save to CSV", "Choose the period to export", "Save current period", "Choose a year range", "From", "To", "Download CSV", "Cancel"];
 
     saveButton.textContent = labels[0];
@@ -512,7 +470,7 @@
   }
 
   function currentSummaryCsvRows(modal, period) {
-    const headers = [t("csvPeriod") || "Period"];
+    const headers = [t("csvYear") || "Year"];
     const values = [period];
     modal.querySelectorAll(".market-summary-table tbody tr").forEach(tr => {
       const cells = tr.querySelectorAll("td");
@@ -525,17 +483,17 @@
   }
 
   function getSummaryModal() {
-    let modal = document.getElementById("marketQuarterlySummaryModal");
+    let modal = document.getElementById("marketAnnualSummaryModal");
     if (modal) return modal;
 
     modal = document.createElement("div");
-    modal.id = "marketQuarterlySummaryModal";
+    modal.id = "marketAnnualSummaryModal";
     modal.className = "market-summary-modal";
     modal.hidden = true;
     modal.innerHTML = `
-      <div class="market-summary-window" role="dialog" aria-modal="true" aria-labelledby="marketQuarterlySummaryTitle">
+      <div class="market-summary-window" role="dialog" aria-modal="true" aria-labelledby="marketAnnualSummaryTitle">
         <button type="button" class="market-summary-close" aria-label="${escapeHtml(t("summaryClose") || "Close")}">×</button>
-        <h3 id="marketQuarterlySummaryTitle"></h3>
+        <h3 id="marketAnnualSummaryTitle"></h3>
         <div class="market-summary-subtitle"></div>
         <div class="market-summary-table-wrap">
           <table class="market-summary-table">
@@ -585,142 +543,104 @@
     return modal;
   }
 
-  function showQuarterlySummary() {
-    const year = Number(yearSelect.value);
-    const quarter = Number(quarterSelect.value);
-    const search = searchInput.value.trim().toLowerCase();
+  function showAnnualSummary() {
+    const year = yearSelect.value;
+    const query = searchInput.value.trim().toLowerCase();
 
     const rows = companies
-      .filter(company =>
-        selectedCompanies.has(companyId(company)) &&
-        String(company.name || "").toLowerCase().includes(search)
-      )
-      .map(company => ({
-        company,
-        record: getRecord(company, year, quarter)
-      }))
-      .filter(item => item.record != null);
+      .map(company => ({ company, record: getRecord(company, year) }))
+      .filter(item =>
+        selectedCompanies.has(companyId(item.company)) &&
+        String(item.company.name || "").toLowerCase().includes(query) &&
+        item.record != null
+      );
 
     const sum = key => rows
       .filter(({ record }) => record?.[key] != null)
       .reduce((total, { record }) => total + Number(record[key] || 0), 0);
 
-    const totalTurnover = sum("taxableTurnover");
-    const totalProjectedTurnover = sum("projectedTurnover");
-    const totalStateTaxes = sum("stateTaxes");
-    const totalLabourTaxes = sum("labourTaxes");
+    const totalTurnover = sum("turnover");
+    const totalEquity = sum("equity");
+    const totalProfit = sum("profit");
     const totalEmployees = sum("employees");
 
-    const profitRows = rows.filter(({ record }) =>
-      record?.profitPerEmployee != null && record?.employees != null
+    const turnoverEmployees = rows.filter(({ record }) =>
+      record?.turnover != null && record?.employees != null
     );
 
-    const wageRows = rows.filter(({ record }) =>
-      record?.averageGrossWage != null && record?.employees != null
+    const profitEmployees = rows.filter(({ record }) =>
+      record?.profit != null && record?.employees != null
     );
 
-    const totalProfit = profitRows.reduce(
-      (total, { record }) =>
-        total + Number(record.profitPerEmployee) * Number(record.employees),
-      0
+    const turnoverForPerEmployee = turnoverEmployees.reduce(
+      (total, { record }) => total + Number(record.turnover || 0), 0
     );
 
-    const totalProfitEmployees = profitRows.reduce(
-      (total, { record }) => total + Number(record.employees),
-      0
+    const employeesForTurnover = turnoverEmployees.reduce(
+      (total, { record }) => total + Number(record.employees || 0), 0
     );
 
-    const totalGrossWages = wageRows.reduce(
-      (total, { record }) =>
-        total + Number(record.averageGrossWage) * Number(record.employees),
-      0
+    const profitForPerEmployee = profitEmployees.reduce(
+      (total, { record }) => total + Number(record.profit || 0), 0
     );
 
-    const totalWageEmployees = wageRows.reduce(
-      (total, { record }) => total + Number(record.employees),
-      0
-    );
-
-    const turnoverRows = rows.filter(({ record }) =>
-      record?.taxableTurnover != null && record?.employees != null
-    );
-
-    const turnoverForPerEmployee = turnoverRows.reduce(
-      (total, { record }) => total + Number(record.taxableTurnover),
-      0
-    );
-
-    const employeesForTurnover = turnoverRows.reduce(
-      (total, { record }) => total + Number(record.employees),
-      0
-    );
-
-    const projectedRows = rows.filter(({ record }) =>
-      record?.projectedTurnover != null && record?.employees != null
-    );
-
-    const projectedTurnoverForPerEmployee = projectedRows.reduce(
-      (total, { record }) => total + Number(record.projectedTurnover),
-      0
-    );
-
-    const employeesForProjected = projectedRows.reduce(
-      (total, { record }) => total + Number(record.employees),
-      0
+    const employeesForProfit = profitEmployees.reduce(
+      (total, { record }) => total + Number(record.employees || 0), 0
     );
 
     const turnoverPerEmployee = employeesForTurnover
       ? turnoverForPerEmployee / employeesForTurnover
       : null;
 
-    const projectedLabourProductivity = employeesForProjected
-      ? projectedTurnoverForPerEmployee / employeesForProjected
+    const profitPerEmployee = employeesForProfit
+      ? profitForPerEmployee / employeesForProfit
       : null;
 
-    const labourProductivity = turnoverPerEmployee;
-
-    const profitPerEmployee = totalProfitEmployees
-      ? totalProfit / totalProfitEmployees
-      : null;
-
-    const averageGrossWage = totalWageEmployees
-      ? totalGrossWages / totalWageEmployees
+    const margin = totalTurnover
+      ? (totalProfit / totalTurnover) * 100
       : null;
 
     const modal = getSummaryModal();
-    const title = modal.querySelector("#marketQuarterlySummaryTitle");
+    const title = modal.querySelector("#marketAnnualSummaryTitle");
     const subtitle = modal.querySelector(".market-summary-subtitle");
     const headerCells = modal.querySelectorAll("thead th");
     const tbody = modal.querySelector("tbody");
 
-    const prefix = t("quarterPrefix") || "Q";
+    const period = year === "latest"
+      ? (t("statusLatest") || "Latest available")
+      : year;
 
     title.textContent = t("summaryTitle") || "Market indicators";
     subtitle.textContent =
-      `${year}-${prefix}${quarter} · ${rows.length} ${t("summaryCompanies") || "companies"}`;
+      `${period} · ${rows.length} ${t("summaryCompanies") || "companies"}`;
 
     headerCells[0].textContent = t("summaryIndicator") || "Indicator";
     headerCells[1].textContent = t("summaryMarket") || "Market";
 
     const labels = [
       [t("summaryTurnover") || "Turnover, €", euro(totalTurnover), ""],
-      [t("summaryProjectedTurnover") || "Projected turnover, €", euro(totalProjectedTurnover), ""],
-      [t("summaryStateTaxes") || "State taxes, €", euro(totalStateTaxes), ""],
-      [t("summaryLabourTaxes") || "Labour taxes, €", euro(totalLabourTaxes), ""],
-      [t("summaryEmployees") || "Employees", number(totalEmployees), ""],
-      [t("summaryTurnoverPerEmployee") || "Turnover / employee, €", euro(turnoverPerEmployee), ""],
-      [t("summaryProjectedProductivity") || "Projected labour productivity, €", euro(projectedLabourProductivity), ""],
-      [t("summaryProductivity") || "Labour productivity, €", euro(labourProductivity), ""],
+      [t("summaryEquity") || "Equity, €", euro(totalEquity), ""],
       [
-        t("summaryProfitPerEmployee") || "Profit / employee, €",
-        euro(profitPerEmployee),
-        profitPerEmployee > 0
+        t("summaryProfit") || "Profit, €",
+        euro(totalProfit),
+        totalProfit > 0
           ? "market-summary-positive"
-          : profitPerEmployee < 0
+          : totalProfit < 0
             ? "market-summary-negative"
             : ""
       ],
-      [t("summaryAverageWage") || "Average gross wage, €", euro(averageGrossWage), ""]
+      [
+        t("summaryProfitability") || "Profitability",
+        percent(margin),
+        margin > 0
+          ? "market-summary-positive"
+          : margin < 0
+            ? "market-summary-negative"
+            : ""
+      ],
+      [t("summaryEmployees") || "Employees", number(totalEmployees), ""],
+      [t("summaryTurnoverPerEmployee") || "Turnover / employee, €", euro(turnoverPerEmployee), ""],
+      [t("summaryProfitPerEmployee") || "Profit / employee, €", euro(profitPerEmployee), ""]
     ];
 
     tbody.innerHTML = labels.map(([label, value, className]) =>
@@ -729,42 +649,21 @@
 
     setupCsvExport(modal, availableYears, (rangeYear, csvRows) => {
       const previousYear = yearSelect.value;
-      const previousQuarter = quarterSelect.value;
+      yearSelect.value = String(rangeYear);
+      showAnnualSummary();
 
-      // The quarter selector is normally populated only with quarters available
-      // for the currently selected year. During range export, however, the year
-      // changes programmatically and its options are not refreshed. Ensure all
-      // four quarter options exist so assigning Q3/Q4 cannot silently set value="".
-      const quarterPrefix = t("quarterPrefix") || "Q";
-      [1, 2, 3, 4].forEach(rangeQuarter => {
-        if (![...quarterSelect.options].some(option => Number(option.value) === rangeQuarter)) {
-          const option = document.createElement("option");
-          option.value = String(rangeQuarter);
-          option.textContent = `${quarterPrefix}${rangeQuarter}`;
-          quarterSelect.appendChild(option);
-        }
-      });
+      const reportModal = document.getElementById("marketAnnualSummaryModal");
+      const reportRows = [...reportModal.querySelectorAll(".market-summary-table tbody tr")];
+      const labels = reportRows.map(tr => tr.querySelectorAll("td")[0]?.textContent.trim() || "");
+      const values = reportRows.map(tr => tr.querySelectorAll("td")[1]?.textContent.trim() || "");
 
-      [1, 2, 3, 4].forEach(rangeQuarter => {
-        yearSelect.value = String(rangeYear);
-        quarterSelect.value = String(rangeQuarter);
-        showQuarterlySummary();
-
-        const reportModal = document.getElementById("marketQuarterlySummaryModal");
-        const period = `${rangeYear}-Q${rangeQuarter}`;
-        const reportRows = [...reportModal.querySelectorAll(".market-summary-table tbody tr")];
-        const labels = reportRows.map(tr => tr.querySelectorAll("td")[0]?.textContent.trim() || "");
-        const values = reportRows.map(tr => tr.querySelectorAll("td")[1]?.textContent.trim() || "");
-
-        if (csvRows.length === 0) {
-          csvRows.push([t("csvPeriod") || "Period", ...labels]);
-        }
-        csvRows.push([period, ...values]);
-      });
+      if (csvRows.length === 0) {
+        csvRows.push([t("csvYear") || "Year", ...labels]);
+      }
+      csvRows.push([String(rangeYear), ...values]);
 
       yearSelect.value = previousYear;
-      quarterSelect.value = previousQuarter;
-      showQuarterlySummary();
+      showAnnualSummary();
     }, () => {
       const period = modal.querySelector(".market-summary-subtitle").textContent.split("·")[0].trim();
       return { filename: period.toLowerCase().replace(/[^a-z0-9]+/giu, "-").replace(/^-|-$/gu, ""),
@@ -776,57 +675,104 @@
 
   function sortValue(company, record) {
     switch (sortSelect.value) {
-      case "taxableTurnover":
-        return record?.taxableTurnover;
-      case "projectedTurnover":
-        return record?.projectedTurnover;
-      case "stateTaxes":
-        return record?.stateTaxes;
-      case "labourTaxes":
-        return record?.labourTaxes;
-      case "employees":
-        return record?.employees;
-      case "taxableTurnoverPerEmployee":
-        return record?.taxableTurnoverPerEmployee;
-      case "projectedLabourProductivity":
-        return record?.projectedLabourProductivity;
-      case "labourProductivity":
-        return record?.labourProductivity;
-      case "profitPerEmployee":
-        return record?.profitPerEmployee;
-      case "averageGrossWage":
-        return record?.averageGrossWage;
-      case "name":
-        return company.name || "";
-      default:
-        return record?.taxableTurnover;
+      case "turnover": return record?.turnover;
+      case "equity": return record?.equity;
+      case "profit": return record?.profit;
+      case "margin": return record?.margin;
+      case "employees": return record?.employees;
+      case "turnoverPerEmployee": return record?.turnoverPerEmployee;
+      case "name": return company.name || "";
+      default: return record?.turnover;
     }
   }
 
-  function turnoverClass(value) {
-    if (value == null) return "quarterly-muted";
-    if (Number(value) > 0) return "quarterly-positive";
-    if (Number(value) < 0) return "quarterly-negative";
-    return "";
+  function escapeHtml(value) {
+    return String(value ?? "")
+      .replaceAll("&", "&amp;")
+      .replaceAll("<", "&lt;")
+      .replaceAll(">", "&gt;")
+      .replaceAll('"', "&quot;")
+      .replaceAll("'", "&#039;");
+  }
+
+  function setupResponsiveViewAndCsv() {
+    const panel = document.getElementById("marketMonitorAnnual");
+    const table = body.closest("table") || panel?.querySelector("table");
+    const csvButton = document.getElementById("marketAnnualCsvExportButton");
+    if (!panel || !table) return;
+
+    // Keep only the responsive table wrapper here. The CSV button is defined in HTML
+    // and uses the shared .cv-link styling from style.css.
+    let style = document.getElementById("market-monitor-view-styles");
+    if (!style) {
+      style = document.createElement("style");
+      style.id = "market-monitor-view-styles";
+      style.textContent = `
+        .market-monitor-table-scroll{max-width:100%;overflow-x:auto}
+        .market-turnover-value{color:#0080BA}
+      `;
+      document.head.appendChild(style);
+    }
+
+    let scroll = table.parentElement;
+    if (!scroll.classList.contains("market-monitor-table-scroll")) {
+      const wrapper = document.createElement("div");
+      wrapper.className = "market-monitor-table-scroll";
+      table.parentNode.insertBefore(wrapper, table);
+      wrapper.appendChild(table);
+      scroll = wrapper;
+    }
+
+    if (!csvButton || csvButton.dataset.ready === "1") return;
+    csvButton.dataset.ready = "1";
+
+    const lang = ["ru", "et", "en"].includes(document.documentElement.lang) ? document.documentElement.lang : "en";
+    const labels = {
+      ru: {csv:"Сохранить в CSV", none:"Отметьте компании для экспорта"},
+      et: {csv:"Salvesta CSV-na", none:"Märgi eksporditavad ettevõtted"},
+      en: {csv:"Save to CSV", none:"Select companies to export"}
+    }[lang];
+    csvButton.textContent = labels.csv;
+    const raw = value => value == null ? "" : String(value);
+
+    csvButton.addEventListener("click", () => {
+      const chosen = companies.filter(company => selectedCompanies.has(companyId(company)));
+      if (!chosen.length) { window.alert(labels.none); return; }
+      const headers = [...table.querySelectorAll("thead th")].map(th => th.textContent.trim());
+      const rows = [headers];
+      chosen.forEach(company => {
+        const record = getRecord(company, yearSelect.value);
+        rows.push([company.name||"",record?.year??"",record?.turnover??"",record?.equity??"",record?.profit??"",record?.margin??"",record?.employees??"",record?.turnoverPerEmployee??""].map(raw));
+      });
+      const csvCell = value => { const text = raw(value); return /[,;"\r\n]/u.test(text) ? `"${text.replaceAll('"','""')}"` : text; };
+      const csv = "\uFEFF" + rows.map(row => row.map(csvCell).join(",")).join("\r\n");
+      const url = URL.createObjectURL(new Blob([csv], {type:"text/csv;charset=utf-8;"}));
+      const link = document.createElement("a");
+      link.href = url;
+      link.download = `market-monitor-annual-${yearSelect.value}.csv`;
+      document.body.appendChild(link); link.click(); link.remove(); URL.revokeObjectURL(url);
+    });
+
+    const updateExportState = event => {
+      const ids = Array.isArray(event?.detail?.selectedCompanies) ? event.detail.selectedCompanies : [...selectedCompanies];
+      csvButton.disabled = ids.length === 0;
+      csvButton.title = csvButton.disabled ? labels.none : labels.csv;
+    };
+    panel.addEventListener("change", event => {
+      if (event.target.matches(".market-company-checkbox, #marketAnnualSelectAll")) updateExportState();
+    });
+    window.addEventListener("market-monitor-selection-change", updateExportState);
+    updateExportState();
   }
 
   function render() {
-    const year = Number(yearSelect.value);
-    const quarter = Number(quarterSelect.value);
-    const search = searchInput.value.trim().toLowerCase();
+    const year = yearSelect.value;
+    const query = searchInput.value.trim().toLowerCase();
     const mobileLabels = getMobileLabels();
-    const prefix = t("quarterPrefix") || "Q";
 
-    let rows = companies
-      .filter(company =>
-        String(company.name || "")
-          .toLowerCase()
-          .includes(search)
-      )
-      .map(company => ({
-        company,
-        record: getRecord(company, year, quarter)
-      }));
+    const rows = companies
+      .map(company => ({ company, record: getRecord(company, year) }))
+      .filter(item => String(item.company.name || "").toLowerCase().includes(query));
 
     rows.sort((a, b) => {
       const av = sortValue(a.company, a.record);
@@ -837,107 +783,92 @@
       if (bv == null) return -1;
 
       if (sortSelect.value === "name") {
-        const result = String(av).localeCompare(
-          String(bv),
-          document.documentElement.lang || "en"
-        );
-        return directionSelect.value === "asc" ? result : -result;
+        const result = String(av).localeCompare(String(bv), document.documentElement.lang || "en");
+        return sortDirection.value === "asc" ? result : -result;
       }
 
-      const result = Number(av) - Number(bv);
-      return directionSelect.value === "asc" ? result : -result;
+      return sortDirection.value === "asc"
+        ? Number(av) - Number(bv)
+        : Number(bv) - Number(av);
     });
 
-      const total = rows.length;
+    const total = rows.length;
 
-      body.innerHTML = rows.map(({ company, record }, index) => {
-      const registryCode =
-        company.registryCode ||
-        company.registry_code ||
-        "";
+    body.innerHTML = rows.map(({ company, record }, index) => {
+      const registryCode = company.registryCode || company.registry_code || "";
+
+      const lang = ["en", "et", "ru"].includes(document.documentElement.lang)
+        ? document.documentElement.lang
+        : "en";
+
+      const registerLang = document.documentElement.lang === "et"
+              ? "est"
+              : "eng";
 
       const registerUrl = registryCode
-        ? `https://ariregister.rik.ee/eng/company/${encodeURIComponent(
-            registryCode
-          )}`
-        : "";
+              ? `https://ariregister.rik.ee/${registerLang}/company/${encodeURIComponent(registryCode)}`
+              : "";
 
       const teatmikUrl = registryCode
-        ? `https://www.teatmik.ee/${lang}/personlegal/${encodeURIComponent(
-            registryCode
-          )}`
+        ? `https://www.teatmik.ee/${lang}/personlegal/${encodeURIComponent(registryCode)}`
         : "";
 
       const companyName = company.website
-        ? `<a href="${escapeHtml(company.website)}"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="quarterly-company-name">${escapeHtml(
-                company.name
-              )}</a>`
-        : `<span class="quarterly-company-name">${escapeHtml(
-            company.name
-          )}</span>`;
+        ? `<a href="${escapeHtml(company.website)}" target="_blank" rel="noopener noreferrer" class="company-name">${escapeHtml(company.name)}</a>`
+        : `<span class="company-name">${escapeHtml(company.name)}</span>`;
 
       const register = registerUrl
-        ? `<a href="${registerUrl}"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="teatmik-link register-link"
-              title="Commercial Register (RIK)"
-              aria-label="Commercial Register (RIK)"
-              style="display:inline-flex;align-items:center;justify-content:center;vertical-align:middle"><span class="teatmik-icon register-icon" style="color:#0080BA">R</span></a>`
+        ? `<a href="${registerUrl}" target="_blank" rel="noopener noreferrer" class="teatmik-link register-link" title="Commercial Register (RIK)" aria-label="Commercial Register (RIK)"><span class="teatmik-icon" style="color: #0080BA;">R</span></a>`
         : "";
 
       const teatmik = teatmikUrl
-        ? `<a href="${teatmikUrl}"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="quarterly-teatmik"
-              title="TEATMIK"
-              aria-label="TEATMIK"
-              style="display:inline-flex;align-items:center;justify-content:center;vertical-align:middle">t</a>`
+        ? `<a href="${teatmikUrl}" target="_blank" rel="noopener noreferrer" class="teatmik-link" title="TEATMIK" aria-label="TEATMIK"><span class="teatmik-icon">t</span></a>`
         : "";
+
+      const profitClass = record?.profit == null
+        ? "muted"
+        : Number(record.profit) > 0 ? "positive" : Number(record.profit) < 0 ? "negative" : "";
+
+      const marginClass = record?.margin == null
+        ? "muted"
+        : Number(record.margin) > 0 ? "positive" : Number(record.margin) < 0 ? "negative" : "";
 
       const label = index => escapeHtml(mobileLabels[index] || "");
 
       return `<tr>
-        <td>
-          <span class="quarterly-company-cell">
-              <span class="company-selection">
-                <input
-                  type="checkbox"
-                  class="market-company-checkbox"
-                  data-company-id="${escapeHtml(companyId(company))}"
-                  ${selectedCompanies.has(companyId(company)) ? "checked" : ""}
-                  aria-label="${escapeHtml(company.name || "Company")}">
-                <span class="company-rank">${index + 1}/${total}</span>
-              </span>
-              ${companyName}
-              ${register}
-              ${teatmik}
-          </span>
+        <td class="company">
+        <span class="company-cell">
+            <span class="company-selection">
+              <input
+                type="checkbox"
+                class="market-company-checkbox"
+                data-company-id="${escapeHtml(companyId(company))}"
+                ${selectedCompanies.has(companyId(company)) ? "checked" : ""}
+                aria-label="${escapeHtml(company.name || "Company")}">
+              <span class="company-rank">${index + 1}/${total}</span>
+            </span>
+            ${companyName}
+            ${register}
+            ${teatmik}
+        </span>
         </td>
-        <td data-label="${label(1)}">${record?.period ?? "—"}</td>
-        <td class="${turnoverClass(record?.taxableTurnover)}" data-label="${label(2)}">${euro(record?.taxableTurnover)}</td>
-        <td data-label="${label(3)}">${euro(record?.projectedTurnover)}</td>
-        <td data-label="${label(4)}">${euro(record?.stateTaxes)}</td>
-        <td data-label="${label(5)}">${euro(record?.labourTaxes)}</td>
+        <td data-label="${label(1)}">${record?.year ?? "—"}</td>
+        <td class="market-turnover-value" data-label="${label(2)}">${euro(record?.turnover)}</td>
+        <td data-label="${label(3)}">${euro(record?.equity)}</td>
+        <td class="${profitClass}" data-label="${label(4)}">${euro(record?.profit)}</td>
+        <td class="${marginClass}" data-label="${label(5)}">${percent(record?.margin)}</td>
         <td data-label="${label(6)}">${number(record?.employees)}</td>
-        <td data-label="${label(7)}">${euro(record?.taxableTurnoverPerEmployee)}</td>
-        <td data-label="${label(8)}">${euro(record?.projectedLabourProductivity)}</td>
-        <td data-label="${label(9)}">${euro(record?.labourProductivity)}</td>
-        <td data-label="${label(10)}">${euro(record?.profitPerEmployee)}</td>
-        <td data-label="${label(11)}">${euro(record?.averageGrossWage)}</td>
+        <td data-label="${label(7)}">${euro(record?.turnoverPerEmployee)}</td>
       </tr>`;
     }).join("");
 
-    const availableCount = rows.filter(item => item.record != null).length;
+    const rowsWithData = rows.filter(({ record }) => record != null).length;
+    const periodLabel = year === "latest" ? (t("statusLatest") || "Latest available") : year;
 
     status.textContent =
       `${t("statusCompanies") || "Companies"}: ${rows.length} · ` +
-      `${t("statusWithData") || "With data"}: ${availableCount} · ` +
-      `${t("statusPeriod") || "Period"}: ${year}-${prefix}${quarter}`;
+      `${t("statusWithData") || "With data"}: ${rowsWithData} · ` +
+      `${t("statusPeriod") || "Period"}: ${periodLabel}`;
 
     updateSelectAllState();
   }
@@ -953,7 +884,7 @@
       ensureSelection();
       updateSelectAllState();
 
-      const updatedElement = document.getElementById("marketMonitorQuarterlyUpdated");
+      const updatedElement = document.getElementById("marketMonitorAnnualUpdated");
       if (updatedElement && data.updated) {
         const updated = String(data.updated).split(".")[0];
         updatedElement.textContent =
@@ -963,39 +894,35 @@
       fillYears();
       render();
     } catch (error) {
-      console.error("Quarterly Market Monitor:", error);
-      status.textContent =
-        t("quarterlyLoadError") ||
-        "Failed to load quarterly data.";
-
-      body.innerHTML = `<tr>
-        <td colspan="12" class="quarterly-error">
-          ${escapeHtml(
-            t("quarterlyCheckFile") ||
-            "Please check the file companies_quarterly.json and make sure the page is running through a local HTTP server."
-          )}
-        </td>
-      </tr>`;
+      console.error("Market Monitor:", error);
+      status.textContent = t("loadError") || "Failed to load Market Monitor data.";
+      body.innerHTML = `
+  <tr>
+    <td colspan="8" class="quarterly-error">
+      ${escapeHtml(t("checkFile") || "Please check the file")}
+      <strong>MarketMonitor/companies.json</strong>
+      ${escapeHtml(
+        t("localHttp") ||
+        "and make sure the page is running through a local HTTP server."
+      )}
+    </td>
+  </tr>
+`;
     }
   }
 
-  yearSelect.addEventListener("change", () => {
-    fillQuarters();
-    render();
-  });
-
-  quarterSelect.addEventListener("change", render);
+  yearSelect.addEventListener("change", render);
   sortSelect.addEventListener("change", render);
-  directionSelect.addEventListener("change", render);
+  sortDirection.addEventListener("change", render);
   searchInput.addEventListener("input", render);
 
   if (summaryButton) {
-    summaryButton.addEventListener("click", showQuarterlySummary);
+    summaryButton.addEventListener("click", showAnnualSummary);
   }
 
+  setupResponsiveViewAndCsv();
   setupSelection();
   setupSharedSelectionSync();
-  setupSelectionPresetButtons();
   setupSelectionFileActions();
   loadData();
 })();

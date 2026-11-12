@@ -54,63 +54,6 @@
     return [...years].sort((a, b) => b - a);
   }
 
-  // Match the Company, Year and Turnover columns to the quarterly report.
-  // If the quarterly table is hidden, use the desktop widths measured from its layout.
-  function syncAnnualColumnWidths() {
-    const annualTable = document.getElementById("marketMonitorAnnual");
-    const quarterlyTable = document.querySelector("#market-monitor .quarterly-table");
-    if (!annualTable) return;
-
-    const annualHeaders = [...annualTable.querySelectorAll("thead th")];
-    if (annualHeaders.length < 3) return;
-
-    const widthOf = cell => {
-      const rectWidth = cell.getBoundingClientRect().width;
-      if (rectWidth > 0) return rectWidth;
-      const cssWidth = parseFloat(getComputedStyle(cell).width);
-      return Number.isFinite(cssWidth) ? cssWidth : 0;
-    };
-
-    let targetWidths = [254, 78, 97];
-    if (quarterlyTable) {
-      const quarterlyHeaders = [...quarterlyTable.querySelectorAll("thead th")];
-      if (quarterlyHeaders.length >= 3) {
-        const measured = quarterlyHeaders.slice(0, 3).map(widthOf);
-        if (measured.every(width => width > 0)) targetWidths = measured;
-      }
-    }
-
-    let colgroup = annualTable.querySelector(":scope > colgroup");
-    if (!colgroup) {
-      colgroup = document.createElement("colgroup");
-      annualTable.insertBefore(colgroup, annualTable.firstChild);
-    }
-    while (colgroup.children.length < annualHeaders.length) {
-      colgroup.appendChild(document.createElement("col"));
-    }
-    while (colgroup.children.length > annualHeaders.length) {
-      colgroup.lastElementChild.remove();
-    }
-
-    const tableWidth = annualTable.getBoundingClientRect().width;
-    if (tableWidth <= 0) return;
-
-    const oldWidths = annualHeaders.map(widthOf);
-    const oldRemainingTotal = oldWidths.slice(3).reduce((sum, width) => sum + width, 0);
-    const remainingTotal = Math.max(0, tableWidth - targetWidths.reduce((sum, width) => sum + width, 0));
-    const widths = [...targetWidths];
-    oldWidths.slice(3).forEach(width => {
-      widths.push(oldRemainingTotal > 0
-        ? remainingTotal * width / oldRemainingTotal
-        : remainingTotal / Math.max(1, oldWidths.length - 3));
-    });
-
-    annualTable.style.tableLayout = "fixed";
-    widths.forEach((width, index) => {
-      colgroup.children[index].style.width = `${width}px`;
-    });
-  }
-
   function getMobileLabels() {
     const headerCells = document.querySelectorAll("#marketMonitorAnnual thead th");
     return [...headerCells].map(th => th.textContent.trim().replace(/,\s*€$/u, ""));
@@ -211,6 +154,9 @@
     selectAllLabel = selectionContainer?.querySelector("#marketAnnualSelectAllLabel") || selectAllLabel;
 
     if (!selectionContainer || !selectAllCheckbox) return;
+
+    // Рыбная версия: убрать предустановленные выборки алюминия и железа.
+    selectionContainer.querySelectorAll("[data-selection-preset]").forEach(button => button.remove());
 
     selectAllCheckbox.addEventListener("change", () => {
       clearActivePreset();
@@ -460,9 +406,9 @@
 
     const lang = document.documentElement.lang || "en";
     const labels = {
-      en: ["Save to CSV", "Choose the period to export", "Save current period", "Choose a year range", "From", "To", "Download CSV", "Cancel"],
-      et: ["Salvesta CSV-na", "Vali ekspordi periood", "Salvesta praegune periood", "Vali aastate vahemik", "Alates", "Kuni", "Laadi CSV alla", "Tühista"],
-      ru: ["Сохранить в CSV", "Выберите период для экспорта", "Сохранить текущий период", "Выбрать интервал лет", "С года", "По год", "Скачать CSV", "Отмена"]
+    en: ["OK", "Choose the period to export", "Save current period", "Choose a year range", "From", "To", "Save to CSV", "Cancel"],
+    et: ["OK", "Vali ekspordi periood", "Salvesta praegune periood", "Vali aastate vahemik", "Alates", "Kuni", "Salvesta CSV-na", "Tühista"],
+    ru: ["OK", "Выберите период для экспорта", "Сохранить текущий период", "Выбрать интервал лет", "С года", "По год", "Сохранить в CSV", "Отмена"]
     }[lang] || ["Save to CSV", "Choose the period to export", "Save current period", "Choose a year range", "From", "To", "Download CSV", "Cancel"];
 
     saveButton.textContent = labels[0];
@@ -749,8 +695,77 @@
       .replaceAll("'", "&#039;");
   }
 
+  function setupResponsiveViewAndCsv() {
+    const panel = document.getElementById("marketMonitorAnnual");
+    const table = body.closest("table") || panel?.querySelector("table");
+    const csvButton = document.getElementById("marketAnnualCsvExportButton");
+    if (!panel || !table) return;
+
+    // Keep only the responsive table wrapper here. The CSV button is defined in HTML
+    // and uses the shared .cv-link styling from style.css.
+    let style = document.getElementById("market-monitor-view-styles");
+    if (!style) {
+      style = document.createElement("style");
+      style.id = "market-monitor-view-styles";
+      style.textContent = `
+        .market-monitor-table-scroll{max-width:100%;overflow-x:auto}
+        .market-turnover-value{color:#0080BA}
+      `;
+      document.head.appendChild(style);
+    }
+
+    let scroll = table.parentElement;
+    if (!scroll.classList.contains("market-monitor-table-scroll")) {
+      const wrapper = document.createElement("div");
+      wrapper.className = "market-monitor-table-scroll";
+      table.parentNode.insertBefore(wrapper, table);
+      wrapper.appendChild(table);
+      scroll = wrapper;
+    }
+
+    if (!csvButton || csvButton.dataset.ready === "1") return;
+    csvButton.dataset.ready = "1";
+
+    const lang = ["ru", "et", "en"].includes(document.documentElement.lang) ? document.documentElement.lang : "en";
+    const labels = {
+      ru: {csv:"Сохранить в CSV", none:"Отметьте компании для экспорта"},
+      et: {csv:"Salvesta CSV-na", none:"Märgi eksporditavad ettevõtted"},
+      en: {csv:"Save to CSV", none:"Select companies to export"}
+    }[lang];
+    csvButton.textContent = labels.csv;
+    const raw = value => value == null ? "" : String(value);
+
+    csvButton.addEventListener("click", () => {
+      const chosen = companies.filter(company => selectedCompanies.has(companyId(company)));
+      if (!chosen.length) { window.alert(labels.none); return; }
+      const headers = [...table.querySelectorAll("thead th")].map(th => th.textContent.trim());
+      const rows = [headers];
+      chosen.forEach(company => {
+        const record = getRecord(company, yearSelect.value);
+        rows.push([company.name||"",record?.year??"",record?.turnover??"",record?.equity??"",record?.profit??"",record?.margin??"",record?.employees??"",record?.turnoverPerEmployee??""].map(raw));
+      });
+      const csvCell = value => { const text = raw(value); return /[,;"\r\n]/u.test(text) ? `"${text.replaceAll('"','""')}"` : text; };
+      const csv = "\uFEFF" + rows.map(row => row.map(csvCell).join(",")).join("\r\n");
+      const url = URL.createObjectURL(new Blob([csv], {type:"text/csv;charset=utf-8;"}));
+      const link = document.createElement("a");
+      link.href = url;
+      link.download = `market-monitor-annual-${yearSelect.value}.csv`;
+      document.body.appendChild(link); link.click(); link.remove(); URL.revokeObjectURL(url);
+    });
+
+    const updateExportState = event => {
+      const ids = Array.isArray(event?.detail?.selectedCompanies) ? event.detail.selectedCompanies : [...selectedCompanies];
+      csvButton.disabled = ids.length === 0;
+      csvButton.title = csvButton.disabled ? labels.none : labels.csv;
+    };
+    panel.addEventListener("change", event => {
+      if (event.target.matches(".market-company-checkbox, #marketAnnualSelectAll")) updateExportState();
+    });
+    window.addEventListener("market-monitor-selection-change", updateExportState);
+    updateExportState();
+  }
+
   function render() {
-    syncAnnualColumnWidths();
     const year = yearSelect.value;
     const query = searchInput.value.trim().toLowerCase();
     const mobileLabels = getMobileLabels();
@@ -786,40 +801,28 @@
         ? document.documentElement.lang
         : "en";
 
+      const registerLang = document.documentElement.lang === "et"
+              ? "est"
+              : "eng";
+
       const registerUrl = registryCode
-        ? `https://ariregister.rik.ee/eng/company/${encodeURIComponent(registryCode)}`
-        : "";
+              ? `https://ariregister.rik.ee/${registerLang}/company/${encodeURIComponent(registryCode)}`
+              : "";
 
       const teatmikUrl = registryCode
         ? `https://www.teatmik.ee/${lang}/personlegal/${encodeURIComponent(registryCode)}`
         : "";
 
-      // Use the same company-cell markup and icon layout as the quarterly report.
       const companyName = company.website
-        ? `<a href="${escapeHtml(company.website)}"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="quarterly-company-name">${escapeHtml(company.name)}</a>`
-        : `<span class="quarterly-company-name">${escapeHtml(company.name)}</span>`;
+        ? `<a href="${escapeHtml(company.website)}" target="_blank" rel="noopener noreferrer" class="company-name">${escapeHtml(company.name)}</a>`
+        : `<span class="company-name">${escapeHtml(company.name)}</span>`;
 
       const register = registerUrl
-        ? `<a href="${registerUrl}"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="teatmik-link register-link"
-              title="Commercial Register (RIK)"
-              aria-label="Commercial Register (RIK)"
-              style="display:inline-flex;align-items:center;justify-content:center;vertical-align:middle"><span class="teatmik-icon register-icon" style="color:#0080BA">R</span></a>`
+        ? `<a href="${registerUrl}" target="_blank" rel="noopener noreferrer" class="teatmik-link register-link" title="Commercial Register (RIK)" aria-label="Commercial Register (RIK)"><span class="teatmik-icon" style="color: #0080BA;">R</span></a>`
         : "";
 
       const teatmik = teatmikUrl
-        ? `<a href="${teatmikUrl}"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="quarterly-teatmik"
-              title="TEATMIK"
-              aria-label="TEATMIK"
-              style="display:inline-flex;align-items:center;justify-content:center;vertical-align:middle">t</a>`
+        ? `<a href="${teatmikUrl}" target="_blank" rel="noopener noreferrer" class="teatmik-link" title="TEATMIK" aria-label="TEATMIK"><span class="teatmik-icon">t</span></a>`
         : "";
 
       const profitClass = record?.profit == null
@@ -834,7 +837,7 @@
 
       return `<tr>
         <td class="company">
-        <span class="quarterly-company-cell">
+        <span class="company-cell">
             <span class="company-selection">
               <input
                 type="checkbox"
@@ -850,7 +853,7 @@
         </span>
         </td>
         <td data-label="${label(1)}">${record?.year ?? "—"}</td>
-        <td data-label="${label(2)}">${euro(record?.turnover)}</td>
+        <td class="market-turnover-value" data-label="${label(2)}">${euro(record?.turnover)}</td>
         <td data-label="${label(3)}">${euro(record?.equity)}</td>
         <td class="${profitClass}" data-label="${label(4)}">${euro(record?.profit)}</td>
         <td class="${marginClass}" data-label="${label(5)}">${percent(record?.margin)}</td>
@@ -917,11 +920,9 @@
     summaryButton.addEventListener("click", showAnnualSummary);
   }
 
+  setupResponsiveViewAndCsv();
   setupSelection();
   setupSharedSelectionSync();
-  setupSelectionPresetButtons();
   setupSelectionFileActions();
   loadData();
-  window.addEventListener("resize", syncAnnualColumnWidths);
-  window.addEventListener("load", syncAnnualColumnWidths);
 })();
